@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r5">
+    <folder id="0">
+        <file id="0" name="BackLeg.png" width="64" height="64" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="BackArm.png" width="64" height="64" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="Body.png" width="64" height="64" pivot_x="0" pivot_y="1"/>
+        <file id="3" name="FrontArm.png" width="64" height="64" pivot_x="0" pivot_y="1"/>
+        <file id="4" name="FrontLeg.png" width="64" height="64" pivot_x="0" pivot_y="1"/>
+        <file id="5" name="Head.png" width="64" height="64" pivot_x="0" pivot_y="1"/>
+        <file id="6" name="Sword.png" width="64" height="64" pivot_x="0" pivot_y="1"/>
+        <file id="7" name="CombatArmFront.png" width="64" height="64" pivot_x="0" pivot_y="1"/>
+        <file id="8" name="CombatArmBack.png" width="64" height="64" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="IceGollem">
+        <obj_info name="IceGollem_BackArm" realname="BackArm" type="sprite">
+            <frames>
+                <i folder="0" file="8"/>
+            </frames>
+        </obj_info>
+        <obj_info name="IceGollem_BackLeg" realname="BackLeg" type="sprite">
+            <frames>
+                <i folder="0" file="0"/>
+            </frames>
+        </obj_info>
+        <obj_info name="IceGollem_Body" realname="Body" type="sprite">
+            <frames>
+                <i folder="0" file="2"/>
+            </frames>
+        </obj_info>
+        <obj_info name="IceGollem_FrontLeg" realname="FrontLeg" type="sprite">
+            <frames>
+                <i folder="0" file="4"/>
+            </frames>
+        </obj_info>
+        <obj_info name="IceGollem_FrontArm_000" realname="FrontArm_000" type="sprite">
+            <frames>
+                <i folder="0" file="7"/>
+            </frames>
+        </obj_info>
+        <obj_info name="IceGollem_Head" realname="Head" type="sprite">
+            <frames>
+                <i folder="0" file="5"/>
+            </frames>
+        </obj_info>
+        <obj_info name="IceGollem_Sword" realname="Sword" type="sprite">
+            <frames>
+                <i folder="0" file="6"/>
+            </frames>
+        </obj_info>
+        <obj_info name="IceGollem_bone_000" realname="bone_000" type="bone" w="16.3844" h="10"/>
+        <obj_info name="IceGollem_bone_001" realname="bone_001" type="bone" w="7.02128" h="10"/>
+        <obj_info name="IceGollem_bone_014" realname="bone_014" type="bone" w="14.4681" h="10"/>
+        <obj_info name="IceGollem_bone_015" realname="bone_015" type="bone" w="16.8085" h="10"/>
+        <obj_info name="IceGollem_bone_016" realname="bone_016" type="bone" w="14.0426" h="10"/>
+        <obj_info name="IceGollem_BakFot" realname="BakFot" type="bone" w="15.5319" h="10"/>
+        <obj_info name="IceGollem_bone_018" realname="bone_018" type="bone" w="16.5589" h="10"/>
+        <obj_info name="IceGollem_Main" realname="Main" type="bone" w="13.6237" h="10"/>
+        <animation id="0" name="Base" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="14" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="11" key="0"/>
+                    <bone_ref id="2" parent="0" timeline="12" key="0"/>
+                    <bone_ref id="3" parent="0" timeline="7" key="0"/>
+                    <bone_ref id="4" parent="3" timeline="8" key="0"/>
+                    <bone_ref id="5" parent="4" timeline="13" key="0"/>
+                    <bone_ref id="6" parent="3" timeline="9" key="0"/>
+                    <bone_ref id="7" parent="3" timeline="10" key="0"/>
+                    <object_ref id="0" parent="7" name="BackArm" folder="0" file="8" abs_x="-32" abs_y="64" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" parent="2" name="BackLeg" folder="0" file="0" abs_x="-32" abs_y="64" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" parent="3" name="Body" folder="0" file="2" abs_x="-32" abs_y="64" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" parent="1" name="FrontLeg" folder="0" file="4" abs_x="-32" abs_y="64" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" parent="5" name="Sword" folder="0" file="6" abs_x="-32" abs_y="64" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" key="0" z_index="4"/>
+                    <object_ref id="5" parent="4" name="Head" folder="0" file="5" abs_x="-32" abs_y="64" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="0" z_index="5"/>
+                    <object_ref id="6" parent="6" name="FrontArm_000" folder="0" file="7" abs_x="-32" abs_y="64" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="0" z_index="6"/>
+                </key>
+            </mainline>
+            <timeline id="0" obj="0" name="BackArm">
+                <key id="0" spin="0">
+                    <object folder="0" file="8" x="-30.595745" y="-31.361702" angle="90" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="1" obj="1" name="BackLeg">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="-46.553191" y="-29.87234" angle="90" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="2" obj="2" name="Body">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="44.820758" y="30.143907" angle="269.255941"/>
+                </key>
+            </timeline>
+            <timeline id="3" obj="3" name="FrontLeg">
+                <key id="0" spin="0">
+                    <object folder="0" file="4" x="-47.829787" y="-32.425532" angle="90" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="4" obj="4" name="FrontArm_000">
+                <key id="0" spin="0">
+                    <object folder="0" file="7" x="-33.574468" y="-33.276596" angle="90" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="5" obj="5" name="Head">
+                <key id="0" spin="0">
+                    <object folder="0" file="5" x="26.765957" y="30.297872" angle="270"/>
+                </key>
+            </timeline>
+            <timeline id="6" obj="6" name="Sword">
+                <key id="0" spin="0">
+                    <object folder="0" file="6" x="-29.515648" y="3.031284" angle="27.552812"/>
+                </key>
+            </timeline>
+            <timeline id="7" obj="7" name="bone_000" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="13.803102" y="-1.069956" angle="268.954149"/>
+                </key>
+            </timeline>
+            <timeline id="8" obj="8" name="bone_001" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="17.663611" y="0.19617" angle="359.255941"/>
+                </key>
+            </timeline>
+            <timeline id="9" obj="9" name="bone_014" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="10.816993" y="-2.693887" angle="179.255941" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="10" obj="10" name="bone_015" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="13.820332" y="-0.817837" angle="179.255941" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="11" obj="11" name="bone_016" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="12.208136" y="2.385803" angle="88.210089" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="12" obj="12" name="BakFot" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="14.720208" y="1.030082" angle="88.210089" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="13" obj="13" name="bone_018" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="10.425532" y="5.531915" angle="242.447188"/>
+                </key>
+            </timeline>
+            <timeline id="14" obj="14" name="Main" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="12.553191" y="18.93617" angle="181.789911"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

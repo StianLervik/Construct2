@@ -1,0 +1,226 @@
+{
+	"entity": [
+		{
+			"animation": [
+				{
+					"gline": [],
+					"id": 0,
+					"interval": 100,
+					"length": 1000,
+					"mainline": {
+						"key": [
+							{
+								"bone_ref": [],
+								"id": 0,
+								"object_ref": [
+									{
+										"abs_a": 1,
+										"abs_angle": 0,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -8,
+										"abs_y": -16,
+										"file": 0,
+										"folder": 0,
+										"id": 0,
+										"key": 0,
+										"name": "ToiletPaper",
+										"timeline": "0",
+										"z_index": "0"
+									}
+								]
+							}
+						]
+					},
+					"name": "Base",
+					"timeline": [
+						{
+							"id": 0,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 0,
+										"file": 0,
+										"folder": 0,
+										"x": -8,
+										"y": 16
+									},
+									"spin": 0
+								}
+							],
+							"name": "ToiletPaper",
+							"obj": 0
+						}
+					]
+				},
+				{
+					"gline": [],
+					"id": 1,
+					"interval": 100,
+					"length": 1000,
+					"mainline": {
+						"key": [
+							{
+								"bone_ref": [],
+								"id": 0,
+								"object_ref": [
+									{
+										"abs_a": 1,
+										"abs_angle": 0,
+										"abs_pivot_x": 0.5,
+										"abs_pivot_y": 0.506708,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": 0,
+										"abs_y": -8.107327,
+										"file": 0,
+										"folder": 0,
+										"id": 0,
+										"key": 1,
+										"name": "ToiletPaper",
+										"timeline": "0",
+										"z_index": "0"
+									}
+								]
+							},
+							{
+								"bone_ref": [],
+								"id": 1,
+								"object_ref": [
+									{
+										"id": 0,
+										"key": 3,
+										"timeline": "0",
+										"z_index": "0"
+									}
+								],
+								"time": 500
+							},
+							{
+								"bone_ref": [],
+								"id": 2,
+								"object_ref": [
+									{
+										"id": 0,
+										"key": 4,
+										"timeline": "0",
+										"z_index": "0"
+									}
+								],
+								"time": 999
+							}
+						]
+					},
+					"name": "Walk",
+					"timeline": [
+						{
+							"id": 0,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 0,
+										"file": 0,
+										"folder": 0,
+										"pivot_x": 0.5,
+										"pivot_y": 0.49329200000000006,
+										"x": 4.832867138436569e-16,
+										"y": 7.892671
+									}
+								},
+								{
+									"id": 1,
+									"object": {
+										"angle": 0,
+										"file": 0,
+										"folder": 0,
+										"pivot_x": 0.5,
+										"pivot_y": 0.506708,
+										"y": 8.107327
+									}
+								},
+								{
+									"id": 2,
+									"object": {
+										"angle": 180,
+										"file": 0,
+										"folder": 0,
+										"pivot_x": 0.5,
+										"pivot_y": 0.506708,
+										"x": 4.832867138436569e-16,
+										"y": 7.892671
+									},
+									"time": 500
+								},
+								{
+									"id": 3,
+									"object": {
+										"angle": 180,
+										"file": 0,
+										"folder": 0,
+										"pivot_x": 0.5,
+										"pivot_y": 0.49329200000000006,
+										"y": 8.107327
+									},
+									"time": 500
+								},
+								{
+									"id": 4,
+									"object": {
+										"angle": 359,
+										"file": 0,
+										"folder": 0,
+										"pivot_x": 0.5,
+										"pivot_y": 0.49329200000000006,
+										"x": 4.823201404159696e-16,
+										"y": 7.893100312
+									},
+									"time": 999
+								}
+							],
+							"name": "ToiletPaper",
+							"obj": 0
+						}
+					]
+				}
+			],
+			"character_map": [],
+			"id": 0,
+			"name": "ToiletPaper",
+			"obj_info": [
+				{
+					"frames": [
+						{
+							"file": 0,
+							"folder": 0
+						}
+					],
+					"name": "ToiletPaper_ToiletPaper",
+					"realname": "ToiletPaper",
+					"type": "sprite"
+				}
+			]
+		}
+	],
+	"folder": [
+		{
+			"file": [
+				{
+					"height": 16,
+					"id": 0,
+					"name": "ToiletPaper.png",
+					"pivot_x": 0,
+					"pivot_y": 1,
+					"width": 16
+				}
+			],
+			"id": 0
+		}
+	],
+	"generator": "BrashMonkey Spriter",
+	"generator_version": "r5",
+	"scon_version": "1.0"
+}
