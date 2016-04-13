@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Cave1-1</name>
+    <events>
+        <include>Main</include>
+        <event-block sid="8999107447963492">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4066232399482126" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="2634996764260537">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="8470941212079283" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="2591496525668705" type="System">
+                            <param id="0" name="Variable">WorldPos</param>
+                            <param id="1" name="Value">&quot;Cave1-1&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="596406068863411">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="4991451322514827" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="2559843849292541" type="RockMonster">
+                    <param id="0" name="Object">EnemyBox</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="2863939024136195" type="EnemyCamera">
+                    <param id="0" name="Object">EnemyBox</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="5391368661450017" type="HeadSensor">
+                    <param id="0" name="Object">RockMonster_RockMonster_RockMonsterHead</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3731644812982808">
+            <conditions>
+                <condition id="-29" name="On load complete" sid="3264734076503817" type="System" />
+            </conditions>
+            <actions>
+                <action id="-18" name="Set layer opacity" sid="21927110367931" type="System">
+                    <param id="0" name="Layer">&quot;Fade&quot;</param>
+                    <param id="1" name="Opacity">100</param>
+                </action>
+                <action id="-9" name="Set value" sid="4142115247709843" type="System">
+                    <param id="0" name="Variable">Fade</param>
+                    <param id="1" name="Value">&quot;inn&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="3569539209932918" title="RockMonster">
+            <sub-events>
+                <event-block any="1" sid="821840988501153">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="4801418343150188" type="PlayerBox">
+                            <param id="0" name="Object">Entry</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="6568253479973695" type="System">
+                            <param id="0" name="Variable">Fade</param>
+                            <param id="1" name="Value">&quot;ut&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="2999628573557853" type="System">
+                            <param id="0" name="Seconds">5.0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="8024631982581733" type="System">
+                            <param id="0" name="Layout">OutsideCave</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2234415871533792">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="4041195649532773" type="PlayerBox">
+                            <param id="0" name="Object">BossArea</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="ScrollTo" id="1" name="Set enabled" sid="8744267513436452" type="EnemyCamera">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="4412553117684477" type="DestroySensor">
+                            <param id="0" name="X">DeadlyIce.X</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="8722431107015327">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="5583637077136579" type="PlayerBox">
+                                    <param id="0" name="Comparison">3</param>
+                                    <param id="1" name="X co-ordinate">1800</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="5160958193283102" type="IceSpawn">
+                                    <param id="0" name="X">PlayerBox.X</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="4284700835517459">
+                    <conditions>
+                        <condition id="666" name="On initialised" sid="3197181308579674" type="RockMonster" />
+                    </conditions>
+                    <actions>
+                        <action id="666" name="Associate object type" sid="8836075459054735" type="RockMonster">
+                            <param id="0" name="Object">RockMonster_RockMonster_RockMonsterArm2</param>
+                            <param id="1" name="Name">&quot;RockMonster_RockMonsterArm2&quot;</param>
+                        </action>
+                        <action id="666" name="Associate object type" sid="1941686720879379" type="RockMonster">
+                            <param id="0" name="Object">RockMonster_RockMonster_RockMonsterLowerFoot2</param>
+                            <param id="1" name="Name">&quot;RockMonster_RockMonsterLowerFoot2&quot;</param>
+                        </action>
+                        <action id="666" name="Associate object type" sid="7230534070629839" type="RockMonster">
+                            <param id="0" name="Object">RockMonster_RockMonster_RockMonsterUpperFoot2</param>
+                            <param id="1" name="Name">&quot;RockMonster_RockMonsterUpperFoot2&quot;</param>
+                        </action>
+                        <action id="666" name="Associate object type" sid="2620004848467372" type="RockMonster">
+                            <param id="0" name="Object">RockMonster_RockMonster_RockMonsterLowerFoot1</param>
+                            <param id="1" name="Name">&quot;RockMonster_RockMonsterLowerFoot1&quot;</param>
+                        </action>
+                        <action id="666" name="Associate object type" sid="8576323946390048" type="RockMonster">
+                            <param id="0" name="Object">RockMonster_RockMonster_RockMonsterUpperFoot1</param>
+                            <param id="1" name="Name">&quot;RockMonster_RockMonsterUpperFoot1&quot;</param>
+                        </action>
+                        <action id="666" name="Associate object type" sid="944659896024841" type="RockMonster">
+                            <param id="0" name="Object">RockMonster_RockMonster_RockMonsterBody</param>
+                            <param id="1" name="Name">&quot;RockMonster_RockMonsterBody&quot;</param>
+                        </action>
+                        <action id="666" name="Associate object type" sid="5466694177521655" type="RockMonster">
+                            <param id="0" name="Object">RockMonster_RockMonster_RockMonsterArm1</param>
+                            <param id="1" name="Name">&quot;RockMonster_RockMonsterArm1&quot;</param>
+                        </action>
+                        <action id="666" name="Associate object type" sid="7431756582629528" type="RockMonster">
+                            <param id="0" name="Object">RockMonster_RockMonster_RockMonsterHead</param>
+                            <param id="1" name="Name">&quot;RockMonster_RockMonsterHead&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8102601763609939">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1685817717711228" type="PlayerBox">
+                            <param id="0" name="Object">BossArea</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="8134314507225216">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="3391557778797337" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="2044739747171358" type="System">
+                                    <param id="0" name="Seconds">3.0</param>
+                                </action>
+                                <action id="0" name="Call function" sid="6475431617625254" type="Function">
+                                    <param id="0" name="Name">&quot;BossAttack&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="1133279310432355">
+                    <conditions>
+                        <condition behavior="Platform" id="7" name="On stopped" sid="9962880501296559" type="EnemyBox" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set animation" sid="8791122541743667" type="RockMonster">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="Where to start playing this animation">0</param>
+                            <param id="2" name="Blend Duration">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8621806262792476">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="9921544638168882" type="EnemyBox">
+                            <param id="0" name="Object">TurnSensor</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set mirrored (on x axis)" sid="1767657519283369" type="RockMonster">
+                            <param id="0" name="Mirror X Axis">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="465493490929828" type="EnemyBox">
+                            <param id="0" name="Instance variable">action</param>
+                            <param id="1" name="Value">&quot;right&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7715837834922771">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="9333867005450005" type="EnemyBox">
+                            <param id="0" name="Object">TurnSensor2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Set mirrored (on x axis)" sid="7912711511486208" type="RockMonster">
+                            <param id="0" name="Mirror X Axis">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="4133108184456865" type="EnemyBox">
+                            <param id="0" name="Instance variable">action</param>
+                            <param id="1" name="Value">&quot;left&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="8779602709834513" type="EnemyStop">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2527529521895242">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="6844049249429921" type="EnemyBox">
+                            <param id="0" name="Object">EnemyStop</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="221797093076021">
+                            <conditions>
+                                <condition id="-9" name="Is visible" sid="404889172719202" type="EnemyStop" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="8509861716543387" type="EnemyBox">
+                                    <param id="0" name="Instance variable">action</param>
+                                    <param id="1" name="Value">&quot;none&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="9447778161050494" type="EnemyStop">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="5704311646328901" type="System">
+                                    <param id="0" name="Seconds">3.0</param>
+                                </action>
+                                <action id="0" name="Call function" sid="3661631980630637" type="Function">
+                                    <param id="0" name="Name">&quot;BossAttack&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="6672561550023219">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="8566944174374194" type="EnemyBox">
+                            <param id="0" name="Instance variable">action</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;left&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="2251845161891735" type="EnemyBox">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9875932372728699">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="2280638906222725" type="EnemyBox">
+                            <param id="0" name="Instance variable">action</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;right&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="9842964519846221" type="EnemyBox">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4423167683942603">
+                    <conditions>
+                        <condition id="0" name="On function" sid="1452777816985835" type="Function">
+                            <param id="0" name="Name">&quot;BossAttack&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set animation" sid="2578799019793243" type="RockMonster">
+                            <param id="0" name="Animation">&quot;Attack&quot;</param>
+                            <param id="1" name="Where to start playing this animation">0</param>
+                            <param id="2" name="Blend Duration">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="402681982418792">
+                    <conditions>
+                        <condition id="0" name="On animation finished" sid="3917446092952088" type="RockMonster">
+                            <param id="0" name="Animation">&quot;Attack&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="2216245044126215">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="9621743605509866" type="EnemyBox">
+                                    <param id="0" name="Instance variable">Health</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set animation" sid="3281692734280479" type="RockMonster">
+                                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                                    <param id="1" name="Where to start playing this animation">0</param>
+                                    <param id="2" name="Blend Duration">0</param>
+                                </action>
+                                <action id="0" name="Call function" sid="8686699403754298" type="Function">
+                                    <param id="0" name="Name">&quot;BlockFall&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action behavior="ScrollTo" id="0" name="Shake" sid="3094115075382818" type="PlayerBox">
+                                    <param id="0" name="Magnitude">10</param>
+                                    <param id="1" name="Duration">3</param>
+                                    <param id="2" name="Mode">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="7469743198417823">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="3086616717877484" type="EnemyBox">
+                                    <param id="0" name="Instance variable">Health</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="ScrollTo" id="0" name="Shake" sid="3079904004892901" type="PlayerBox">
+                                    <param id="0" name="Magnitude">10</param>
+                                    <param id="1" name="Duration">1</param>
+                                    <param id="2" name="Mode">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="3466329706136036" type="Audio">
+                                    <param id="0" name="Audio file">EnemyAttack</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="6607048762726067" type="IceSpawn">
+                                    <param id="0" name="Object">DeadlyIce</param>
+                                    <param id="1" name="Layer">6</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="704179471493133" type="DeadlyIce">
+                                    <param id="0" name="Angle">90</param>
+                                </action>
+                                <action id="0" name="Set animation" sid="2648685502070586" type="RockMonster">
+                                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                                    <param id="1" name="Where to start playing this animation">0</param>
+                                    <param id="2" name="Blend Duration">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="4030174476591634" type="System">
+                                    <param id="0" name="Seconds">3.0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="5233731356193258" type="EnemyBox">
+                                    <param id="0" name="Instance variable">action</param>
+                                    <param id="1" name="Value">&quot;left&quot;</param>
+                                </action>
+                                <action id="0" name="Set animation" sid="4323917753431612" type="RockMonster">
+                                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                                    <param id="1" name="Where to start playing this animation">0</param>
+                                    <param id="2" name="Blend Duration">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="2083530673048759">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="8602252962730493" type="DeadlyIce">
+                            <param id="0" name="Object">PhysicsBlocker</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="9830706120251204" type="DeadlyIce">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="5009440949485766" type="DeadlyIce">
+                            <param id="0" name="Speed">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2604888902953286">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="5341311293519847" type="EnemyBox">
+                            <param id="0" name="Object">DestroySensor</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="9325683697477357">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="6227586304814492" type="DeadlyIce">
+                                    <param id="0" name="Object">DestroySensor</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="6786476712820677" type="DeadlyIce" />
+                                <action id="0" name="Spawn another object" sid="3735755461548461" type="DestroySensor">
+                                    <param id="0" name="Object">IceExplode</param>
+                                    <param id="1" name="Layer">7</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="4951258463123568" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="9283569184086528" type="IceExplode" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="3998028606031375">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="4150432665086876" type="PlayerBox">
+                            <param id="0" name="Object">RockMonster_RockMonster_RockMonsterHead</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="1846649946187324">
+                            <conditions>
+                                <condition behavior="Platform" id="4" name="Is falling" sid="9756131552208405" type="PlayerBox" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="3122465804729377">
+                                    <conditions>
+                                        <condition id="3" name="Compare frame" sid="7998616669244774" type="RockMonster_RockMonster_RockMonsterHead">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="6112049214329067">
+                                            <conditions>
+                                                <condition behavior="Flash" id="0" inverted="1" name="Is flashing" sid="2803806735555126" type="RockMonster" />
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="Flash" id="0" name="Flash" sid="1120393487358361" type="RockMonster">
+                                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                                    <param id="2" name="Duration">7.0</param>
+                                                </action>
+                                                <action id="0" name="Play" sid="4109662885432381" type="Audio">
+                                                    <param id="0" name="Audio file">EnemyHit</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                                <action id="-12" name="Subtract from" sid="7066824946303821" type="EnemyBox">
+                                                    <param id="0" name="Instance variable">Health</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action behavior="Platform" id="9" name="Set vector Y" sid="5392270726411382" type="PlayerBox">
+                                                    <param id="0" name="Vector Y">-300</param>
+                                                </action>
+                                                <action behavior="ScrollTo" id="0" name="Shake" sid="7584872743239492" type="PlayerBox">
+                                                    <param id="0" name="Magnitude">10</param>
+                                                    <param id="1" name="Duration">5</param>
+                                                    <param id="2" name="Mode">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="4797679718725054">
+                    <conditions>
+                        <condition id="4" name="Compare Current Animation" sid="754730603839812" type="RockMonster">
+                            <param id="0" name="Animation">&quot;Walk&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="7436732254161025">
+                            <conditions>
+                                <condition id="2" name="Compare Current Animation Frame" sid="3396072272007696" type="RockMonster">
+                                    <param id="0" name="Current Key Frame is ">0</param>
+                                    <param id="1" name="Frame">0</param>
+                                </condition>
+                                <condition id="2" name="Compare Current Animation Frame" sid="8374586068988938" type="RockMonster">
+                                    <param id="0" name="Current Key Frame is ">0</param>
+                                    <param id="1" name="Frame">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="ScrollTo" id="0" name="Shake" sid="7106067845891196" type="PlayerBox">
+                                    <param id="0" name="Magnitude">2</param>
+                                    <param id="1" name="Duration">0.5</param>
+                                    <param id="2" name="Mode">0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="3849597456561139">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="4715101887586739" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="8455460926972908" type="Audio">
+                                            <param id="0" name="Audio file">Walk</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="1119758045520589">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="4242589357443446" type="PlayerBox">
+                            <param id="0" name="Object">DeadlyIce</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="1763555370955529">
+                            <conditions>
+                                <condition behavior="Bullet" id="0" name="Compare speed" sid="6926047761390611" type="DeadlyIce">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Speed">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="12269224712061" type="Function">
+                                    <param id="0" name="Name">&quot;Damaged&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="563663874094656">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="462710158207785" type="EnemyBox">
+                            <param id="0" name="Object">PlayerBox</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="5325610960391968">
+                            <conditions>
+                                <condition behavior="Flash" id="0" inverted="1" name="Is flashing" sid="1621322359896813" type="RockMonster" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="1519018086396586" type="Function">
+                                    <param id="0" name="Name">&quot;Damaged&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="7291756958045442" title="Actions">
+            <sub-events>
+                <event-block sid="6906925888410567">
+                    <conditions>
+                        <condition id="0" name="On function" sid="2554063088304333" type="Function">
+                            <param id="0" name="Name">&quot;BlockFall&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Physics" id="27" name="Set enabled" sid="8841274221630514" type="BossEnding">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6332138655296071">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="3734116960897675" type="BossEnding">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Y co-ordinate">688</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="1867807880180811" type="System">
+                            <param id="0" name="Variable">Fade</param>
+                            <param id="1" name="Value">&quot;ut&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="6199739079709827" type="System">
+                            <param id="0" name="Seconds">5.0</param>
+                        </action>
+                        <action id="-25" name="Go to layout (by name)" sid="9934284794667649" type="System">
+                            <param id="0" name="Layout">&quot;Sewers1-1&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1525597917381804">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="5612417309766854" type="SnowBall">
+                            <param id="0" name="Object">LeverTarget</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="7981648432760376">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="2642798036849373" type="LeverTarget">
+                                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="4090760340943478" type="LeverTarget">
+                                    <param id="0" name="Animation">&quot;Hit&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action behavior="Physics" id="27" name="Set enabled" sid="7581966982791001" type="MovableBlock">
+                                    <param id="0" name="Mode">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="1290606582643075" type="SnowBall" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="5335841635199419" title="Enemys">
+            <sub-events>
+                <event-block sid="4568860445863157">
+                    <conditions>
+                        <condition id="666" name="On initialised" sid="4770229672471334" type="Knight" />
+                    </conditions>
+                    <actions>
+                        <action id="666" name="Associate object type" sid="8930464143345718" type="Knight">
+                            <param id="0" name="Object">Knight_Knight_KnightLBL</param>
+                            <param id="1" name="Name">&quot;Knight_KnightLBL&quot;</param>
+                        </action>
+                        <action id="666" name="Associate object type" sid="9467168846783056" type="Knight">
+                            <param id="0" name="Object">Knight_Knight_KnightMBL</param>
+                            <param id="1" name="Name">&quot;Knight_KnightMBL&quot;</param>
+                        </action>
+                        <action id="666" name="Associate object type" sid="6411798325453482" type="Knight">
+                            <param id="0" name="Object">Knight_Knight_KnightUBL</param>
+                            <param id="1" name="Name">&quot;Knight_KnightUBL&quot;</param>
+                        </action>
+                        <action id="666" name="Associate object type" sid="8886307408800352" type="Knight">
+                            <param id="0" name="Object">Knight_Knight_KnightLFL</param>
+                            <param id="1" name="Name">&quot;Knight_KnightLFL&quot;</param>
+                        </action>
+                        <action id="666" name="Associate object type" sid="54812358110173" type="Knight">
+                            <param id="0" name="Object">Knight_Knight_KnightMFL</param>
+                            <param id="1" name="Name">&quot;Knight_KnightMFL&quot;</param>
+                        </action>
+                        <action id="666" name="Associate object type" sid="5353007733052691" type="Knight">
+                            <param id="0" name="Object">Knight_Knight_KnightUFL</param>
+                            <param id="1" name="Name">&quot;Knight_KnightUFL&quot;</param>
+                        </action>
+                        <action id="666" name="Associate object type" sid="691592253035407" type="Knight">
+                            <param id="0" name="Object">Knight_Knight_KnightBody</param>
+                            <param id="1" name="Name">&quot;Knight_KnightBody&quot;</param>
+                        </action>
+                        <action id="666" name="Associate object type" sid="2543438618837131" type="Knight">
+                            <param id="0" name="Object">Knight_Knight_KnightHead</param>
+                            <param id="1" name="Name">&quot;Knight_KnightHead&quot;</param>
+                        </action>
+                        <action id="666" name="Associate object type" sid="5104909378999217" type="Knight">
+                            <param id="0" name="Object">Knight_Knight_KnightArm</param>
+                            <param id="1" name="Name">&quot;Knight_KnightArm&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="2361365402197728">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="2263830675895951" type="Keyboard">
+                    <param id="0" name="Key">80 (P)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set animation" sid="8384407425768541" type="Knight">
+                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                    <param id="1" name="Where to start playing this animation">0</param>
+                    <param id="2" name="Blend Duration">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3835326460419263">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="342825892369513" type="PlayerBox">
+                    <param id="0" name="Object">IceSpikes</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="6838010313611089">
+                    <conditions>
+                        <condition behavior="Flash" id="0" inverted="1" name="Is flashing" sid="6122601671907236" type="Body" />
+                        <condition behavior="Flash" id="0" inverted="1" name="Is flashing" sid="6158284811365333" type="Feets" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="9" name="Set vector Y" sid="5950837167468432" type="PlayerBox">
+                            <param id="0" name="Vector Y">-300</param>
+                        </action>
+                        <action behavior="Platform" id="8" name="Set vector X" sid="4414666570567322" type="PlayerBox">
+                            <param id="0" name="Vector X">-100</param>
+                        </action>
+                        <action id="0" name="Call function" sid="758931162250683" type="Function">
+                            <param id="0" name="Name">&quot;Damaged&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

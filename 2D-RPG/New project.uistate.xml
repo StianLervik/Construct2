@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="1">OutsideCave</layout>
+        <layout active="1" order="2">Cave1-1</layout>
+        <layout order="5">Sewers1-1</layout>
+        <event-sheet order="3">OutsideCave</event-sheet>
+        <event-sheet order="4">Cave1-1</event-sheet>
+        <event-sheet order="6">Sewers1-1</event-sheet>
+        <event-sheet order="7">Main</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="0">
+        <family expanded="0" name="Blocks" />
+        <family expanded="0" name="RockMonsterFamily" />
+        <family expanded="0" name="Vatn" />
+        <family expanded="0" name="ToiletPaperFamily" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/Caracter/" />
+        <folder expanded="0" path="object-folder/Enemy/" />
+        <folder expanded="0" path="object-folder/Enemy/IceGollem/" />
+        <folder expanded="0" path="object-folder/Enemy/ToiletPaper/" />
+        <folder expanded="0" path="object-folder/Tiles/" />
+        <folder expanded="0" path="object-folder/Tiles/Cave1-1/" />
+        <folder expanded="0" path="object-folder/Tiles/Sewers/" />
+        <folder expanded="0" path="object-folder/Backgrounds/" />
+        <folder expanded="0" path="object-folder/Backgrounds/Sewers/" />
+        <folder expanded="0" path="object-folder/Backgrounds/Cave1-1/" />
+        <folder expanded="0" path="object-folder/Sensors/" />
+        <folder expanded="0" path="object-folder/Sensors/Sewers/" />
+        <folder expanded="0" path="object-folder/Sensors/Cave1-1/" />
+        <folder expanded="0" path="object-folder/Actions/" />
+        <folder expanded="0" path="object-folder/Effects/" />
+        <folder expanded="0" path="object-folder/Pickups/" />
+        <folder expanded="0" path="object-folder/Weapons/" />
+        <folder expanded="0" path="object-folder/Texts/" />
+        <folder expanded="0" path="object-folder/GameFunctions/" />
+        <folder expanded="0" path="object-folder/RockMonster sprites/" />
+        <folder expanded="0" path="object-folder/Knight sprites/" />
+        <folder expanded="0" path="object-folder/Touch/" />
+        <folder expanded="0" path="object-folder/ToiletPaper sprites/" />
+        <folder expanded="0" path="object-folder/Objects/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="0" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="0" path="file-folder/Spriter animations/" />
+        <folder expanded="1" path="animation-folder/Body/" />
+        <folder expanded="1" path="animation-folder/Feets/" />
+        <folder expanded="1" path="animation-folder/PlayerBox/" />
+        <folder expanded="1" path="animation-folder/DeadlyIce/" />
+        <folder expanded="1" path="animation-folder/EnemyBox/" />
+        <folder expanded="1" path="animation-folder/ToiletBox/" />
+        <folder expanded="1" path="animation-folder/Block/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/GroundInside/" />
+        <folder expanded="1" path="animation-folder/MovableBlock/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/SewersBlock/" />
+        <folder expanded="1" path="animation-folder/Vfall/" />
+        <folder expanded="1" path="animation-folder/WaterTopp/" />
+        <folder expanded="1" path="animation-folder/FloorIce/" />
+        <folder expanded="1" path="animation-folder/RoofIce/" />
+        <folder expanded="1" path="animation-folder/TSensorL/" />
+        <folder expanded="1" path="animation-folder/TSensorR/" />
+        <folder expanded="1" path="animation-folder/BossArea/" />
+        <folder expanded="1" path="animation-folder/DestroySensor/" />
+        <folder expanded="1" path="animation-folder/EnemyCamera/" />
+        <folder expanded="1" path="animation-folder/EnemyStop/" />
+        <folder expanded="1" path="animation-folder/Entry/" />
+        <folder expanded="1" path="animation-folder/FalldDeath/" />
+        <folder expanded="1" path="animation-folder/GroundSensor/" />
+        <folder expanded="1" path="animation-folder/HeadSensor/" />
+        <folder expanded="1" path="animation-folder/IceSpawn/" />
+        <folder expanded="1" path="animation-folder/PhysicsBlocker/" />
+        <folder expanded="1" path="animation-folder/Solid/" />
+        <folder expanded="1" path="animation-folder/StartSensor/" />
+        <folder expanded="1" path="animation-folder/ToppSensor/" />
+        <folder expanded="1" path="animation-folder/TurnSensor/" />
+        <folder expanded="1" path="animation-folder/TurnSensor2/" />
+        <folder expanded="1" path="animation-folder/LeverTarget/" />
+        <folder expanded="1" path="animation-folder/Breath/" />
+        <folder expanded="1" path="animation-folder/Light/" />
+        <folder expanded="1" path="animation-folder/MoreSnowBalls/" />
+        <folder expanded="1" path="animation-folder/SnowballPickup/" />
+        <folder expanded="1" path="animation-folder/SnowBall/" />
+        <folder expanded="1" path="animation-folder/RockMonster_RockMonster_RockMonsterArm2/" />
+        <folder expanded="1" path="animation-folder/RockMonster_RockMonster_RockMonsterLowerFoot2/" />
+        <folder expanded="1" path="animation-folder/RockMonster_RockMonster_RockMonsterUpperFoot2/" />
+        <folder expanded="1" path="animation-folder/RockMonster_RockMonster_RockMonsterLowerFoot1/" />
+        <folder expanded="1" path="animation-folder/RockMonster_RockMonster_RockMonsterUpperFoot1/" />
+        <folder expanded="1" path="animation-folder/RockMonster_RockMonster_RockMonsterBody/" />
+        <folder expanded="1" path="animation-folder/RockMonster_RockMonster_RockMonsterArm1/" />
+        <folder expanded="1" path="animation-folder/RockMonster_RockMonster_RockMonsterHead/" />
+        <folder expanded="1" path="animation-folder/Knight_Knight_KnightLBL/" />
+        <folder expanded="1" path="animation-folder/Knight_Knight_KnightMBL/" />
+        <folder expanded="1" path="animation-folder/Knight_Knight_KnightUBL/" />
+        <folder expanded="1" path="animation-folder/Knight_Knight_KnightLFL/" />
+        <folder expanded="1" path="animation-folder/Knight_Knight_KnightMFL/" />
+        <folder expanded="1" path="animation-folder/Knight_Knight_KnightUFL/" />
+        <folder expanded="1" path="animation-folder/Knight_Knight_KnightBody/" />
+        <folder expanded="1" path="animation-folder/Knight_Knight_KnightHead/" />
+        <folder expanded="1" path="animation-folder/Knight_Knight_KnightArm/" />
+        <folder expanded="1" path="animation-folder/CLeft/" />
+        <folder expanded="1" path="animation-folder/CAttack/" />
+        <folder expanded="1" path="animation-folder/CUp/" />
+        <folder expanded="1" path="animation-folder/CRight/" />
+        <folder expanded="1" path="animation-folder/ToiletPaper_ToiletPaper_ToiletPaper/" />
+        <folder expanded="1" path="animation-folder/Bed/" />
+        <folder expanded="1" path="animation-folder/Health1/" />
+        <folder expanded="1" path="animation-folder/Health2/" />
+        <folder expanded="1" path="animation-folder/Health3/" />
+        <folder expanded="1" path="animation-folder/IceSpikes/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/Sword/" />
+        <folder expanded="1" path="animation-folder/SonPlayer/" />
+        <folder expanded="1" path="animation-folder/Wind/" />
+        <folder expanded="1" path="animation-folder/AttackSensor/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+    </folders-expanded>
+</c2uistate>

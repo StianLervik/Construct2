@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Sewers1-1</name>
+    <events>
+        <variable constant="0" name="VaterFadeSpeed" sid="7681532485438202" static="0" type="number">0.5</variable>
+        <variable constant="0" name="VaterFade" sid="9041625570424757" static="0" type="text">ut</variable>
+        <include>Main</include>
+        <event-block sid="6951015594728711">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8905624813894409" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set animation" sid="8395944346521419" type="ToiletPaper">
+                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                    <param id="1" name="Where to start playing this animation">0</param>
+                    <param id="2" name="Blend Duration">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1994761640760734">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="2861511571364753" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="3119331698905157" type="ToiletPaper">
+                    <param id="0" name="Object">ToiletBox</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3643354163615397">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="7786675846160341" type="Vatn" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="0" name="Restart fade" sid="5764171286227184" type="Vatn" />
+            </actions>
+        </event-block>
+        <event-block sid="3680820419548803">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="6166045651958684" type="PlayerBox">
+                    <param id="0" name="Object">WaterTopp</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="3405973938401647">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="3797792853952079" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="5027307120046505" type="Audio">
+                            <param id="0" name="Audio file">InVater</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;InWater&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="7854145947581001">
+            <conditions>
+                <condition id="666" name="On initialised" sid="6933720599348269" type="ToiletPaper" />
+            </conditions>
+            <actions>
+                <action id="666" name="Associate object type" sid="437875983908193" type="ToiletPaper">
+                    <param id="0" name="Object">ToiletPaper_ToiletPaper_ToiletPaper</param>
+                    <param id="1" name="Name">&quot;ToiletPaper_ToiletPaper&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="692923506945743">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="830317905325995" type="ToiletBox">
+                    <param id="0" name="Object">TSensorR</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="4261843595827783" type="ToiletBox">
+                    <param id="0" name="Instance variable">Way</param>
+                    <param id="1" name="Value">&quot;right&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8804821940936339">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6434352186837624" type="ToiletBox">
+                    <param id="0" name="Object">TSensorL</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="7401410822029751" type="ToiletBox">
+                    <param id="0" name="Instance variable">Way</param>
+                    <param id="1" name="Value">&quot;left&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1348530621590347">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="4806342095821403" type="ToiletBox">
+                    <param id="0" name="Instance variable">Way</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;left&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="11" name="Set mirrored (on x axis)" sid="4924206286209383" type="ToiletPaper">
+                    <param id="0" name="Mirror X Axis">0</param>
+                </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="5228465829639611" type="ToiletBox">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="630717954390927">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="2193985798204191" type="ToiletBox">
+                    <param id="0" name="Instance variable">Way</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;right&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="11" name="Set mirrored (on x axis)" sid="9674891723481876" type="ToiletPaper">
+                    <param id="0" name="Mirror X Axis">1</param>
+                </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="7529482777488395" type="ToiletBox">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6905289169634648">
+            <conditions>
+                <condition behavior="Platform" id="4" name="Is falling" sid="3780397261201724" type="PlayerBox" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="9069574099410251">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="9508334118780052" type="PlayerBox">
+                            <param id="0" name="Object">ToiletBox</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="4723737081371843" type="Audio">
+                            <param id="0" name="Audio file">EnemyHit2</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="2185122432678675" type="ToiletBox" />
+                        <action behavior="Platform" id="9" name="Set vector Y" sid="1775038649353783" type="PlayerBox">
+                            <param id="0" name="Vector Y">-300</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

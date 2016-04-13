@@ -1,0 +1,3602 @@
+{
+	"entity": [
+		{
+			"animation": [
+				{
+					"gline": [],
+					"id": 0,
+					"interval": 100,
+					"length": 1000,
+					"mainline": {
+						"key": [
+							{
+								"bone_ref": [
+									{
+										"id": 0,
+										"key": 0,
+										"timeline": 8
+									},
+									{
+										"id": 1,
+										"key": 0,
+										"parent": 0,
+										"timeline": 9
+									},
+									{
+										"id": 2,
+										"key": 0,
+										"parent": 1,
+										"timeline": 10
+									},
+									{
+										"id": 3,
+										"key": 0,
+										"parent": 1,
+										"timeline": 15
+									},
+									{
+										"id": 4,
+										"key": 0,
+										"parent": 1,
+										"timeline": 16
+									},
+									{
+										"id": 5,
+										"key": 0,
+										"parent": 0,
+										"timeline": 11
+									},
+									{
+										"id": 6,
+										"key": 0,
+										"parent": 5,
+										"timeline": 12
+									},
+									{
+										"id": 7,
+										"key": 0,
+										"parent": 0,
+										"timeline": 13
+									},
+									{
+										"id": 8,
+										"key": 0,
+										"parent": 7,
+										"timeline": 14
+									}
+								],
+								"id": 0,
+								"object_ref": [
+									{
+										"abs_a": 1,
+										"abs_angle": 359.999999,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -47.9999984863739,
+										"abs_y": -96.00000040340802,
+										"file": 1,
+										"folder": 0,
+										"id": 0,
+										"key": 0,
+										"name": "RockMonsterArm2",
+										"parent": 4,
+										"timeline": "1",
+										"z_index": "0"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 0,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -48,
+										"abs_y": -96,
+										"file": 5,
+										"folder": 0,
+										"id": 1,
+										"key": 0,
+										"name": "RockMonsterLowerFoot2",
+										"timeline": "5",
+										"z_index": "1"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 0,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -47.99999944944801,
+										"abs_y": -96.00000029657991,
+										"file": 7,
+										"folder": 0,
+										"id": 2,
+										"key": 0,
+										"name": "RockMonsterUpperFoot2",
+										"parent": 7,
+										"timeline": "7",
+										"z_index": "2"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 5.684341886080802e-14,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -48.000000628040276,
+										"abs_y": -96.00000002475937,
+										"file": 4,
+										"folder": 0,
+										"id": 3,
+										"key": 0,
+										"name": "RockMonsterLowerFoot1",
+										"parent": 6,
+										"timeline": "4",
+										"z_index": "3"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 0,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -48.00000029455111,
+										"abs_y": -96.00000018785812,
+										"file": 6,
+										"folder": 0,
+										"id": 4,
+										"key": 0,
+										"name": "RockMonsterUpperFoot1",
+										"parent": 5,
+										"timeline": "6",
+										"z_index": "4"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 0,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -47.999999582278406,
+										"abs_y": -95.99999988443273,
+										"file": 2,
+										"folder": 0,
+										"id": 5,
+										"key": 0,
+										"name": "RockMonsterBody",
+										"parent": 1,
+										"timeline": "2",
+										"z_index": "5"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 0,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -47.99999931577019,
+										"abs_y": -95.99999910677376,
+										"file": 0,
+										"folder": 0,
+										"id": 6,
+										"key": 0,
+										"name": "RockMonsterArm1",
+										"parent": 3,
+										"timeline": "0",
+										"z_index": "6"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 0,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -47.99999971747398,
+										"abs_y": -95.99999969788654,
+										"file": 3,
+										"folder": 0,
+										"id": 7,
+										"key": 0,
+										"name": "RockMonsterHead",
+										"parent": 2,
+										"timeline": "3",
+										"z_index": "7"
+									}
+								]
+							}
+						]
+					},
+					"name": "Base",
+					"timeline": [
+						{
+							"id": 0,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 90,
+										"file": 0,
+										"folder": 0,
+										"x": -42.296296,
+										"y": -50.777778
+									},
+									"spin": 0
+								}
+							],
+							"name": "RockMonsterArm1",
+							"obj": 0
+						},
+						{
+							"id": 1,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 91.84761000000003,
+										"file": 1,
+										"folder": 0,
+										"x": -39.816207,
+										"y": -48.846157
+									},
+									"spin": 0
+								}
+							],
+							"name": "RockMonsterArm2",
+							"obj": 1
+						},
+						{
+							"id": 2,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 269.144903,
+										"file": 2,
+										"folder": 0,
+										"x": 64.744033,
+										"y": 45.649974
+									},
+									"spin": 0
+								}
+							],
+							"name": "RockMonsterBody",
+							"obj": 2
+						},
+						{
+							"id": 3,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 271.735705,
+										"file": 3,
+										"folder": 0,
+										"x": 31.161341,
+										"y": 47.113615
+									},
+									"spin": 0
+								}
+							],
+							"name": "RockMonsterHead",
+							"obj": 3
+						},
+						{
+							"id": 4,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 94.899092,
+										"file": 4,
+										"folder": 0,
+										"x": -73.020085,
+										"y": -55.364189
+									},
+									"spin": 0
+								}
+							],
+							"name": "RockMonsterLowerFoot1",
+							"obj": 4
+						},
+						{
+							"id": 5,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 0,
+										"file": 5,
+										"folder": 0,
+										"x": -48,
+										"y": 96
+									},
+									"spin": 0
+								}
+							],
+							"name": "RockMonsterLowerFoot2",
+							"obj": 5
+						},
+						{
+							"id": 6,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 93.69138599999997,
+										"file": 6,
+										"folder": 0,
+										"x": -60.683278,
+										"y": -54.33447
+									},
+									"spin": 0
+								}
+							],
+							"name": "RockMonsterUpperFoot1",
+							"obj": 6
+						},
+						{
+							"id": 7,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 90,
+										"file": 7,
+										"folder": 0,
+										"x": -64.518519,
+										"y": -45.222222
+									},
+									"spin": 0
+								}
+							],
+							"name": "RockMonsterUpperFoot2",
+							"obj": 7
+						},
+						{
+							"id": 8,
+							"key": [
+								{
+									"bone": {
+										"angle": 183.17983,
+										"x": 23.611111,
+										"y": 32.407407
+									},
+									"id": 0,
+									"spin": 0
+								}
+							],
+							"name": "bone_000",
+							"obj": 8,
+							"object_type": "bone"
+						},
+						{
+							"id": 9,
+							"key": [
+								{
+									"bone": {
+										"angle": 267.675267,
+										"x": 24.987189,
+										"y": -0.9245
+									},
+									"id": 0,
+									"spin": 0
+								}
+							],
+							"name": "Body",
+							"obj": 9,
+							"object_type": "bone"
+						},
+						{
+							"id": 10,
+							"key": [
+								{
+									"bone": {
+										"angle": 357.409198,
+										"x": 31.484885,
+										"y": -0.006909
+									},
+									"id": 0,
+									"spin": 0
+								}
+							],
+							"name": "Head",
+							"obj": 10,
+							"object_type": "bone"
+						},
+						{
+							"id": 11,
+							"key": [
+								{
+									"bone": {
+										"angle": 83.128784,
+										"x": 21.289188,
+										"y": -0.719056
+									},
+									"id": 0,
+									"spin": 0
+								}
+							],
+							"name": "FrontUpperLeg",
+							"obj": 11,
+							"object_type": "bone"
+						},
+						{
+							"id": 12,
+							"key": [
+								{
+									"bone": {
+										"angle": 358.792294,
+										"x": 13.487491,
+										"y": -0.521616
+									},
+									"id": 0,
+									"spin": 0
+								}
+							],
+							"name": "FrontLowerLeg",
+							"obj": 12,
+							"object_type": "bone"
+						},
+						{
+							"id": 13,
+							"key": [
+								{
+									"bone": {
+										"angle": 86.82017000000002,
+										"x": 26.39962,
+										"y": -0.539292
+									},
+									"id": 0,
+									"spin": 0
+								}
+							],
+							"name": "BackUpperLeg",
+							"obj": 13,
+							"object_type": "bone"
+						},
+						{
+							"id": 14,
+							"key": [
+								{
+									"bone": {
+										"angle": 358.363423,
+										"x": 12.962963
+									},
+									"id": 0,
+									"spin": 0
+								}
+							],
+							"name": "BackLowerLeg",
+							"obj": 14,
+							"object_type": "bone"
+						},
+						{
+							"id": 15,
+							"key": [
+								{
+									"bone": {
+										"angle": 179.144903,
+										"x": 21.694654,
+										"y": -4.490932
+									},
+									"id": 0,
+									"spin": 0
+								}
+							],
+							"name": "FrontArm",
+							"obj": 15,
+							"object_type": "bone"
+						},
+						{
+							"id": 16,
+							"key": [
+								{
+									"bone": {
+										"angle": 177.297292,
+										"x": 22.668841,
+										"y": -1.26437
+									},
+									"id": 0,
+									"spin": 0
+								}
+							],
+							"name": "BackArm",
+							"obj": 16,
+							"object_type": "bone"
+						}
+					]
+				},
+				{
+					"gline": [],
+					"id": 1,
+					"interval": 100,
+					"length": 1000,
+					"mainline": {
+						"key": [
+							{
+								"bone_ref": [
+									{
+										"id": 0,
+										"key": 0,
+										"timeline": 8
+									},
+									{
+										"id": 1,
+										"key": 0,
+										"parent": 0,
+										"timeline": 9
+									},
+									{
+										"id": 2,
+										"key": 0,
+										"parent": 1,
+										"timeline": 10
+									},
+									{
+										"id": 3,
+										"key": 0,
+										"parent": 1,
+										"timeline": 15
+									},
+									{
+										"id": 4,
+										"key": 0,
+										"parent": 1,
+										"timeline": 16
+									},
+									{
+										"id": 5,
+										"key": 0,
+										"parent": 0,
+										"timeline": 11
+									},
+									{
+										"id": 6,
+										"key": 0,
+										"parent": 5,
+										"timeline": 12
+									},
+									{
+										"id": 7,
+										"key": 0,
+										"parent": 0,
+										"timeline": 13
+									},
+									{
+										"id": 8,
+										"key": 0,
+										"parent": 7,
+										"timeline": 14
+									}
+								],
+								"id": 0,
+								"object_ref": [
+									{
+										"abs_a": 1,
+										"abs_angle": 359.999999,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -47.9999984863739,
+										"abs_y": -93.25086340340803,
+										"file": 1,
+										"folder": 0,
+										"id": 0,
+										"key": 0,
+										"name": "RockMonsterArm2",
+										"parent": 4,
+										"timeline": "1",
+										"z_index": "0"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 61.41742099999999,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -88.65030695753516,
+										"abs_y": -13.697500206789876,
+										"file": 5,
+										"folder": 0,
+										"id": 1,
+										"key": 0,
+										"name": "RockMonsterLowerFoot2",
+										"parent": 8,
+										"timeline": "5",
+										"z_index": "1"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 17.053616000000034,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -64.93272983455365,
+										"abs_y": -77.1518708388324,
+										"file": 7,
+										"folder": 0,
+										"id": 2,
+										"key": 0,
+										"name": "RockMonsterUpperFoot2",
+										"parent": 7,
+										"timeline": "7",
+										"z_index": "2"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 350.665932,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -39.83403398286076,
+										"abs_y": -101.72269353936072,
+										"file": 4,
+										"folder": 0,
+										"id": 3,
+										"key": 0,
+										"name": "RockMonsterLowerFoot1",
+										"parent": 6,
+										"timeline": "4",
+										"z_index": "3"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 337.42058799999995,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -19.548282025458356,
+										"abs_y": -107.65994808425091,
+										"file": 6,
+										"folder": 0,
+										"id": 4,
+										"key": 0,
+										"name": "RockMonsterUpperFoot1",
+										"parent": 5,
+										"timeline": "6",
+										"z_index": "4"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 0,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -47.999999582278406,
+										"abs_y": -93.25086288443273,
+										"file": 2,
+										"folder": 0,
+										"id": 5,
+										"key": 0,
+										"name": "RockMonsterBody",
+										"parent": 1,
+										"timeline": "2",
+										"z_index": "5"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 0,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -47.99999931577019,
+										"abs_y": -93.25086210677375,
+										"file": 0,
+										"folder": 0,
+										"id": 6,
+										"key": 0,
+										"name": "RockMonsterArm1",
+										"parent": 3,
+										"timeline": "0",
+										"z_index": "6"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 0,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -47.99999971747398,
+										"abs_y": -93.25086269788653,
+										"file": 8,
+										"folder": 0,
+										"id": 7,
+										"key": 0,
+										"name": "RockMonsterHead",
+										"parent": 2,
+										"timeline": "3",
+										"z_index": "7"
+									}
+								]
+							},
+							{
+								"bone_ref": [
+									{
+										"id": 0,
+										"key": 1,
+										"timeline": 8
+									},
+									{
+										"id": 1,
+										"key": 1,
+										"parent": 0,
+										"timeline": 9
+									},
+									{
+										"id": 2,
+										"key": 1,
+										"parent": 1,
+										"timeline": 10
+									},
+									{
+										"id": 3,
+										"key": 1,
+										"parent": 1,
+										"timeline": 15
+									},
+									{
+										"id": 4,
+										"key": 1,
+										"parent": 1,
+										"timeline": 16
+									},
+									{
+										"id": 5,
+										"key": 0,
+										"parent": 0,
+										"timeline": 11
+									},
+									{
+										"id": 6,
+										"key": 0,
+										"parent": 5,
+										"timeline": 12
+									},
+									{
+										"id": 7,
+										"key": 0,
+										"parent": 0,
+										"timeline": 13
+									},
+									{
+										"id": 8,
+										"key": 0,
+										"parent": 7,
+										"timeline": 14
+									}
+								],
+								"id": 1,
+								"object_ref": [
+									{
+										"id": 0,
+										"key": 0,
+										"parent": 4,
+										"timeline": "1",
+										"z_index": "0"
+									},
+									{
+										"id": 1,
+										"key": 0,
+										"parent": 8,
+										"timeline": "5",
+										"z_index": "1"
+									},
+									{
+										"id": 2,
+										"key": 0,
+										"parent": 7,
+										"timeline": "7",
+										"z_index": "2"
+									},
+									{
+										"id": 3,
+										"key": 0,
+										"parent": 6,
+										"timeline": "4",
+										"z_index": "3"
+									},
+									{
+										"id": 4,
+										"key": 0,
+										"parent": 5,
+										"timeline": "6",
+										"z_index": "4"
+									},
+									{
+										"id": 5,
+										"key": 0,
+										"parent": 1,
+										"timeline": "2",
+										"z_index": "5"
+									},
+									{
+										"id": 6,
+										"key": 0,
+										"parent": 3,
+										"timeline": "0",
+										"z_index": "6"
+									},
+									{
+										"id": 7,
+										"key": 0,
+										"parent": 2,
+										"timeline": "3",
+										"z_index": "7"
+									}
+								],
+								"time": 250
+							},
+							{
+								"bone_ref": [
+									{
+										"id": 0,
+										"key": 2,
+										"timeline": 8
+									},
+									{
+										"id": 1,
+										"key": 2,
+										"parent": 0,
+										"timeline": 9
+									},
+									{
+										"id": 2,
+										"key": 2,
+										"parent": 1,
+										"timeline": 10
+									},
+									{
+										"id": 3,
+										"key": 2,
+										"parent": 1,
+										"timeline": 15
+									},
+									{
+										"id": 4,
+										"key": 2,
+										"parent": 1,
+										"timeline": 16
+									},
+									{
+										"id": 5,
+										"key": 1,
+										"parent": 0,
+										"timeline": 11
+									},
+									{
+										"id": 6,
+										"key": 1,
+										"parent": 5,
+										"timeline": 12
+									},
+									{
+										"id": 7,
+										"key": 1,
+										"parent": 0,
+										"timeline": 13
+									},
+									{
+										"id": 8,
+										"key": 1,
+										"parent": 7,
+										"timeline": 14
+									}
+								],
+								"id": 2,
+								"object_ref": [
+									{
+										"id": 0,
+										"key": 0,
+										"parent": 4,
+										"timeline": "1",
+										"z_index": "0"
+									},
+									{
+										"id": 1,
+										"key": 0,
+										"parent": 8,
+										"timeline": "5",
+										"z_index": "1"
+									},
+									{
+										"id": 2,
+										"key": 0,
+										"parent": 7,
+										"timeline": "7",
+										"z_index": "2"
+									},
+									{
+										"id": 3,
+										"key": 0,
+										"parent": 6,
+										"timeline": "4",
+										"z_index": "3"
+									},
+									{
+										"id": 4,
+										"key": 0,
+										"parent": 5,
+										"timeline": "6",
+										"z_index": "4"
+									},
+									{
+										"id": 5,
+										"key": 0,
+										"parent": 1,
+										"timeline": "2",
+										"z_index": "5"
+									},
+									{
+										"id": 6,
+										"key": 0,
+										"parent": 3,
+										"timeline": "0",
+										"z_index": "6"
+									},
+									{
+										"id": 7,
+										"key": 0,
+										"parent": 2,
+										"timeline": "3",
+										"z_index": "7"
+									}
+								],
+								"time": 500
+							},
+							{
+								"bone_ref": [
+									{
+										"id": 0,
+										"key": 3,
+										"timeline": 8
+									},
+									{
+										"id": 1,
+										"key": 2,
+										"parent": 0,
+										"timeline": 9
+									},
+									{
+										"id": 2,
+										"key": 2,
+										"parent": 1,
+										"timeline": 10
+									},
+									{
+										"id": 3,
+										"key": 3,
+										"parent": 1,
+										"timeline": 15
+									},
+									{
+										"id": 4,
+										"key": 3,
+										"parent": 1,
+										"timeline": 16
+									},
+									{
+										"id": 5,
+										"key": 1,
+										"parent": 0,
+										"timeline": 11
+									},
+									{
+										"id": 6,
+										"key": 1,
+										"parent": 5,
+										"timeline": 12
+									},
+									{
+										"id": 7,
+										"key": 1,
+										"parent": 0,
+										"timeline": 13
+									},
+									{
+										"id": 8,
+										"key": 1,
+										"parent": 7,
+										"timeline": 14
+									}
+								],
+								"id": 3,
+								"object_ref": [
+									{
+										"id": 0,
+										"key": 0,
+										"parent": 4,
+										"timeline": "1",
+										"z_index": "0"
+									},
+									{
+										"id": 1,
+										"key": 0,
+										"parent": 8,
+										"timeline": "5",
+										"z_index": "1"
+									},
+									{
+										"id": 2,
+										"key": 0,
+										"parent": 7,
+										"timeline": "7",
+										"z_index": "2"
+									},
+									{
+										"id": 3,
+										"key": 0,
+										"parent": 6,
+										"timeline": "4",
+										"z_index": "3"
+									},
+									{
+										"id": 4,
+										"key": 0,
+										"parent": 5,
+										"timeline": "6",
+										"z_index": "4"
+									},
+									{
+										"id": 5,
+										"key": 0,
+										"parent": 1,
+										"timeline": "2",
+										"z_index": "5"
+									},
+									{
+										"id": 6,
+										"key": 0,
+										"parent": 3,
+										"timeline": "0",
+										"z_index": "6"
+									},
+									{
+										"id": 7,
+										"key": 0,
+										"parent": 2,
+										"timeline": "3",
+										"z_index": "7"
+									}
+								],
+								"time": 750
+							}
+						]
+					},
+					"name": "Walk",
+					"timeline": [
+						{
+							"id": 0,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 90,
+										"file": 0,
+										"folder": 0,
+										"x": -42.296296,
+										"y": -50.777778
+									},
+									"spin": 0
+								}
+							],
+							"name": "RockMonsterArm1",
+							"obj": 0
+						},
+						{
+							"id": 1,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 91.84761000000003,
+										"file": 1,
+										"folder": 0,
+										"x": -39.816207,
+										"y": -48.846157
+									},
+									"spin": 0
+								}
+							],
+							"name": "RockMonsterArm2",
+							"obj": 1
+						},
+						{
+							"id": 2,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 269.144903,
+										"file": 2,
+										"folder": 0,
+										"x": 64.744033,
+										"y": 45.649974
+									},
+									"spin": 0
+								}
+							],
+							"name": "RockMonsterBody",
+							"obj": 2
+						},
+						{
+							"id": 3,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 271.735705,
+										"file": 8,
+										"folder": 0,
+										"x": 31.161341,
+										"y": 47.113615
+									},
+									"spin": 0
+								}
+							],
+							"name": "RockMonsterHead",
+							"obj": 3
+						},
+						{
+							"id": 4,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 94.899092,
+										"file": 4,
+										"folder": 0,
+										"x": -73.020085,
+										"y": -55.364189
+									},
+									"spin": 0
+								}
+							],
+							"name": "RockMonsterLowerFoot1",
+							"obj": 4
+						},
+						{
+							"id": 5,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 91.63657699999999,
+										"file": 5,
+										"folder": 0,
+										"x": -76.158339,
+										"y": -47.416629
+									},
+									"spin": 0
+								}
+							],
+							"name": "RockMonsterLowerFoot2",
+							"obj": 5
+						},
+						{
+							"id": 6,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 93.69138599999997,
+										"file": 6,
+										"folder": 0,
+										"x": -60.683278,
+										"y": -54.33447
+									},
+									"spin": 0
+								}
+							],
+							"name": "RockMonsterUpperFoot1",
+							"obj": 6
+						},
+						{
+							"id": 7,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 90,
+										"file": 7,
+										"folder": 0,
+										"x": -64.518519,
+										"y": -45.222222
+									},
+									"spin": 0
+								}
+							],
+							"name": "RockMonsterUpperFoot2",
+							"obj": 7
+						},
+						{
+							"id": 8,
+							"key": [
+								{
+									"bone": {
+										"angle": 183.17983,
+										"x": 23.611111,
+										"y": 29.65827
+									},
+									"id": 0,
+									"spin": 0
+								},
+								{
+									"bone": {
+										"angle": 183.17983,
+										"x": 23.611111,
+										"y": 36.65827
+									},
+									"id": 1,
+									"spin": 0,
+									"time": 250
+								},
+								{
+									"bone": {
+										"angle": 183.17983,
+										"x": 23.611111,
+										"y": 29.658267
+									},
+									"id": 2,
+									"spin": 0,
+									"time": 500
+								},
+								{
+									"bone": {
+										"angle": 183.17983,
+										"x": 23.611111,
+										"y": 36.65827
+									},
+									"id": 3,
+									"spin": 0,
+									"time": 750
+								}
+							],
+							"name": "bone_000",
+							"obj": 8,
+							"object_type": "bone"
+						},
+						{
+							"id": 9,
+							"key": [
+								{
+									"bone": {
+										"angle": 267.675267,
+										"x": 24.987189,
+										"y": -0.9245
+									},
+									"id": 0,
+									"spin": 0
+								},
+								{
+									"bone": {
+										"angle": 267.675267,
+										"x": 24.987189,
+										"y": -0.9245
+									},
+									"id": 1,
+									"spin": 0,
+									"time": 250
+								},
+								{
+									"bone": {
+										"angle": 267.675267,
+										"x": 24.987189,
+										"y": -0.9245
+									},
+									"id": 2,
+									"spin": 0,
+									"time": 500
+								}
+							],
+							"name": "Body",
+							"obj": 9,
+							"object_type": "bone"
+						},
+						{
+							"id": 10,
+							"key": [
+								{
+									"bone": {
+										"angle": 357.409198,
+										"x": 31.484885,
+										"y": -0.006909
+									},
+									"id": 0,
+									"spin": 0
+								},
+								{
+									"bone": {
+										"angle": 357.409198,
+										"x": 31.484885,
+										"y": -0.006909
+									},
+									"id": 1,
+									"spin": 0,
+									"time": 250
+								},
+								{
+									"bone": {
+										"angle": 357.409198,
+										"x": 31.484885,
+										"y": -0.006909
+									},
+									"id": 2,
+									"spin": 0,
+									"time": 500
+								}
+							],
+							"name": "Head",
+							"obj": 10,
+							"object_type": "bone"
+						},
+						{
+							"id": 11,
+							"key": [
+								{
+									"bone": {
+										"angle": 60.549372000000005,
+										"x": 21.289188,
+										"y": -0.719056
+									},
+									"id": 0
+								},
+								{
+									"bone": {
+										"angle": 93.03788500000002,
+										"x": 21.289188,
+										"y": -0.719056
+									},
+									"id": 1,
+									"spin": -1,
+									"time": 500
+								}
+							],
+							"name": "FrontUpperLeg",
+							"obj": 11,
+							"object_type": "bone"
+						},
+						{
+							"id": 12,
+							"key": [
+								{
+									"bone": {
+										"angle": 12.037638000000015,
+										"x": 13.487491,
+										"y": -0.521616
+									},
+									"id": 0
+								},
+								{
+									"bone": {
+										"angle": 38.39173900000003,
+										"x": 13.487491,
+										"y": -0.521616
+									},
+									"id": 1,
+									"spin": -1,
+									"time": 500
+								}
+							],
+							"name": "FrontLowerLeg",
+							"obj": 12,
+							"object_type": "bone"
+						},
+						{
+							"id": 13,
+							"key": [
+								{
+									"bone": {
+										"angle": 103.873786,
+										"x": 26.39962,
+										"y": -0.539292
+									},
+									"id": 0,
+									"spin": -1
+								},
+								{
+									"bone": {
+										"angle": 51.412825,
+										"x": 26.39962,
+										"y": -0.539292
+									},
+									"id": 1,
+									"time": 500
+								}
+							],
+							"name": "BackUpperLeg",
+							"obj": 13,
+							"object_type": "bone"
+						},
+						{
+							"id": 14,
+							"key": [
+								{
+									"bone": {
+										"angle": 42.72722799999997,
+										"x": 12.962963
+									},
+									"id": 0,
+									"spin": -1
+								},
+								{
+									"bone": {
+										"angle": 25.439295000000016,
+										"x": 12.962963
+									},
+									"id": 1,
+									"time": 500
+								}
+							],
+							"name": "BackLowerLeg",
+							"obj": 14,
+							"object_type": "bone"
+						},
+						{
+							"id": 15,
+							"key": [
+								{
+									"bone": {
+										"angle": 179.144903,
+										"x": 21.694654,
+										"y": -4.490932
+									},
+									"id": 0,
+									"spin": 0
+								},
+								{
+									"bone": {
+										"angle": 179.144903,
+										"x": 26.16151,
+										"y": -4.557601
+									},
+									"id": 1,
+									"spin": 0,
+									"time": 250
+								},
+								{
+									"bone": {
+										"angle": 179.144903,
+										"x": 21.694654,
+										"y": -4.490932
+									},
+									"id": 2,
+									"spin": 0,
+									"time": 500
+								},
+								{
+									"bone": {
+										"angle": 179.144903,
+										"x": 26.16151,
+										"y": -4.557601
+									},
+									"id": 3,
+									"spin": 0,
+									"time": 750
+								}
+							],
+							"name": "FrontArm",
+							"obj": 15,
+							"object_type": "bone"
+						},
+						{
+							"id": 16,
+							"key": [
+								{
+									"bone": {
+										"angle": 177.297292,
+										"x": 22.668841,
+										"y": -1.26437
+									},
+									"id": 0,
+									"spin": 0
+								},
+								{
+									"bone": {
+										"angle": 177.297292,
+										"x": 27.135697,
+										"y": -1.331039
+									},
+									"id": 1,
+									"spin": 0,
+									"time": 250
+								},
+								{
+									"bone": {
+										"angle": 177.297292,
+										"x": 22.668841,
+										"y": -1.26437
+									},
+									"id": 2,
+									"spin": 0,
+									"time": 500
+								},
+								{
+									"bone": {
+										"angle": 177.297292,
+										"x": 27.135697,
+										"y": -1.331039
+									},
+									"id": 3,
+									"spin": 0,
+									"time": 750
+								}
+							],
+							"name": "BackArm",
+							"obj": 16,
+							"object_type": "bone"
+						}
+					]
+				},
+				{
+					"gline": [],
+					"id": 2,
+					"interval": 100,
+					"length": 2000,
+					"mainline": {
+						"key": [
+							{
+								"bone_ref": [
+									{
+										"id": 0,
+										"key": 0,
+										"timeline": 8
+									},
+									{
+										"id": 1,
+										"key": 0,
+										"parent": 0,
+										"timeline": 9
+									},
+									{
+										"id": 2,
+										"key": 0,
+										"parent": 1,
+										"timeline": 10
+									},
+									{
+										"id": 3,
+										"key": 0,
+										"parent": 1,
+										"timeline": 15
+									},
+									{
+										"id": 4,
+										"key": 0,
+										"parent": 1,
+										"timeline": 16
+									},
+									{
+										"id": 5,
+										"key": 0,
+										"parent": 0,
+										"timeline": 11
+									},
+									{
+										"id": 6,
+										"key": 0,
+										"parent": 5,
+										"timeline": 12
+									},
+									{
+										"id": 7,
+										"key": 0,
+										"parent": 0,
+										"timeline": 13
+									},
+									{
+										"id": 8,
+										"key": 0,
+										"parent": 7,
+										"timeline": 14
+									}
+								],
+								"id": 0,
+								"object_ref": [
+									{
+										"abs_a": 1,
+										"abs_angle": 359.999999,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -47.9999984863739,
+										"abs_y": -96.00000040340802,
+										"file": 1,
+										"folder": 0,
+										"id": 0,
+										"key": 0,
+										"name": "RockMonsterArm2",
+										"parent": 4,
+										"timeline": "1",
+										"z_index": "0"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 0,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -47.99999967841525,
+										"abs_y": -95.99999944941064,
+										"file": 5,
+										"folder": 0,
+										"id": 1,
+										"key": 1,
+										"name": "RockMonsterLowerFoot2",
+										"parent": 8,
+										"timeline": "5",
+										"z_index": "1"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 0,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -47.99999944944801,
+										"abs_y": -96.00000029657991,
+										"file": 7,
+										"folder": 0,
+										"id": 2,
+										"key": 0,
+										"name": "RockMonsterUpperFoot2",
+										"parent": 7,
+										"timeline": "7",
+										"z_index": "2"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 5.684341886080802e-14,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -48.000000628040276,
+										"abs_y": -96.00000002475937,
+										"file": 4,
+										"folder": 0,
+										"id": 3,
+										"key": 0,
+										"name": "RockMonsterLowerFoot1",
+										"parent": 6,
+										"timeline": "4",
+										"z_index": "3"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 0,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -48.00000029455111,
+										"abs_y": -96.00000018785812,
+										"file": 6,
+										"folder": 0,
+										"id": 4,
+										"key": 0,
+										"name": "RockMonsterUpperFoot1",
+										"parent": 5,
+										"timeline": "6",
+										"z_index": "4"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 0,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -47.999999582278406,
+										"abs_y": -95.99999988443273,
+										"file": 2,
+										"folder": 0,
+										"id": 5,
+										"key": 0,
+										"name": "RockMonsterBody",
+										"parent": 1,
+										"timeline": "2",
+										"z_index": "5"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 0,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -47.99999931577019,
+										"abs_y": -95.99999910677376,
+										"file": 0,
+										"folder": 0,
+										"id": 6,
+										"key": 0,
+										"name": "RockMonsterArm1",
+										"parent": 3,
+										"timeline": "0",
+										"z_index": "6"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 0,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -47.99999971747398,
+										"abs_y": -95.99999969788654,
+										"file": 3,
+										"folder": 0,
+										"id": 7,
+										"key": 0,
+										"name": "RockMonsterHead",
+										"parent": 2,
+										"timeline": "3",
+										"z_index": "7"
+									}
+								]
+							},
+							{
+								"bone_ref": [
+									{
+										"id": 0,
+										"key": 0,
+										"timeline": 8
+									},
+									{
+										"id": 1,
+										"key": 0,
+										"parent": 0,
+										"timeline": 9
+									},
+									{
+										"id": 2,
+										"key": 0,
+										"parent": 1,
+										"timeline": 10
+									},
+									{
+										"id": 3,
+										"key": 1,
+										"parent": 1,
+										"timeline": 15
+									},
+									{
+										"id": 4,
+										"key": 1,
+										"parent": 1,
+										"timeline": 16
+									},
+									{
+										"id": 5,
+										"key": 0,
+										"parent": 0,
+										"timeline": 11
+									},
+									{
+										"id": 6,
+										"key": 0,
+										"parent": 5,
+										"timeline": 12
+									},
+									{
+										"id": 7,
+										"key": 0,
+										"parent": 0,
+										"timeline": 13
+									},
+									{
+										"id": 8,
+										"key": 0,
+										"parent": 7,
+										"timeline": 14
+									}
+								],
+								"id": 1,
+								"object_ref": [
+									{
+										"id": 0,
+										"key": 0,
+										"parent": 4,
+										"timeline": "1",
+										"z_index": "0"
+									},
+									{
+										"id": 1,
+										"key": 3,
+										"timeline": "5",
+										"z_index": "1"
+									},
+									{
+										"id": 2,
+										"key": 0,
+										"parent": 7,
+										"timeline": "7",
+										"z_index": "2"
+									},
+									{
+										"id": 3,
+										"key": 0,
+										"parent": 6,
+										"timeline": "4",
+										"z_index": "3"
+									},
+									{
+										"id": 4,
+										"key": 0,
+										"parent": 5,
+										"timeline": "6",
+										"z_index": "4"
+									},
+									{
+										"id": 5,
+										"key": 0,
+										"parent": 1,
+										"timeline": "2",
+										"z_index": "5"
+									},
+									{
+										"id": 6,
+										"key": 0,
+										"parent": 3,
+										"timeline": "0",
+										"z_index": "6"
+									},
+									{
+										"id": 7,
+										"key": 0,
+										"parent": 2,
+										"timeline": "3",
+										"z_index": "7"
+									}
+								],
+								"time": 982
+							}
+						]
+					},
+					"name": "Idle",
+					"timeline": [
+						{
+							"id": 0,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 90,
+										"file": 0,
+										"folder": 0,
+										"x": -42.296296,
+										"y": -50.777778
+									},
+									"spin": 0
+								}
+							],
+							"name": "RockMonsterArm1",
+							"obj": 0
+						},
+						{
+							"id": 1,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 91.84761000000003,
+										"file": 1,
+										"folder": 0,
+										"x": -39.816207,
+										"y": -48.846157
+									},
+									"spin": 0
+								}
+							],
+							"name": "RockMonsterArm2",
+							"obj": 1
+						},
+						{
+							"id": 2,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 269.144903,
+										"file": 2,
+										"folder": 0,
+										"x": 64.744033,
+										"y": 45.649974
+									},
+									"spin": 0
+								}
+							],
+							"name": "RockMonsterBody",
+							"obj": 2
+						},
+						{
+							"id": 3,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 271.735705,
+										"file": 3,
+										"folder": 0,
+										"x": 31.161341,
+										"y": 47.113615
+									},
+									"spin": 0
+								}
+							],
+							"name": "RockMonsterHead",
+							"obj": 3
+						},
+						{
+							"id": 4,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 94.899092,
+										"file": 4,
+										"folder": 0,
+										"x": -73.020085,
+										"y": -55.364189
+									},
+									"spin": 0
+								}
+							],
+							"name": "RockMonsterLowerFoot1",
+							"obj": 4
+						},
+						{
+							"id": 5,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 0,
+										"file": 5,
+										"folder": 0,
+										"x": -47.99999967841525,
+										"y": 95.99999944941064
+									},
+									"spin": -1
+								},
+								{
+									"id": 1,
+									"object": {
+										"angle": 91.63657699999999,
+										"file": 5,
+										"folder": 0,
+										"x": -76.158339,
+										"y": -47.416629
+									},
+									"spin": 0
+								},
+								{
+									"id": 2,
+									"object": {
+										"angle": 91.63657699999999,
+										"file": 5,
+										"folder": 0,
+										"x": -76.1583395411804,
+										"y": -47.41662933717826
+									},
+									"spin": -1,
+									"time": 982
+								},
+								{
+									"id": 3,
+									"object": {
+										"angle": 0,
+										"file": 5,
+										"folder": 0,
+										"x": -48,
+										"y": 96
+									},
+									"spin": 0,
+									"time": 982
+								}
+							],
+							"name": "RockMonsterLowerFoot2",
+							"obj": 5
+						},
+						{
+							"id": 6,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 93.69138599999997,
+										"file": 6,
+										"folder": 0,
+										"x": -60.683278,
+										"y": -54.33447
+									},
+									"spin": 0
+								}
+							],
+							"name": "RockMonsterUpperFoot1",
+							"obj": 6
+						},
+						{
+							"id": 7,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 90,
+										"file": 7,
+										"folder": 0,
+										"x": -64.518519,
+										"y": -45.222222
+									},
+									"spin": 0
+								}
+							],
+							"name": "RockMonsterUpperFoot2",
+							"obj": 7
+						},
+						{
+							"id": 8,
+							"key": [
+								{
+									"bone": {
+										"angle": 183.17983,
+										"x": 23.611111,
+										"y": 32.407407
+									},
+									"id": 0,
+									"spin": 0
+								}
+							],
+							"name": "bone_000",
+							"obj": 8,
+							"object_type": "bone"
+						},
+						{
+							"id": 9,
+							"key": [
+								{
+									"bone": {
+										"angle": 267.675267,
+										"x": 24.987189,
+										"y": -0.9245
+									},
+									"id": 0,
+									"spin": 0
+								}
+							],
+							"name": "Body",
+							"obj": 9,
+							"object_type": "bone"
+						},
+						{
+							"id": 10,
+							"key": [
+								{
+									"bone": {
+										"angle": 357.409198,
+										"x": 31.484885,
+										"y": -0.006909
+									},
+									"id": 0,
+									"spin": 0
+								}
+							],
+							"name": "Head",
+							"obj": 10,
+							"object_type": "bone"
+						},
+						{
+							"id": 11,
+							"key": [
+								{
+									"bone": {
+										"angle": 83.128784,
+										"x": 21.289188,
+										"y": -0.719056
+									},
+									"id": 0,
+									"spin": 0
+								}
+							],
+							"name": "FrontUpperLeg",
+							"obj": 11,
+							"object_type": "bone"
+						},
+						{
+							"id": 12,
+							"key": [
+								{
+									"bone": {
+										"angle": 358.792294,
+										"x": 13.487491,
+										"y": -0.521616
+									},
+									"id": 0,
+									"spin": 0
+								}
+							],
+							"name": "FrontLowerLeg",
+							"obj": 12,
+							"object_type": "bone"
+						},
+						{
+							"id": 13,
+							"key": [
+								{
+									"bone": {
+										"angle": 86.82017000000002,
+										"x": 26.39962,
+										"y": -0.539292
+									},
+									"id": 0,
+									"spin": 0
+								}
+							],
+							"name": "BackUpperLeg",
+							"obj": 13,
+							"object_type": "bone"
+						},
+						{
+							"id": 14,
+							"key": [
+								{
+									"bone": {
+										"angle": 358.363423,
+										"x": 12.962963
+									},
+									"id": 0,
+									"spin": 0
+								}
+							],
+							"name": "BackLowerLeg",
+							"obj": 14,
+							"object_type": "bone"
+						},
+						{
+							"id": 15,
+							"key": [
+								{
+									"bone": {
+										"angle": 179.144903,
+										"x": 21.694654,
+										"y": -4.490932
+									},
+									"id": 0,
+									"spin": 0
+								},
+								{
+									"bone": {
+										"angle": 179.144903,
+										"x": 24.935034,
+										"y": -4.539295
+									},
+									"id": 1,
+									"spin": 0,
+									"time": 982
+								}
+							],
+							"name": "FrontArm",
+							"obj": 15,
+							"object_type": "bone"
+						},
+						{
+							"id": 16,
+							"key": [
+								{
+									"bone": {
+										"angle": 177.297292,
+										"x": 22.668841,
+										"y": -1.26437
+									},
+									"id": 0,
+									"spin": 0
+								},
+								{
+									"bone": {
+										"angle": 177.297292,
+										"x": 25.90922,
+										"y": -1.312734
+									},
+									"id": 1,
+									"spin": 0,
+									"time": 982
+								}
+							],
+							"name": "BackArm",
+							"obj": 16,
+							"object_type": "bone"
+						}
+					]
+				},
+				{
+					"gline": [],
+					"id": 3,
+					"interval": 100,
+					"length": 500,
+					"looping": "false",
+					"mainline": {
+						"key": [
+							{
+								"bone_ref": [
+									{
+										"id": 0,
+										"key": 0,
+										"timeline": 8
+									},
+									{
+										"id": 1,
+										"key": 0,
+										"parent": 0,
+										"timeline": 9
+									},
+									{
+										"id": 2,
+										"key": 0,
+										"parent": 1,
+										"timeline": 10
+									},
+									{
+										"id": 3,
+										"key": 0,
+										"parent": 1,
+										"timeline": 15
+									},
+									{
+										"id": 4,
+										"key": 0,
+										"parent": 1,
+										"timeline": 16
+									},
+									{
+										"id": 5,
+										"key": 0,
+										"parent": 0,
+										"timeline": 11
+									},
+									{
+										"id": 6,
+										"key": 0,
+										"parent": 5,
+										"timeline": 12
+									},
+									{
+										"id": 7,
+										"key": 0,
+										"parent": 0,
+										"timeline": 13
+									},
+									{
+										"id": 8,
+										"key": 0,
+										"parent": 7,
+										"timeline": 14
+									}
+								],
+								"id": 0,
+								"object_ref": [
+									{
+										"abs_a": 1,
+										"abs_angle": 359.999999,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -47.99999848637389,
+										"abs_y": -96.00000040340802,
+										"file": 1,
+										"folder": 0,
+										"id": 0,
+										"key": 0,
+										"name": "RockMonsterArm2",
+										"parent": 4,
+										"timeline": "1",
+										"z_index": "0"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 0,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -47.99999967841526,
+										"abs_y": -95.99999944941064,
+										"file": 5,
+										"folder": 0,
+										"id": 1,
+										"key": 0,
+										"name": "RockMonsterLowerFoot2",
+										"parent": 8,
+										"timeline": "5",
+										"z_index": "1"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 0,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -47.99999944944801,
+										"abs_y": -96.00000029657991,
+										"file": 7,
+										"folder": 0,
+										"id": 2,
+										"key": 0,
+										"name": "RockMonsterUpperFoot2",
+										"parent": 7,
+										"timeline": "7",
+										"z_index": "2"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 5.684341886080802e-14,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -48.000000628040276,
+										"abs_y": -96.00000002475937,
+										"file": 4,
+										"folder": 0,
+										"id": 3,
+										"key": 0,
+										"name": "RockMonsterLowerFoot1",
+										"parent": 6,
+										"timeline": "4",
+										"z_index": "3"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 0,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -48.0000002945511,
+										"abs_y": -96.00000018785812,
+										"file": 6,
+										"folder": 0,
+										"id": 4,
+										"key": 0,
+										"name": "RockMonsterUpperFoot1",
+										"parent": 5,
+										"timeline": "6",
+										"z_index": "4"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 0,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -47.999999582278384,
+										"abs_y": -95.99999988443274,
+										"file": 2,
+										"folder": 0,
+										"id": 5,
+										"key": 0,
+										"name": "RockMonsterBody",
+										"parent": 1,
+										"timeline": "2",
+										"z_index": "5"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 0,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -47.99999931577019,
+										"abs_y": -95.99999910677377,
+										"file": 0,
+										"folder": 0,
+										"id": 6,
+										"key": 0,
+										"name": "RockMonsterArm1",
+										"parent": 3,
+										"timeline": "0",
+										"z_index": "6"
+									},
+									{
+										"abs_a": 1,
+										"abs_angle": 0,
+										"abs_pivot_x": 0,
+										"abs_pivot_y": 1,
+										"abs_scale_x": 1,
+										"abs_scale_y": 1,
+										"abs_x": -47.99999971747397,
+										"abs_y": -95.99999969788655,
+										"file": 3,
+										"folder": 0,
+										"id": 7,
+										"key": 0,
+										"name": "RockMonsterHead",
+										"parent": 2,
+										"timeline": "3",
+										"z_index": "7"
+									}
+								]
+							},
+							{
+								"bone_ref": [
+									{
+										"id": 0,
+										"key": 1,
+										"timeline": 8
+									},
+									{
+										"id": 1,
+										"key": 1,
+										"parent": 0,
+										"timeline": 9
+									},
+									{
+										"id": 2,
+										"key": 1,
+										"parent": 1,
+										"timeline": 10
+									},
+									{
+										"id": 3,
+										"key": 1,
+										"parent": 1,
+										"timeline": 15
+									},
+									{
+										"id": 4,
+										"key": 1,
+										"parent": 1,
+										"timeline": 16
+									},
+									{
+										"id": 5,
+										"key": 1,
+										"parent": 0,
+										"timeline": 11
+									},
+									{
+										"id": 6,
+										"key": 1,
+										"parent": 5,
+										"timeline": 12
+									},
+									{
+										"id": 7,
+										"key": 1,
+										"parent": 0,
+										"timeline": 13
+									},
+									{
+										"id": 8,
+										"key": 1,
+										"parent": 7,
+										"timeline": 14
+									}
+								],
+								"id": 1,
+								"object_ref": [
+									{
+										"id": 0,
+										"key": 1,
+										"parent": 4,
+										"timeline": "1",
+										"z_index": "0"
+									},
+									{
+										"id": 1,
+										"key": 1,
+										"parent": 8,
+										"timeline": "5",
+										"z_index": "1"
+									},
+									{
+										"id": 2,
+										"key": 1,
+										"parent": 7,
+										"timeline": "7",
+										"z_index": "2"
+									},
+									{
+										"id": 3,
+										"key": 1,
+										"parent": 6,
+										"timeline": "4",
+										"z_index": "3"
+									},
+									{
+										"id": 4,
+										"key": 1,
+										"parent": 5,
+										"timeline": "6",
+										"z_index": "4"
+									},
+									{
+										"id": 5,
+										"key": 1,
+										"parent": 1,
+										"timeline": "2",
+										"z_index": "5"
+									},
+									{
+										"id": 6,
+										"key": 1,
+										"parent": 3,
+										"timeline": "0",
+										"z_index": "6"
+									},
+									{
+										"id": 7,
+										"key": 1,
+										"parent": 2,
+										"timeline": "3",
+										"z_index": "7"
+									}
+								],
+								"time": 333
+							},
+							{
+								"bone_ref": [
+									{
+										"id": 0,
+										"key": 2,
+										"timeline": 8
+									},
+									{
+										"id": 1,
+										"key": 2,
+										"parent": 0,
+										"timeline": 9
+									},
+									{
+										"id": 2,
+										"key": 2,
+										"parent": 1,
+										"timeline": 10
+									},
+									{
+										"id": 3,
+										"key": 2,
+										"parent": 1,
+										"timeline": 15
+									},
+									{
+										"id": 4,
+										"key": 2,
+										"parent": 1,
+										"timeline": 16
+									},
+									{
+										"id": 5,
+										"key": 2,
+										"parent": 0,
+										"timeline": 11
+									},
+									{
+										"id": 6,
+										"key": 2,
+										"parent": 5,
+										"timeline": 12
+									},
+									{
+										"id": 7,
+										"key": 2,
+										"parent": 0,
+										"timeline": 13
+									},
+									{
+										"id": 8,
+										"key": 2,
+										"parent": 7,
+										"timeline": 14
+									}
+								],
+								"id": 2,
+								"object_ref": [
+									{
+										"id": 0,
+										"key": 2,
+										"parent": 4,
+										"timeline": "1",
+										"z_index": "0"
+									},
+									{
+										"id": 1,
+										"key": 3,
+										"timeline": "5",
+										"z_index": "1"
+									},
+									{
+										"id": 2,
+										"key": 2,
+										"parent": 7,
+										"timeline": "7",
+										"z_index": "2"
+									},
+									{
+										"id": 3,
+										"key": 2,
+										"parent": 6,
+										"timeline": "4",
+										"z_index": "3"
+									},
+									{
+										"id": 4,
+										"key": 2,
+										"parent": 5,
+										"timeline": "6",
+										"z_index": "4"
+									},
+									{
+										"id": 5,
+										"key": 2,
+										"parent": 1,
+										"timeline": "2",
+										"z_index": "5"
+									},
+									{
+										"id": 6,
+										"key": 2,
+										"parent": 3,
+										"timeline": "0",
+										"z_index": "6"
+									},
+									{
+										"id": 7,
+										"key": 2,
+										"parent": 2,
+										"timeline": "3",
+										"z_index": "7"
+									}
+								],
+								"time": 500
+							}
+						]
+					},
+					"name": "Attack",
+					"timeline": [
+						{
+							"id": 0,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 90,
+										"file": 0,
+										"folder": 0,
+										"x": -42.296296000000005,
+										"y": -50.777778000000005
+									},
+									"spin": 0
+								},
+								{
+									"id": 1,
+									"object": {
+										"angle": 90,
+										"file": 0,
+										"folder": 0,
+										"x": -42.296296,
+										"y": -50.77777799999999
+									},
+									"spin": 0,
+									"time": 333
+								},
+								{
+									"id": 2,
+									"object": {
+										"angle": 90,
+										"file": 0,
+										"folder": 0,
+										"x": -42.296296,
+										"y": -50.77777799999999
+									},
+									"spin": 0,
+									"time": 500
+								}
+							],
+							"name": "RockMonsterArm1",
+							"obj": 0
+						},
+						{
+							"id": 1,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 91.84761000000003,
+										"file": 1,
+										"folder": 0,
+										"x": -39.81620699999999,
+										"y": -48.846157
+									},
+									"spin": 0
+								},
+								{
+									"id": 1,
+									"object": {
+										"angle": 91.84761000000003,
+										"file": 1,
+										"folder": 0,
+										"x": -39.81620699999999,
+										"y": -48.846157
+									},
+									"spin": 0,
+									"time": 333
+								},
+								{
+									"id": 2,
+									"object": {
+										"angle": 91.84761000000003,
+										"file": 1,
+										"folder": 0,
+										"x": -39.81620699999998,
+										"y": -48.846156999999984
+									},
+									"spin": 0,
+									"time": 500
+								}
+							],
+							"name": "RockMonsterArm2",
+							"obj": 1
+						},
+						{
+							"id": 2,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 269.144903,
+										"file": 2,
+										"folder": 0,
+										"x": 64.74403300000002,
+										"y": 45.649973999999986
+									},
+									"spin": 0
+								},
+								{
+									"id": 1,
+									"object": {
+										"angle": 269.144903,
+										"file": 2,
+										"folder": 0,
+										"x": 64.74403300000002,
+										"y": 45.649973999999986
+									},
+									"spin": 0,
+									"time": 333
+								},
+								{
+									"id": 2,
+									"object": {
+										"angle": 269.144903,
+										"file": 2,
+										"folder": 0,
+										"x": 64.74403300000002,
+										"y": 45.649973999999986
+									},
+									"spin": 0,
+									"time": 500
+								}
+							],
+							"name": "RockMonsterBody",
+							"obj": 2
+						},
+						{
+							"id": 3,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 271.735705,
+										"file": 3,
+										"folder": 0,
+										"x": 31.161341000000018,
+										"y": 47.11361499999999
+									},
+									"spin": 0
+								},
+								{
+									"id": 1,
+									"object": {
+										"angle": 271.735705,
+										"file": 8,
+										"folder": 0,
+										"x": 31.161341000000014,
+										"y": 47.11361499999998
+									},
+									"spin": 0,
+									"time": 333
+								},
+								{
+									"id": 2,
+									"object": {
+										"angle": 271.735705,
+										"file": 3,
+										"folder": 0,
+										"x": 31.161341000000018,
+										"y": 47.11361499999999
+									},
+									"spin": 0,
+									"time": 500
+								}
+							],
+							"name": "RockMonsterHead",
+							"obj": 3
+						},
+						{
+							"id": 4,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 94.899092,
+										"file": 4,
+										"folder": 0,
+										"x": -73.020085,
+										"y": -55.364189
+									},
+									"spin": 0
+								},
+								{
+									"id": 1,
+									"object": {
+										"angle": 94.899092,
+										"file": 4,
+										"folder": 0,
+										"x": -73.020085,
+										"y": -55.364189
+									},
+									"spin": 0,
+									"time": 333
+								},
+								{
+									"id": 2,
+									"object": {
+										"angle": 94.899092,
+										"file": 4,
+										"folder": 0,
+										"x": -73.020085,
+										"y": -55.364189
+									},
+									"spin": 0,
+									"time": 500
+								}
+							],
+							"name": "RockMonsterLowerFoot1",
+							"obj": 4
+						},
+						{
+							"id": 5,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 91.63657699999999,
+										"file": 5,
+										"folder": 0,
+										"x": -76.15833900000001,
+										"y": -47.41662900000001
+									},
+									"spin": 0
+								},
+								{
+									"id": 1,
+									"object": {
+										"angle": 91.63657699999999,
+										"file": 5,
+										"folder": 0,
+										"x": -76.15833954118042,
+										"y": -47.41662933717823
+									},
+									"spin": 0,
+									"time": 333
+								},
+								{
+									"id": 2,
+									"object": {
+										"angle": 91.63657699999999,
+										"file": 5,
+										"folder": 0,
+										"x": -76.1583395411804,
+										"y": -47.41662933717826
+									},
+									"spin": -1,
+									"time": 500
+								},
+								{
+									"id": 3,
+									"object": {
+										"angle": 0,
+										"file": 5,
+										"folder": 0,
+										"x": -48,
+										"y": 96
+									},
+									"time": 500
+								}
+							],
+							"name": "RockMonsterLowerFoot2",
+							"obj": 5
+						},
+						{
+							"id": 6,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 93.69138599999997,
+										"file": 6,
+										"folder": 0,
+										"x": -60.68327800000001,
+										"y": -54.334469999999996
+									},
+									"spin": 0
+								},
+								{
+									"id": 1,
+									"object": {
+										"angle": 93.69138599999997,
+										"file": 6,
+										"folder": 0,
+										"x": -60.68327800000001,
+										"y": -54.334469999999996
+									},
+									"spin": 0,
+									"time": 333
+								},
+								{
+									"id": 2,
+									"object": {
+										"angle": 93.69138599999997,
+										"file": 6,
+										"folder": 0,
+										"x": -60.68327800000001,
+										"y": -54.334469999999996
+									},
+									"spin": 0,
+									"time": 500
+								}
+							],
+							"name": "RockMonsterUpperFoot1",
+							"obj": 6
+						},
+						{
+							"id": 7,
+							"key": [
+								{
+									"id": 0,
+									"object": {
+										"angle": 90,
+										"file": 7,
+										"folder": 0,
+										"x": -64.518519,
+										"y": -45.222222
+									},
+									"spin": 0
+								},
+								{
+									"id": 1,
+									"object": {
+										"angle": 90,
+										"file": 7,
+										"folder": 0,
+										"x": -64.518519,
+										"y": -45.222222
+									},
+									"spin": 0,
+									"time": 333
+								},
+								{
+									"id": 2,
+									"object": {
+										"angle": 90,
+										"file": 7,
+										"folder": 0,
+										"x": -64.518519,
+										"y": -45.222222
+									},
+									"spin": 0,
+									"time": 500
+								}
+							],
+							"name": "RockMonsterUpperFoot2",
+							"obj": 7
+						},
+						{
+							"id": 8,
+							"key": [
+								{
+									"bone": {
+										"angle": 183.17983,
+										"x": 23.611111,
+										"y": 32.407407
+									},
+									"id": 0
+								},
+								{
+									"bone": {
+										"angle": 186.82740230586313,
+										"x": 23.61111,
+										"y": 35.477582438596485
+									},
+									"id": 1,
+									"spin": -1,
+									"time": 333
+								},
+								{
+									"bone": {
+										"angle": 183.17983,
+										"x": 23.611111,
+										"y": 32.407407
+									},
+									"id": 2,
+									"spin": 0,
+									"time": 500
+								}
+							],
+							"name": "bone_000",
+							"obj": 8,
+							"object_type": "bone"
+						},
+						{
+							"id": 9,
+							"key": [
+								{
+									"bone": {
+										"angle": 267.67526699999996,
+										"x": 24.987188999999997,
+										"y": -0.9245000000000012
+									},
+									"id": 0,
+									"spin": -1
+								},
+								{
+									"bone": {
+										"angle": 261.4144167055653,
+										"x": 24.987188999999997,
+										"y": -0.9245000000000054
+									},
+									"id": 1,
+									"time": 333
+								},
+								{
+									"bone": {
+										"angle": 267.67526699999996,
+										"x": 24.987188999999997,
+										"y": -0.9245000000000012
+									},
+									"id": 2,
+									"spin": 0,
+									"time": 500
+								}
+							],
+							"name": "Body",
+							"obj": 9,
+							"object_type": "bone"
+						},
+						{
+							"id": 10,
+							"key": [
+								{
+									"bone": {
+										"angle": 357.409198,
+										"x": 31.484885,
+										"y": -0.006908999999998042
+									},
+									"id": 0,
+									"spin": 0
+								},
+								{
+									"bone": {
+										"angle": 357.409198,
+										"x": 31.48488499999999,
+										"y": -0.00690899999999804
+									},
+									"id": 1,
+									"spin": 0,
+									"time": 333
+								},
+								{
+									"bone": {
+										"angle": 357.409198,
+										"x": 31.484885,
+										"y": -0.006908999999998042
+									},
+									"id": 2,
+									"spin": 0,
+									"time": 500
+								}
+							],
+							"name": "Head",
+							"obj": 10,
+							"object_type": "bone"
+						},
+						{
+							"id": 11,
+							"key": [
+								{
+									"bone": {
+										"angle": 83.128784,
+										"x": 21.289188,
+										"y": -0.7190559999999994
+									},
+									"id": 0,
+									"spin": 0
+								},
+								{
+									"bone": {
+										"angle": 83.128784,
+										"x": 21.289188,
+										"y": -0.7190560000000003
+									},
+									"id": 1,
+									"spin": 0,
+									"time": 333
+								},
+								{
+									"bone": {
+										"angle": 83.128784,
+										"x": 21.289188,
+										"y": -0.7190559999999994
+									},
+									"id": 2,
+									"spin": 0,
+									"time": 500
+								}
+							],
+							"name": "FrontUpperLeg",
+							"obj": 11,
+							"object_type": "bone"
+						},
+						{
+							"id": 12,
+							"key": [
+								{
+									"bone": {
+										"angle": 358.792294,
+										"x": 13.487491,
+										"y": -0.521616
+									},
+									"id": 0
+								},
+								{
+									"bone": {
+										"angle": 12.238348395400749,
+										"x": 13.487490999999999,
+										"y": -0.5216159999999999
+									},
+									"id": 1,
+									"spin": -1,
+									"time": 333
+								},
+								{
+									"bone": {
+										"angle": 358.792294,
+										"x": 13.487491,
+										"y": -0.521616
+									},
+									"id": 2,
+									"spin": 0,
+									"time": 500
+								}
+							],
+							"name": "FrontLowerLeg",
+							"obj": 12,
+							"object_type": "bone"
+						},
+						{
+							"id": 13,
+							"key": [
+								{
+									"bone": {
+										"angle": 86.82016999999996,
+										"x": 26.399620000000002,
+										"y": -0.5392920000000018
+									},
+									"id": 0,
+									"spin": 0
+								},
+								{
+									"bone": {
+										"angle": 86.82016999999996,
+										"x": 26.399620000000002,
+										"y": -0.5392920000000015
+									},
+									"id": 1,
+									"spin": 0,
+									"time": 333
+								},
+								{
+									"bone": {
+										"angle": 86.82016999999996,
+										"x": 26.399620000000002,
+										"y": -0.5392920000000018
+									},
+									"id": 2,
+									"spin": 0,
+									"time": 500
+								}
+							],
+							"name": "BackUpperLeg",
+							"obj": 13,
+							"object_type": "bone"
+						},
+						{
+							"id": 14,
+							"key": [
+								{
+									"bone": {
+										"angle": 358.363423,
+										"x": 12.962963000000002,
+										"y": 3.647135651753571e-15
+									},
+									"id": 0
+								},
+								{
+									"bone": {
+										"angle": 10.701349443978586,
+										"x": 12.962963000000007,
+										"y": 8.81777613838224e-15
+									},
+									"id": 1,
+									"spin": -1,
+									"time": 333
+								},
+								{
+									"bone": {
+										"angle": 358.363423,
+										"x": 12.962963000000002,
+										"y": 3.647135651753571e-15
+									},
+									"id": 2,
+									"spin": 0,
+									"time": 500
+								}
+							],
+							"name": "BackLowerLeg",
+							"obj": 14,
+							"object_type": "bone"
+						},
+						{
+							"id": 15,
+							"key": [
+								{
+									"bone": {
+										"angle": 179.144903,
+										"x": 21.694654,
+										"y": -4.490932000000003
+									},
+									"id": 0,
+									"spin": 0
+								},
+								{
+									"bone": {
+										"angle": 179.144903,
+										"x": 28.933146437933615,
+										"y": -4.416570210423432
+									},
+									"id": 1,
+									"spin": 0,
+									"time": 333
+								},
+								{
+									"bone": {
+										"angle": 179.144903,
+										"x": 21.694650906378037,
+										"y": -4.490931095645511
+									},
+									"id": 2,
+									"spin": 0,
+									"time": 500
+								}
+							],
+							"name": "FrontArm",
+							"obj": 15,
+							"object_type": "bone"
+						},
+						{
+							"id": 16,
+							"key": [
+								{
+									"bone": {
+										"angle": 177.29729199999997,
+										"x": 22.668840999999997,
+										"y": -1.2643700000000027
+									},
+									"id": 0,
+									"spin": 0
+								},
+								{
+									"bone": {
+										"angle": 177.29729199999997,
+										"x": 29.907332437933622,
+										"y": -1.1900092104234445
+									},
+									"id": 1,
+									"spin": 0,
+									"time": 333
+								},
+								{
+									"bone": {
+										"angle": 177.29729199999997,
+										"x": 22.66883690637804,
+										"y": -1.2643700956455157
+									},
+									"id": 2,
+									"spin": 0,
+									"time": 500
+								}
+							],
+							"name": "BackArm",
+							"obj": 16,
+							"object_type": "bone"
+						}
+					]
+				}
+			],
+			"character_map": [],
+			"id": 0,
+			"name": "RockMonster",
+			"obj_info": [
+				{
+					"frames": [
+						{
+							"file": 0,
+							"folder": 0
+						}
+					],
+					"name": "RockMonster_RockMonsterArm1",
+					"realname": "RockMonsterArm1",
+					"type": "sprite"
+				},
+				{
+					"frames": [
+						{
+							"file": 1,
+							"folder": 0
+						}
+					],
+					"name": "RockMonster_RockMonsterArm2",
+					"realname": "RockMonsterArm2",
+					"type": "sprite"
+				},
+				{
+					"frames": [
+						{
+							"file": 2,
+							"folder": 0
+						}
+					],
+					"name": "RockMonster_RockMonsterBody",
+					"realname": "RockMonsterBody",
+					"type": "sprite"
+				},
+				{
+					"frames": [
+						{
+							"file": 3,
+							"folder": 0
+						},
+						{
+							"file": 8,
+							"folder": 0
+						}
+					],
+					"name": "RockMonster_RockMonsterHead",
+					"realname": "RockMonsterHead",
+					"type": "sprite"
+				},
+				{
+					"frames": [
+						{
+							"file": 4,
+							"folder": 0
+						}
+					],
+					"name": "RockMonster_RockMonsterLowerFoot1",
+					"realname": "RockMonsterLowerFoot1",
+					"type": "sprite"
+				},
+				{
+					"frames": [
+						{
+							"file": 5,
+							"folder": 0
+						}
+					],
+					"name": "RockMonster_RockMonsterLowerFoot2",
+					"realname": "RockMonsterLowerFoot2",
+					"type": "sprite"
+				},
+				{
+					"frames": [
+						{
+							"file": 6,
+							"folder": 0
+						}
+					],
+					"name": "RockMonster_RockMonsterUpperFoot1",
+					"realname": "RockMonsterUpperFoot1",
+					"type": "sprite"
+				},
+				{
+					"frames": [
+						{
+							"file": 7,
+							"folder": 0
+						}
+					],
+					"name": "RockMonster_RockMonsterUpperFoot2",
+					"realname": "RockMonsterUpperFoot2",
+					"type": "sprite"
+				},
+				{
+					"h": 10,
+					"name": "RockMonster_bone_000",
+					"realname": "bone_000",
+					"type": "bone",
+					"w": 25.0386
+				},
+				{
+					"h": 10,
+					"name": "RockMonster_Body",
+					"realname": "Body",
+					"type": "bone",
+					"w": 31.022
+				},
+				{
+					"h": 10,
+					"name": "RockMonster_Head",
+					"realname": "Head",
+					"type": "bone",
+					"w": 15.2848
+				},
+				{
+					"h": 10,
+					"name": "RockMonster_FrontUpperLeg",
+					"realname": "FrontUpperLeg",
+					"type": "bone",
+					"w": 14.3817
+				},
+				{
+					"h": 10,
+					"name": "RockMonster_FrontLowerLeg",
+					"realname": "FrontLowerLeg",
+					"type": "bone",
+					"w": 16.2631
+				},
+				{
+					"h": 10,
+					"name": "RockMonster_BackUpperLeg",
+					"realname": "BackUpperLeg",
+					"type": "bone",
+					"w": 12.963
+				},
+				{
+					"h": 10,
+					"name": "RockMonster_BackLowerLeg",
+					"realname": "BackLowerLeg",
+					"type": "bone",
+					"w": 16.2103
+				},
+				{
+					"h": 10,
+					"name": "RockMonster_FrontArm",
+					"realname": "FrontArm",
+					"type": "bone",
+					"w": 13.8889
+				},
+				{
+					"h": 10,
+					"name": "RockMonster_BackArm",
+					"realname": "BackArm",
+					"type": "bone",
+					"w": 14.3593
+				}
+			]
+		}
+	],
+	"folder": [
+		{
+			"file": [
+				{
+					"height": 96,
+					"id": 0,
+					"name": "RockMonsterArm1.png",
+					"pivot_x": 0,
+					"pivot_y": 1,
+					"width": 96
+				},
+				{
+					"height": 96,
+					"id": 1,
+					"name": "RockMonsterArm2.png",
+					"pivot_x": 0,
+					"pivot_y": 1,
+					"width": 96
+				},
+				{
+					"height": 96,
+					"id": 2,
+					"name": "RockMonsterBody.png",
+					"pivot_x": 0,
+					"pivot_y": 1,
+					"width": 96
+				},
+				{
+					"height": 96,
+					"id": 3,
+					"name": "RockMonsterHead.png",
+					"pivot_x": 0,
+					"pivot_y": 1,
+					"width": 96
+				},
+				{
+					"height": 96,
+					"id": 4,
+					"name": "RockMonsterLowerFoot1.png",
+					"pivot_x": 0,
+					"pivot_y": 1,
+					"width": 96
+				},
+				{
+					"height": 96,
+					"id": 5,
+					"name": "RockMonsterLowerFoot2.png",
+					"pivot_x": 0,
+					"pivot_y": 1,
+					"width": 96
+				},
+				{
+					"height": 96,
+					"id": 6,
+					"name": "RockMonsterUpperFoot1.png",
+					"pivot_x": 0,
+					"pivot_y": 1,
+					"width": 96
+				},
+				{
+					"height": 96,
+					"id": 7,
+					"name": "RockMonsterUpperFoot2.png",
+					"pivot_x": 0,
+					"pivot_y": 1,
+					"width": 96
+				},
+				{
+					"height": 96,
+					"id": 8,
+					"name": "RockMonsterHead2.png",
+					"pivot_x": 0,
+					"pivot_y": 1,
+					"width": 96
+				}
+			],
+			"id": 0
+		}
+	],
+	"generator": "BrashMonkey Spriter",
+	"generator_version": "r5",
+	"scon_version": "1.0"
+}

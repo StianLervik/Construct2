@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>OutsideCave</name>
+    <events>
+        <include>Main</include>
+        <event-block sid="8970715223269413">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1504496880024419" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="2414901427583512" type="Tekst">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="2713016760953637">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="5872370330468158" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="6101107133605405" type="System">
+                            <param id="0" name="Variable">WorldPos</param>
+                            <param id="1" name="Value">&quot;OutsideCave&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="2671429147428552">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="36476730068889" type="PlayerBox">
+                    <param id="0" name="Object">Entry</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="11" name="Set enabled" sid="2183769653558786" type="PlayerBox">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="622188222462973" type="System">
+                    <param id="0" name="Variable">Fade</param>
+                    <param id="1" name="Value">&quot;ut&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="9409002501242353" type="System">
+                    <param id="0" name="Seconds">5.0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="4149211715757135" type="System">
+                    <param id="0" name="Layout">Cave1-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="3631060893044637">
+            <conditions>
+                <condition id="2" inverted="1" name="Is playing" sid="7173923334632192" type="Body">
+                    <param id="0" name="Animation">&quot;Torch&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="7278910942436878" type="Light">
+                    <param id="0" name="Opacity">10</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

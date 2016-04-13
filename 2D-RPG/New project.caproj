@@ -1,0 +1,1867 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website></author-website>
+    <app-id></app-id>
+    <unique-id>2qpiupr2gjili</unique-id>
+    <saved-with-version>22100</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="BrashMonkey" id="Spriter" version="1">Scml</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>320</width>
+        <height>180</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Scale inner</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Fullscreen scaling quality">Low</prop>
+        <prop name="Hide address bar">No</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Preview browser">NW.js</prop>
+        <prop name="Sampling">Point</prop>
+        <prop name="Use iOS retina display">All devices</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Caracter">
+            <object-type name="Body" sid="6729801147048712">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Attack" sid="4114857233138804" type="boolean" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Flash" sid="6139634796291182">
+                        <behavior id="Flash" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="8787782115487923" speed="1">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Filer\Construct2\2D-RPG\Caracter\Test.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Filer\Construct2\2D-RPG\Caracter\Test2.png">
+                            <collision-poly>
+                                <point x="0.28125" y="0.28125" />
+                                <point x="0.5" y="0.09375" />
+                                <point x="0.625" y="0.375" />
+                                <point x="0.625" y="0.625" />
+                                <point x="0.5" y="0.75" />
+                                <point x="0.3125" y="0.6875" />
+                                <point x="0.25" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="2" loop="1" name="Torch" pingpong="0" repeatcount="1" repeatto="0" sid="6438203949606244" speed="1">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Digg" pingpong="0" repeatcount="1" repeatto="0" sid="4844677115994323" speed="5">
+                        <frame duration="1" hotspotX="0.3125" hotspotY="0.40625" original-source="C:\Users\Stian\Desktop\2D-RPG\Caracter\BodyLFlipped.png">
+                            <image-point name="Imagepoint 1" x="0.875" y="0.1875" />
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Trow" pingpong="0" repeatcount="1" repeatto="0" sid="2565635703729696" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Filer\Construct2\2D-RPG\Caracter\BodyThrowSBTest.png">
+                            <collision-poly>
+                                <point x="0.3125" y="0.3125" />
+                                <point x="0.5" y="0.0625" />
+                                <point x="0.625" y="0.375" />
+                                <point x="0.78125" y="0.5" />
+                                <point x="0.625" y="0.625" />
+                                <point x="0.5" y="0.75" />
+                                <point x="0.34375" y="0.65625" />
+                                <point x="0.25" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="2" loop="0" name="Attack" pingpong="0" repeatcount="1" repeatto="0" sid="6219247959019273" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Filer\Construct2\2D-RPG\Caracter\Attack1.png">
+                            <collision-poly>
+                                <point x="0.3125" y="0.3125" />
+                                <point x="0.5" y="0.0625" />
+                                <point x="0.78125" y="0.21875" />
+                                <point x="0.96875" y="0.5" />
+                                <point x="0.75" y="0.75" />
+                                <point x="0.5" y="0.75" />
+                                <point x="0.34375" y="0.65625" />
+                                <point x="0.25" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Filer\Construct2\2D-RPG\Caracter\Attack2.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="AttackRdy" pingpong="0" repeatcount="1" repeatto="0" sid="3238859458255891" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Filer\Construct2\2D-RPG\Caracter\CombatReady.png">
+                            <collision-poly>
+                                <point x="0.3125" y="0.3125" />
+                                <point x="0.5" y="0.0625" />
+                                <point x="0.625" y="0.375" />
+                                <point x="0.625" y="0.625" />
+                                <point x="0.5" y="0.75" />
+                                <point x="0.34375" y="0.65625" />
+                                <point x="0.25" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Feets" sid="7914040244203385">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Flash" sid="1768335410754692">
+                        <behavior id="Flash" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="3534631577927901" speed="15">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\Legs.png">
+                            <collision-poly>
+                                <point x="0.5" y="0.735294" />
+                                <point x="0.5625" y="0.794118" />
+                                <point x="0.5" y="1" />
+                                <point x="0.3125" y="0.852941" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="8" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="1648782929677529" speed="15">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PlayerBox" sid="389965767512293">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable comment="Player health" name="Health" sid="7486343791185766" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Platform" sid="8662530644979774">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                    <behavior-type name="ScrollTo" sid="1404037992222257">
+                        <behavior id="scrollto" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7373934474607444" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.466667">
+                            <image-point name="Imagepoint 1" x="1" y="0.266667" />
+                            <image-point name="Imagepoint 2" x="0.9" y="0.266667" />
+                            <image-point name="Imagepoint 3" x="1" y="0.4" />
+                            <image-point name="Imagepoint 4" x="0.5" y="0.6" />
+                            <image-point name="Imagepoint 5" x="0.5" y="0.4" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Enemy">
+            <object-folder name="IceGollem">
+                <object-type name="DeadlyIce" sid="9538839461938559">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Bullet" sid="3969557760209801">
+                            <behavior id="Bullet" />
+                        </behavior-type>
+                        <behavior-type name="Solid" sid="6419939059788831">
+                            <behavior id="solid" />
+                        </behavior-type>
+                        <behavior-type name="DestroyOutsideLayout" sid="7974043540923891">
+                            <behavior id="destroy" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4132585932688018" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Filer\2D-RPG\BackGround\RoofIce.png">
+                                <collision-poly>
+                                    <point x="0" y="0.79375" />
+                                    <point x="0" y="0.195833" />
+                                    <point x="0.292708" y="0.251041" />
+                                    <point x="0.308333" y="0" />
+                                    <point x="0.835417" y="0.283333" />
+                                    <point x="0.890625" y="0.453906" />
+                                    <point x="0.738542" y="0.765104" />
+                                    <point x="0.304166" y="0.99375" />
+                                    <point x="0.309375" y="0.717708" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="EnemyBox" sid="8959009229085453">
+                    <plugin id="Sprite" />
+                    <instance-variables>
+                        <instance-variable name="action" sid="3201835080805236" type="string" />
+                        <instance-variable name="Health" sid="1625395210073178" type="number" />
+                    </instance-variables>
+                    <behaviors>
+                        <behavior-type name="Platform" sid="7260598934912121">
+                            <behavior id="Platform" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8770094546866281" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="1.004">
+                                <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="ToiletPaper">
+                <object-type name="ToiletBox" sid="6328742295047918">
+                    <plugin id="Sprite" />
+                    <instance-variables>
+                        <instance-variable name="Way" sid="5398012374234533" type="string" />
+                    </instance-variables>
+                    <behaviors>
+                        <behavior-type name="Platform" sid="1419911141248763">
+                            <behavior id="Platform" />
+                        </behavior-type>
+                    </behaviors>
+                    <container>
+                        <type>ToiletPaper</type>
+                        <type>ToiletPaper_ToiletPaper_ToiletPaper</type>
+                        <type>ToiletBox</type>
+                    </container>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2335923343787647" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+        </object-folder>
+        <object-folder name="Tiles">
+            <object-folder name="Cave1-1">
+                <object-type name="Block" sid="8057095833468265">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="4571588461943438">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="11" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="979599975956611" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\2D-RPG\Tiles\SnowEdge.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0.648438" y="0" />
+                                    <point x="0.976563" y="0.292969" />
+                                    <point x="0.976563" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\InvLowerSnowEdge.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\LowerDirt.png" />
+                            <frame duration="0" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\InvSnowEdgeOnTop.png">
+                                <collision-poly>
+                                    <point x="0.0390625" y="0.3125" />
+                                    <point x="0.390625" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="1" />
+                                    <point x="0.101563" y="1" />
+                                    <point x="0.0957031" y="0.628906" />
+                                    <point x="0.0351563" y="0.617188" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\LowerSnowEdge.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\2D-RPG\Tiles\Snow.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\2D-RPG\Tiles\SnowEdgeInWall.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\2D-RPG\Tiles\Ice.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Filer\2D-RPG\Tiles\InvSnowEdgeInWall.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\Tiles\DirtEdge.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\Tiles\DirtEdge.png">
+                                <collision-poly>
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Sprite5" sid="5496437238816161">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6950666500139403" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\2D-RPG\Tiles\DirtEdge2.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="IceFloor" sid="7303032041555543">
+                    <plugin id="TiledBg" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="3351583219191038">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <texture original-source="D:\Snarvei\Egne spel\2D-RPG\Ice.png" />
+                </object-type>
+                <object-type name="Roof" sid="8523092394287252">
+                    <plugin id="TiledBg" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="4856572165050589">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <texture original-source="D:\Snarvei\Egne spel\2D-RPG\LowerDirt.png" />
+                </object-type>
+                <object-type name="Ground" sid="5978914401052625">
+                    <plugin id="TiledBg" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="8352849476783209">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <texture original-source="D:\Snarvei\Egne spel\2D-RPG\Snow.png" />
+                </object-type>
+                <object-type name="GroundInside" sid="9393326682324922">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4623999445067832" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\SnowEdgeInWall.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Edge" sid="637167403462605">
+                    <plugin id="TiledBg" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="188852760325191">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <texture original-source="D:\Snarvei\Egne spel\2D-RPG\DirtEdge.png" />
+                </object-type>
+                <object-type name="Dirt" sid="4162986683116858">
+                    <plugin id="TiledBg" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="6469572925342359">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <texture original-source="D:\Snarvei\Egne spel\2D-RPG\Dirt.png" />
+                </object-type>
+                <object-type name="MovableBlock" sid="3836779597926568">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="4402376048030067">
+                            <behavior id="solid" />
+                        </behavior-type>
+                        <behavior-type name="Physics" sid="6914698129698188">
+                            <behavior id="Physics" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3190502982678415" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\2D-RPG\Tiles\SnowEdge.png">
+                                <collision-poly>
+                                    <point x="0.03125" y="0" />
+                                    <point x="0.96875" y="0" />
+                                    <point x="0.96875" y="0.96875" />
+                                    <point x="0.03125" y="0.96875" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\InvLowerSnowEdge.png">
+                                <collision-poly>
+                                    <point x="0.03125" y="0" />
+                                    <point x="0.96875" y="0" />
+                                    <point x="0.96875" y="0.96875" />
+                                    <point x="0.03125" y="0.96875" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\LowerDirt.png">
+                                <collision-poly>
+                                    <point x="0.03125" y="0" />
+                                    <point x="0.96875" y="0" />
+                                    <point x="0.96875" y="0.96875" />
+                                    <point x="0.03125" y="0.96875" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="0" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\InvSnowEdgeOnTop.png">
+                                <collision-poly>
+                                    <point x="0.03125" y="0" />
+                                    <point x="0.96875" y="0" />
+                                    <point x="0.96875" y="0.96875" />
+                                    <point x="0.03125" y="0.96875" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\LowerSnowEdge.png">
+                                <collision-poly>
+                                    <point x="0.03125" y="0" />
+                                    <point x="0.96875" y="0" />
+                                    <point x="0.96875" y="0.96875" />
+                                    <point x="0.03125" y="0.96875" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\2D-RPG\Tiles\Snow.png">
+                                <collision-poly>
+                                    <point x="0.03125" y="0" />
+                                    <point x="0.96875" y="0" />
+                                    <point x="0.96875" y="0.96875" />
+                                    <point x="0.03125" y="0.96875" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\2D-RPG\Tiles\SnowEdgeInWall.png">
+                                <collision-poly>
+                                    <point x="0.03125" y="0" />
+                                    <point x="0.96875" y="0" />
+                                    <point x="0.96875" y="0.96875" />
+                                    <point x="0.03125" y="0.96875" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\2D-RPG\Tiles\Ice.png">
+                                <collision-poly>
+                                    <point x="0.03125" y="0" />
+                                    <point x="0.96875" y="0" />
+                                    <point x="0.96875" y="0.96875" />
+                                    <point x="0.03125" y="0.96875" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Sprite" sid="3562122267252612">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="7339958407719961">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4371767584160766" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\Snow.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Cave" sid="4038672938683337">
+                    <plugin id="TiledBg" />
+                    <texture original-source="D:\Snarvei\Egne spel\2D-RPG\CaveDirt.png" />
+                </object-type>
+                <object-type name="BossEnding" sid="5648942102129939">
+                    <plugin id="TiledBg" />
+                    <behaviors>
+                        <behavior-type name="Physics" sid="1212218484245652">
+                            <behavior id="Physics" />
+                        </behavior-type>
+                    </behaviors>
+                    <texture original-source="C:\Users\Stian\Desktop\Filer\2D-RPG\Tiles\Ice.png" />
+                </object-type>
+                <object-type name="Sprite2" sid="7006564545205251">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="8359417840988193">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6177933564173486" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\Dirt.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="Sewers">
+                <object-type name="SewersBlock" sid="2608148600072755">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="9992321133517207">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="984123956371304" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Filer\2D-RPG\Tiles\Sewers\Block.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\Tiles\Sewers\BlockLeft.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\Tiles\Sewers\BlockRight.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\Tiles\Sewers\BlockAll.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\Tiles\Sewers\BlockBot.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\Tiles\Sewers\BlockBoth.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\Tiles\Sewers\BlockLeftBot.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\Tiles\Sewers\BlockRightBot.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Vfall" sid="5643118390419296">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9752353495019525" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\Tiles\Sewers\HalvShitVatnR.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\Tiles\Sewers\HalvShitVatnR2.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\Tiles\Sewers\HalvShitVatnR3.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\Tiles\Sewers\HalvShitVatnR4.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="WaterTopp" sid="2186513283051785">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="573990007598212" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\Tiles\Sewers\HalvShitVatn.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\Tiles\Sewers\HalvShitVatn2.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\Tiles\Sewers\HalvShitVatn3.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\Tiles\Sewers\HalvShitVatn4.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+        </object-folder>
+        <object-folder name="Backgrounds">
+            <object-folder name="Sewers">
+                <object-type name="Kloakk3" sid="8355247935520016">
+                    <plugin id="TiledBg" />
+                    <texture original-source="D:\Snarvei\Egne spel\2D-RPG\BackGround\Sewers\Sewer1.png" />
+                </object-type>
+                <object-type name="CaveBackground" sid="3392382099706119">
+                    <plugin id="TiledBg" />
+                    <texture />
+                </object-type>
+                <object-type name="Kloakk2" sid="8629357984976594">
+                    <plugin id="TiledBg" />
+                    <texture original-source="D:\Snarvei\Egne spel\2D-RPG\BackGround\Sewers\Sewer2.png" />
+                </object-type>
+                <object-type name="Kloakk1" sid="655295996225045">
+                    <plugin id="TiledBg" />
+                    <texture original-source="D:\Snarvei\Egne spel\2D-RPG\BackGround\Sewers\Sewer3.png" />
+                </object-type>
+                <object-type name="Mur" sid="5132647418269821">
+                    <plugin id="TiledBg" />
+                    <texture original-source="C:\Users\Stian\Desktop\Filer\2D-RPG\BackGround\Sewers\Wall.png" />
+                </object-type>
+                <object-type name="Stars" sid="1511466907407438">
+                    <plugin id="TiledBg" />
+                    <texture original-source="D:\Snarvei\Egne spel\2D-RPG\Background.png" />
+                </object-type>
+                <object-type name="V1" sid="1111707237563117">
+                    <plugin id="TiledBg" />
+                    <texture original-source="C:\Users\Stian\Desktop\Filer\2D-RPG\BackGround\Sewers\Vater1.png" />
+                </object-type>
+                <object-type name="V2" sid="766587789723239">
+                    <plugin id="TiledBg" />
+                    <texture original-source="C:\Users\Stian\Desktop\Filer\2D-RPG\BackGround\Sewers\Vater3.png" />
+                </object-type>
+                <object-type name="V3" sid="9913186583456056">
+                    <plugin id="TiledBg" />
+                    <texture original-source="C:\Users\Stian\Desktop\Filer\2D-RPG\BackGround\Sewers\Vater2.png" />
+                </object-type>
+                <object-type name="V4" sid="4010090677103131">
+                    <plugin id="TiledBg" />
+                    <texture original-source="C:\Users\Stian\Desktop\Filer\2D-RPG\BackGround\Sewers\Vater1.png" />
+                </object-type>
+                <object-type name="V5" sid="373584055614423">
+                    <plugin id="TiledBg" />
+                    <texture original-source="C:\Users\Stian\Desktop\Filer\2D-RPG\BackGround\Sewers\Vater2.png" />
+                </object-type>
+                <object-type name="V6" sid="8468451605008216">
+                    <plugin id="TiledBg" />
+                    <texture original-source="C:\Users\Stian\Desktop\Filer\2D-RPG\BackGround\Sewers\Vater3.png" />
+                </object-type>
+                <object-type name="BGO" sid="1970778830791382">
+                    <plugin id="TiledBg" />
+                    <texture original-source="D:\Snarvei\Egne spel\2D-RPG\BackGround\Sewers\BrickBackground.png" />
+                </object-type>
+                <object-type name="BGU" sid="3456172206389469">
+                    <plugin id="TiledBg" />
+                    <texture original-source="D:\Snarvei\Egne spel\2D-RPG\BackGround\Sewers\Wall2.png" />
+                </object-type>
+                <object-type name="BG_Fader" sid="4943541365971569">
+                    <plugin id="TiledBg" />
+                    <texture original-source="D:\Snarvei\Egne spel\2D-RPG\BackGround\FaderLayer.png" />
+                </object-type>
+            </object-folder>
+            <object-folder name="Cave1-1">
+                <object-type name="GroundIce1" sid="6474580146018769">
+                    <plugin id="TiledBg" />
+                    <texture original-source="C:\Users\Stian\Desktop\2D-RPG\BackGround\CaveBackground.png" />
+                </object-type>
+                <object-type name="GroundIce2" sid="361160640927225">
+                    <plugin id="TiledBg" />
+                    <texture original-source="C:\Users\Stian\Desktop\2D-RPG\BackGround\CaveBackground2.png" />
+                </object-type>
+                <object-type name="FloorIce" sid="2513269688441556">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8166431451527241" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\FloorIce.png">
+                                <collision-poly>
+                                    <point x="0.375" y="0.375" />
+                                    <point x="0.5" y="0.21875" />
+                                    <point x="0.625" y="0.375" />
+                                    <point x="0.78125" y="0.5" />
+                                    <point x="1" y="1" />
+                                    <point x="0.5" y="1" />
+                                    <point x="0.28125" y="0.71875" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="GroundIce3" sid="4421116721700475">
+                    <plugin id="TiledBg" />
+                    <texture original-source="C:\Users\Stian\Desktop\2D-RPG\BackGround\CaveBackground3.png" />
+                </object-type>
+                <object-type name="RoofIce1" sid="6783595573582189">
+                    <plugin id="TiledBg" />
+                    <texture original-source="C:\Users\Stian\Desktop\2D-RPG\BackGround\CaveBackground.png" />
+                </object-type>
+                <object-type name="RoofIce" sid="9117300031810582">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2134985808059724" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\RoofIce.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.71875" y="0.28125" />
+                                    <point x="0.625" y="0.625" />
+                                    <point x="0.5" y="0.78125" />
+                                    <point x="0.375" y="0.625" />
+                                    <point x="0.25" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="RoofIce2" sid="1663054035753883">
+                    <plugin id="TiledBg" />
+                    <texture original-source="D:\Snarvei\Egne spel\2D-RPG\CaveBackground2.png" />
+                </object-type>
+                <object-type name="RoofIce3" sid="5086352577898743">
+                    <plugin id="TiledBg" />
+                    <texture original-source="D:\Snarvei\Egne spel\2D-RPG\CaveBackground3.png" />
+                </object-type>
+                <object-type name="Blocker" sid="9403186717898041">
+                    <plugin id="TiledBg" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="1340647258589916">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <texture original-source="D:\Snarvei\Egne spel\2D-RPG\DirtEdge.png" />
+                </object-type>
+                <object-type name="TiledBackground2" sid="1286664807761175">
+                    <plugin id="TiledBg" />
+                    <texture original-source="C:\Users\Stian\Desktop\2D-RPG\BackGround\Inventory.png" />
+                </object-type>
+            </object-folder>
+        </object-folder>
+        <object-folder name="Sensors">
+            <object-folder name="Sewers">
+                <object-type name="TSensorL" sid="9026272376212283">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7000229081457583" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="TSensorR" sid="6714579809143715">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3483037835092919" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="Cave1-1">
+                <object-type name="BossArea" sid="3431558191652342">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8904720919614625" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="DestroySensor" sid="4634336775474753">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2501106866028719" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="EnemyCamera" sid="7427337002423987">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="ScrollTo" sid="9363248140968133">
+                            <behavior id="scrollto" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="868347662549485" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="EnemyStop" sid="2410516713043447">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9112724331788035" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Entry" sid="7197686405215989">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5662508153605896" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="FalldDeath" sid="1402371350981019">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="544002869786482" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="GroundSensor" sid="755558522764743">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6407754993480392" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="HeadSensor" sid="9455962545153789">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3305245163809918" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.529412" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="IceSpawn" sid="5299369751666668">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8226302898435413" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="PhysicsBlocker" sid="5448668305809786">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Physics" sid="4651483153368433">
+                            <behavior id="Physics" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="770019548585947" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Solid" sid="9013505886100735">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Solid" sid="5901567618218044">
+                            <behavior id="solid" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="668257814748363" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="StartSensor" sid="6012754926738483">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6525131377425811" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="ToppSensor" sid="2379783715231889">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9354568315831812" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="TurnSensor" sid="2859042129494207">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9823915309194662" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="TurnSensor2" sid="3468396862209599">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8464924097447231" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+        </object-folder>
+        <object-folder name="Actions">
+            <object-type name="LeverTarget" sid="187295633526355">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="5161670870629118" speed="7">
+                        <frame duration="1" hotspotX="0.444444" hotspotY="-0.214286">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0.928571" />
+                                <point x="0" y="0.928571" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="3" loop="0" name="Hit" pingpong="0" repeatcount="1" repeatto="0" sid="1811682295375431" speed="15">
+                        <frame duration="1" hotspotX="0.444444" hotspotY="-0.214286">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0.928571" />
+                                <point x="0" y="0.928571" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.363636" hotspotY="-0.214286">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0.928571" />
+                                <point x="0" y="0.928571" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.266667" hotspotY="-1.83333">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0.833333" />
+                                <point x="0" y="0.833333" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Effects">
+            <object-type name="Breath" sid="8040657401584381">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="1745968549790132">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="Fade" sid="6934173018166918">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="720754662773128" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.6" original-source="D:\Snarvei\Egne spel\2D-RPG\Breath.png">
+                            <collision-poly>
+                                <point x="0.25" y="0.333333" />
+                                <point x="0.5" y="0" />
+                                <point x="0.75" y="0.333333" />
+                                <point x="1" y="0.333333" />
+                                <point x="0.5" y="1" />
+                                <point x="0" y="0.333333" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Particles" sid="2279809554977766">
+                <plugin id="Particles" />
+                <texture original-source="D:\Snarvei\Egne spel\2D-RPG\LargeSnøEffekt.png" />
+            </object-type>
+            <object-type name="Particles2" sid="8893914999391182">
+                <plugin id="Particles" />
+                <texture original-source="D:\Snarvei\Egne spel\2D-RPG\LargeSnøEffekt.png" />
+            </object-type>
+            <object-type name="Particles3" sid="9312677144893634">
+                <plugin id="Particles" />
+                <texture original-source="D:\Snarvei\Egne spel\2D-RPG\LargeSnøEffekt.png" />
+            </object-type>
+            <object-type name="Particles4" sid="8758128726694473">
+                <plugin id="Particles" />
+                <texture original-source="D:\Snarvei\Egne spel\2D-RPG\LargeSnøEffekt.png" />
+            </object-type>
+            <object-type name="Light" sid="2218151715944654">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="411609249486088" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="IceExplode" sid="7720949537652439">
+                <plugin id="Particles" />
+                <texture />
+            </object-type>
+        </object-folder>
+        <object-folder name="Pickups">
+            <object-type name="MoreSnowBalls" sid="156228976310425">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="3136954757879813">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                    <behavior-type name="Bullet" sid="7760700196695788">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4855388063176291" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\2D-RPG\Weapons\SnowBall2.png">
+                            <collision-poly>
+                                <point x="0.166667" y="0.166667" />
+                                <point x="0.5" y="0" />
+                                <point x="0.833333" y="0.166667" />
+                                <point x="1" y="0.5" />
+                                <point x="0.833333" y="0.833333" />
+                                <point x="0.5" y="1" />
+                                <point x="0.166667" y="0.833333" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SnowballPickup" sid="5284909640252811">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="3326003848102015">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Sine2" sid="5223182648006896">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Sine3" sid="5341706032880118">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="887723148331516" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\Weapons\SnowBall2.png">
+                            <collision-poly>
+                                <point x="0.166667" y="0.166667" />
+                                <point x="0.5" y="0" />
+                                <point x="0.833333" y="0.166667" />
+                                <point x="1" y="0.5" />
+                                <point x="0.833333" y="0.833333" />
+                                <point x="0.5" y="1" />
+                                <point x="0.166667" y="0.833333" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Weapons">
+            <object-type name="SnowBall" sid="6172065825691684">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="8081294817007756">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="2541939134925003">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7666441699607632" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\Weapons\SnowBall2.png">
+                            <collision-poly>
+                                <point x="0.166667" y="0.166667" />
+                                <point x="0.5" y="0" />
+                                <point x="0.833333" y="0.166667" />
+                                <point x="1" y="0.5" />
+                                <point x="0.833333" y="0.833333" />
+                                <point x="0.5" y="1" />
+                                <point x="0.166667" y="0.833333" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Texts">
+            <object-type name="Tekst" sid="333450929160626">
+                <plugin id="Spritefont2" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="5655770769247799">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="D:\Snarvei\Egne spel\2D-RPG\TekstFont.png" />
+            </object-type>
+            <object-type name="Tekst2" sid="2969229861225636">
+                <plugin id="Spritefont2" />
+                <behaviors>
+                    <behavior-type name="Anchor" sid="3546759371717873">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\Stian\Desktop\2D-RPG\Text\TekstFont2.png" />
+            </object-type>
+            <object-type name="TextBox" sid="5208131187545183">
+                <plugin id="TextBox" />
+            </object-type>
+            <object-type name="SpriteFont" sid="1211415180724042">
+                <plugin id="Spritefont2" />
+                <behaviors>
+                    <behavior-type name="Anchor" sid="3242388623071994">
+                        <behavior id="Anchor" />
+                    </behavior-type>
+                </behaviors>
+                <texture />
+            </object-type>
+        </object-folder>
+        <object-folder name="GameFunctions">
+            <object-type name="Function" sid="7882482007530328">
+                <plugin id="Function" />
+            </object-type>
+            <object-type name="Keyboard" sid="4436305314906168">
+                <plugin id="Keyboard" />
+            </object-type>
+            <object-type name="Mouse" sid="3506161195311074">
+                <plugin id="Mouse" />
+            </object-type>
+            <object-type name="Browser" sid="572672658967098">
+                <plugin id="Browser" />
+            </object-type>
+            <object-type name="Touch" sid="9019288645303574">
+                <plugin id="Touch" />
+            </object-type>
+            <object-type name="Gamepad" sid="9237693692015532">
+                <plugin id="gamepad" />
+            </object-type>
+            <object-type name="Audio" sid="34866759690057">
+                <plugin id="Audio" />
+            </object-type>
+        </object-folder>
+        <object-folder name="RockMonster sprites">
+            <object-type name="RockMonster_RockMonster_RockMonsterArm2" sid="9739080348902094">
+                <plugin id="Sprite" />
+                <container>
+                    <type>RockMonster</type>
+                    <type>RockMonster_RockMonster_RockMonsterArm2</type>
+                    <type>RockMonster_RockMonster_RockMonsterLowerFoot2</type>
+                    <type>RockMonster_RockMonster_RockMonsterUpperFoot2</type>
+                    <type>RockMonster_RockMonster_RockMonsterLowerFoot1</type>
+                    <type>RockMonster_RockMonster_RockMonsterUpperFoot1</type>
+                    <type>RockMonster_RockMonster_RockMonsterBody</type>
+                    <type>RockMonster_RockMonster_RockMonsterArm1</type>
+                    <type>RockMonster_RockMonster_RockMonsterHead</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5618449975864943" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Stian\Desktop\Filer\2D-RPG\Enemys\Til Animator\RockMonsterArm2.png">
+                            <collision-poly>
+                                <point x="0.447917" y="0.447917" />
+                                <point x="0.5" y="0.416667" />
+                                <point x="0.541667" y="0.458333" />
+                                <point x="0.541667" y="0.541667" />
+                                <point x="0.5" y="0.572917" />
+                                <point x="0.40625" y="0.59375" />
+                                <point x="0.260417" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="RockMonster_RockMonster_RockMonsterLowerFoot2" sid="1453587758542409">
+                <plugin id="Sprite" />
+                <container>
+                    <type>RockMonster</type>
+                    <type>RockMonster_RockMonster_RockMonsterArm2</type>
+                    <type>RockMonster_RockMonster_RockMonsterLowerFoot2</type>
+                    <type>RockMonster_RockMonster_RockMonsterUpperFoot2</type>
+                    <type>RockMonster_RockMonster_RockMonsterLowerFoot1</type>
+                    <type>RockMonster_RockMonster_RockMonsterUpperFoot1</type>
+                    <type>RockMonster_RockMonster_RockMonsterBody</type>
+                    <type>RockMonster_RockMonster_RockMonsterArm1</type>
+                    <type>RockMonster_RockMonster_RockMonsterHead</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="560970268842895" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Stian\Desktop\Filer\2D-RPG\Enemys\Til Animator\RockMonsterLowerFoot2.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="RockMonster_RockMonster_RockMonsterUpperFoot2" sid="9855976418202762">
+                <plugin id="Sprite" />
+                <container>
+                    <type>RockMonster</type>
+                    <type>RockMonster_RockMonster_RockMonsterArm2</type>
+                    <type>RockMonster_RockMonster_RockMonsterLowerFoot2</type>
+                    <type>RockMonster_RockMonster_RockMonsterUpperFoot2</type>
+                    <type>RockMonster_RockMonster_RockMonsterLowerFoot1</type>
+                    <type>RockMonster_RockMonster_RockMonsterUpperFoot1</type>
+                    <type>RockMonster_RockMonster_RockMonsterBody</type>
+                    <type>RockMonster_RockMonster_RockMonsterArm1</type>
+                    <type>RockMonster_RockMonster_RockMonsterHead</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2503940773485697" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Stian\Desktop\Filer\2D-RPG\Enemys\Til Animator\RockMonsterUpperFoot2.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="RockMonster_RockMonster_RockMonsterLowerFoot1" sid="6595970481157475">
+                <plugin id="Sprite" />
+                <container>
+                    <type>RockMonster</type>
+                    <type>RockMonster_RockMonster_RockMonsterArm2</type>
+                    <type>RockMonster_RockMonster_RockMonsterLowerFoot2</type>
+                    <type>RockMonster_RockMonster_RockMonsterUpperFoot2</type>
+                    <type>RockMonster_RockMonster_RockMonsterLowerFoot1</type>
+                    <type>RockMonster_RockMonster_RockMonsterUpperFoot1</type>
+                    <type>RockMonster_RockMonster_RockMonsterBody</type>
+                    <type>RockMonster_RockMonster_RockMonsterArm1</type>
+                    <type>RockMonster_RockMonster_RockMonsterHead</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7878145782218225" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Stian\Desktop\Filer\2D-RPG\Enemys\Til Animator\RockMonsterLowerFoot1.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="RockMonster_RockMonster_RockMonsterUpperFoot1" sid="8403463030293641">
+                <plugin id="Sprite" />
+                <container>
+                    <type>RockMonster</type>
+                    <type>RockMonster_RockMonster_RockMonsterArm2</type>
+                    <type>RockMonster_RockMonster_RockMonsterLowerFoot2</type>
+                    <type>RockMonster_RockMonster_RockMonsterUpperFoot2</type>
+                    <type>RockMonster_RockMonster_RockMonsterLowerFoot1</type>
+                    <type>RockMonster_RockMonster_RockMonsterUpperFoot1</type>
+                    <type>RockMonster_RockMonster_RockMonsterBody</type>
+                    <type>RockMonster_RockMonster_RockMonsterArm1</type>
+                    <type>RockMonster_RockMonster_RockMonsterHead</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="916668906892676" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Stian\Desktop\Filer\2D-RPG\Enemys\Til Animator\RockMonsterUpperFoot1.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="RockMonster_RockMonster_RockMonsterBody" sid="1895018254579141">
+                <plugin id="Sprite" />
+                <container>
+                    <type>RockMonster</type>
+                    <type>RockMonster_RockMonster_RockMonsterArm2</type>
+                    <type>RockMonster_RockMonster_RockMonsterLowerFoot2</type>
+                    <type>RockMonster_RockMonster_RockMonsterUpperFoot2</type>
+                    <type>RockMonster_RockMonster_RockMonsterLowerFoot1</type>
+                    <type>RockMonster_RockMonster_RockMonsterUpperFoot1</type>
+                    <type>RockMonster_RockMonster_RockMonsterBody</type>
+                    <type>RockMonster_RockMonster_RockMonsterArm1</type>
+                    <type>RockMonster_RockMonster_RockMonsterHead</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8461401534106002" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Stian\Desktop\Filer\2D-RPG\Enemys\Til Animator\RockMonsterBody.png">
+                            <collision-poly>
+                                <point x="0.375" y="0.375" />
+                                <point x="0.5" y="0.34375" />
+                                <point x="0.625" y="0.375" />
+                                <point x="0.625" y="0.625" />
+                                <point x="0.5" y="0.6875" />
+                                <point x="0.364583" y="0.635417" />
+                                <point x="0.364583" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="RockMonster_RockMonster_RockMonsterArm1" sid="4479656569902526">
+                <plugin id="Sprite" />
+                <container>
+                    <type>RockMonster</type>
+                    <type>RockMonster_RockMonster_RockMonsterArm2</type>
+                    <type>RockMonster_RockMonster_RockMonsterLowerFoot2</type>
+                    <type>RockMonster_RockMonster_RockMonsterUpperFoot2</type>
+                    <type>RockMonster_RockMonster_RockMonsterLowerFoot1</type>
+                    <type>RockMonster_RockMonster_RockMonsterUpperFoot1</type>
+                    <type>RockMonster_RockMonster_RockMonsterBody</type>
+                    <type>RockMonster_RockMonster_RockMonsterArm1</type>
+                    <type>RockMonster_RockMonster_RockMonsterHead</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4776168045214385" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Stian\Desktop\Filer\2D-RPG\Enemys\Til Animator\RockMonsterArm1.png">
+                            <collision-poly>
+                                <point x="0.489583" y="0.489583" />
+                                <point x="0.5" y="0.4375" />
+                                <point x="0.5625" y="0.4375" />
+                                <point x="0.583333" y="0.5" />
+                                <point x="0.572917" y="0.572917" />
+                                <point x="0.5" y="0.614583" />
+                                <point x="0.385417" y="0.614583" />
+                                <point x="0.489583" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="RockMonster_RockMonster_RockMonsterHead" sid="8478118795133297">
+                <plugin id="Sprite" />
+                <container>
+                    <type>RockMonster</type>
+                    <type>RockMonster_RockMonster_RockMonsterArm2</type>
+                    <type>RockMonster_RockMonster_RockMonsterLowerFoot2</type>
+                    <type>RockMonster_RockMonster_RockMonsterUpperFoot2</type>
+                    <type>RockMonster_RockMonster_RockMonsterLowerFoot1</type>
+                    <type>RockMonster_RockMonster_RockMonsterUpperFoot1</type>
+                    <type>RockMonster_RockMonster_RockMonsterBody</type>
+                    <type>RockMonster_RockMonster_RockMonsterArm1</type>
+                    <type>RockMonster_RockMonster_RockMonsterHead</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9533727619621422" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Stian\Desktop\Filer\2D-RPG\Enemys\Til Animator\RockMonsterHead.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0.260417" />
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Stian\Desktop\Filer\2D-RPG\Enemys\Til Animator\RockMonsterHead2.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0.260417" />
+                            <collision-poly>
+                                <point x="0.432292" y="0.182292" />
+                                <point x="0.572917" y="0.171875" />
+                                <point x="0.583334" y="0.348959" />
+                                <point x="0.395834" y="0.354167" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Knight sprites">
+            <object-type name="Knight_Knight_KnightLBL" sid="5390826197068589">
+                <plugin id="Sprite" />
+                <container>
+                    <type>Knight</type>
+                    <type>Knight_Knight_KnightLBL</type>
+                    <type>Knight_Knight_KnightMBL</type>
+                    <type>Knight_Knight_KnightUBL</type>
+                    <type>Knight_Knight_KnightLFL</type>
+                    <type>Knight_Knight_KnightMFL</type>
+                    <type>Knight_Knight_KnightUFL</type>
+                    <type>Knight_Knight_KnightBody</type>
+                    <type>Knight_Knight_KnightHead</type>
+                    <type>Knight_Knight_KnightArm</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6858379502349995" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Snarvei\Egne spel\2D-RPG\Enemys\Knight\Delar\KnightLBL.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Knight_Knight_KnightMBL" sid="409241903545007">
+                <plugin id="Sprite" />
+                <container>
+                    <type>Knight</type>
+                    <type>Knight_Knight_KnightLBL</type>
+                    <type>Knight_Knight_KnightMBL</type>
+                    <type>Knight_Knight_KnightUBL</type>
+                    <type>Knight_Knight_KnightLFL</type>
+                    <type>Knight_Knight_KnightMFL</type>
+                    <type>Knight_Knight_KnightUFL</type>
+                    <type>Knight_Knight_KnightBody</type>
+                    <type>Knight_Knight_KnightHead</type>
+                    <type>Knight_Knight_KnightArm</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3530619782752006" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Snarvei\Egne spel\2D-RPG\Enemys\Knight\Delar\KnightMBL.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Knight_Knight_KnightUBL" sid="6952150800154682">
+                <plugin id="Sprite" />
+                <container>
+                    <type>Knight</type>
+                    <type>Knight_Knight_KnightLBL</type>
+                    <type>Knight_Knight_KnightMBL</type>
+                    <type>Knight_Knight_KnightUBL</type>
+                    <type>Knight_Knight_KnightLFL</type>
+                    <type>Knight_Knight_KnightMFL</type>
+                    <type>Knight_Knight_KnightUFL</type>
+                    <type>Knight_Knight_KnightBody</type>
+                    <type>Knight_Knight_KnightHead</type>
+                    <type>Knight_Knight_KnightArm</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3137072921114565" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Snarvei\Egne spel\2D-RPG\Enemys\Knight\Delar\KnightUBL.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Knight_Knight_KnightLFL" sid="4850125629448399">
+                <plugin id="Sprite" />
+                <container>
+                    <type>Knight</type>
+                    <type>Knight_Knight_KnightLBL</type>
+                    <type>Knight_Knight_KnightMBL</type>
+                    <type>Knight_Knight_KnightUBL</type>
+                    <type>Knight_Knight_KnightLFL</type>
+                    <type>Knight_Knight_KnightMFL</type>
+                    <type>Knight_Knight_KnightUFL</type>
+                    <type>Knight_Knight_KnightBody</type>
+                    <type>Knight_Knight_KnightHead</type>
+                    <type>Knight_Knight_KnightArm</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2294951152142605" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Snarvei\Egne spel\2D-RPG\Enemys\Knight\Delar\KnightLFL.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Knight_Knight_KnightMFL" sid="7714849138997">
+                <plugin id="Sprite" />
+                <container>
+                    <type>Knight</type>
+                    <type>Knight_Knight_KnightLBL</type>
+                    <type>Knight_Knight_KnightMBL</type>
+                    <type>Knight_Knight_KnightUBL</type>
+                    <type>Knight_Knight_KnightLFL</type>
+                    <type>Knight_Knight_KnightMFL</type>
+                    <type>Knight_Knight_KnightUFL</type>
+                    <type>Knight_Knight_KnightBody</type>
+                    <type>Knight_Knight_KnightHead</type>
+                    <type>Knight_Knight_KnightArm</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9797904485305173" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Snarvei\Egne spel\2D-RPG\Enemys\Knight\Delar\KnightMFL.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Knight_Knight_KnightUFL" sid="8905043277596192">
+                <plugin id="Sprite" />
+                <container>
+                    <type>Knight</type>
+                    <type>Knight_Knight_KnightLBL</type>
+                    <type>Knight_Knight_KnightMBL</type>
+                    <type>Knight_Knight_KnightUBL</type>
+                    <type>Knight_Knight_KnightLFL</type>
+                    <type>Knight_Knight_KnightMFL</type>
+                    <type>Knight_Knight_KnightUFL</type>
+                    <type>Knight_Knight_KnightBody</type>
+                    <type>Knight_Knight_KnightHead</type>
+                    <type>Knight_Knight_KnightArm</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9097618658970293" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Snarvei\Egne spel\2D-RPG\Enemys\Knight\Delar\KnightUFL.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Knight_Knight_KnightBody" sid="2941417558726096">
+                <plugin id="Sprite" />
+                <container>
+                    <type>Knight</type>
+                    <type>Knight_Knight_KnightLBL</type>
+                    <type>Knight_Knight_KnightMBL</type>
+                    <type>Knight_Knight_KnightUBL</type>
+                    <type>Knight_Knight_KnightLFL</type>
+                    <type>Knight_Knight_KnightMFL</type>
+                    <type>Knight_Knight_KnightUFL</type>
+                    <type>Knight_Knight_KnightBody</type>
+                    <type>Knight_Knight_KnightHead</type>
+                    <type>Knight_Knight_KnightArm</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2076772224409128" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Snarvei\Egne spel\2D-RPG\Enemys\Knight\Delar\KnightBody.png">
+                            <collision-poly>
+                                <point x="0.375" y="0.375" />
+                                <point x="0.5" y="0.28125" />
+                                <point x="0.65625" y="0.34375" />
+                                <point x="0.75" y="0.5" />
+                                <point x="0.71875" y="0.71875" />
+                                <point x="0.5" y="0.75" />
+                                <point x="0.375" y="0.625" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Knight_Knight_KnightHead" sid="7988667385572277">
+                <plugin id="Sprite" />
+                <container>
+                    <type>Knight</type>
+                    <type>Knight_Knight_KnightLBL</type>
+                    <type>Knight_Knight_KnightMBL</type>
+                    <type>Knight_Knight_KnightUBL</type>
+                    <type>Knight_Knight_KnightLFL</type>
+                    <type>Knight_Knight_KnightMFL</type>
+                    <type>Knight_Knight_KnightUFL</type>
+                    <type>Knight_Knight_KnightBody</type>
+                    <type>Knight_Knight_KnightHead</type>
+                    <type>Knight_Knight_KnightArm</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4581204407966407" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Snarvei\Egne spel\2D-RPG\Enemys\Knight\Delar\KnightHead.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Knight_Knight_KnightArm" sid="1120848697747901">
+                <plugin id="Sprite" />
+                <container>
+                    <type>Knight</type>
+                    <type>Knight_Knight_KnightLBL</type>
+                    <type>Knight_Knight_KnightMBL</type>
+                    <type>Knight_Knight_KnightUBL</type>
+                    <type>Knight_Knight_KnightLFL</type>
+                    <type>Knight_Knight_KnightMFL</type>
+                    <type>Knight_Knight_KnightUFL</type>
+                    <type>Knight_Knight_KnightBody</type>
+                    <type>Knight_Knight_KnightHead</type>
+                    <type>Knight_Knight_KnightArm</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6775904355055275" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Snarvei\Egne spel\2D-RPG\Enemys\Knight\Delar\KnightArm.png">
+                            <collision-poly>
+                                <point x="0.21875" y="0.21875" />
+                                <point x="0.5" y="0.4375" />
+                                <point x="0.53125" y="0.46875" />
+                                <point x="0.53125" y="0.53125" />
+                                <point x="0.46875" y="0.53125" />
+                                <point x="0.21875" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Touch">
+            <object-type name="CLeft" sid="8240334039364391">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3241436298857674" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="CAttack" sid="6749801523844838">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1843091738186261" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="CUp" sid="6118554264666776">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8854213434390154" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="CRight" sid="4548605947620336">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8352398424212759" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="ToiletPaper sprites">
+            <object-type name="ToiletPaper_ToiletPaper_ToiletPaper" sid="5286037142400604">
+                <plugin id="Sprite" />
+                <container>
+                    <type>ToiletPaper</type>
+                    <type>ToiletPaper_ToiletPaper_ToiletPaper</type>
+                    <type>ToiletBox</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6227617442773802" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="D:\Snarvei\Egne spel\2D-RPG\Enemys\Toiletpaper\ToiletPaper.png">
+                            <collision-poly>
+                                <point x="0.125" y="0.125" />
+                                <point x="0.5" y="0" />
+                                <point x="0.875" y="0.125" />
+                                <point x="1" y="0.5" />
+                                <point x="0.875" y="0.875" />
+                                <point x="0.5" y="1" />
+                                <point x="0.125" y="0.875" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Objects">
+            <object-type name="Bed" sid="2357202508404782">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9480146120654081" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\Objects\Bed.png">
+                            <collision-poly>
+                                <point x="0.15625" y="0.3125" />
+                                <point x="0.5" y="0.3125" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0.5" y="0.75" />
+                                <point x="0.03125" y="0.9375" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-type name="Health1" sid="6452517183324256">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="995939995375565">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="250470232244355" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Health2" sid="4757728270555738">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="4452154989161869">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3770771937369498" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Health3" sid="8348269925830073">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="3198008189591783">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6093293385966759" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="RockMonster" sid="893797857788305">
+            <plugin id="Spriter" />
+            <behaviors>
+                <behavior-type name="Flash" sid="5685112227169969">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>RockMonster</type>
+                <type>RockMonster_RockMonster_RockMonsterArm2</type>
+                <type>RockMonster_RockMonster_RockMonsterLowerFoot2</type>
+                <type>RockMonster_RockMonster_RockMonsterUpperFoot2</type>
+                <type>RockMonster_RockMonster_RockMonsterLowerFoot1</type>
+                <type>RockMonster_RockMonster_RockMonsterUpperFoot1</type>
+                <type>RockMonster_RockMonster_RockMonsterBody</type>
+                <type>RockMonster_RockMonster_RockMonsterArm1</type>
+                <type>RockMonster_RockMonster_RockMonsterHead</type>
+            </container>
+        </object-type>
+        <object-type name="Knight" sid="9610797453163861">
+            <plugin id="Spriter" />
+            <container>
+                <type>Knight</type>
+                <type>Knight_Knight_KnightLBL</type>
+                <type>Knight_Knight_KnightMBL</type>
+                <type>Knight_Knight_KnightUBL</type>
+                <type>Knight_Knight_KnightLFL</type>
+                <type>Knight_Knight_KnightMFL</type>
+                <type>Knight_Knight_KnightUFL</type>
+                <type>Knight_Knight_KnightBody</type>
+                <type>Knight_Knight_KnightHead</type>
+                <type>Knight_Knight_KnightArm</type>
+            </container>
+        </object-type>
+        <object-type name="ToiletPaper" sid="5961834825962002">
+            <plugin id="Spriter" />
+            <container>
+                <type>ToiletPaper</type>
+                <type>ToiletPaper_ToiletPaper_ToiletPaper</type>
+                <type>ToiletBox</type>
+            </container>
+        </object-type>
+        <object-type name="IceSpikes" sid="7396656229367716">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3566010647891792" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\Tiles\Cave1-1\Spikes.png">
+                        <collision-poly>
+                            <point x="0.8125" y="0.8125" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0.1875" y="0.8125" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="3089839291763815">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2626917623180408" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\BackGround\Death\Death.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\BackGround\Death\Death2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\BackGround\Death\Death3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\BackGround\Death\Death4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\BackGround\Death\Death5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Snarvei\Egne spel\2D-RPG\BackGround\Death\Death6.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sword" sid="6746638855529107">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="1784625858173318">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4455192932654447" speed="5">
+                    <frame duration="1" hotspotX="0.6" hotspotY="0.545455" original-source="C:\Users\Stian\Desktop\Filer\Construct2\2D-RPG\Weapons\Sword.png">
+                        <collision-poly>
+                            <point x="0.2" y="0.0909091" />
+                            <point x="0.4" y="0" />
+                            <point x="0.8" y="0.0909091" />
+                            <point x="0.8" y="0.454545" />
+                            <point x="0.6" y="0.818182" />
+                            <point x="0.4" y="1" />
+                            <point x="0.4" y="0.818182" />
+                            <point x="0.2" y="0.454545" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SonPlayer" sid="3129493087435024">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5424637955799305" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Filer\Construct2\2D-RPG\Caracter\Sword.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Wind" sid="5077197689358154">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="1660788608749209">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3488793135828106" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Filer\Construct2\2D-RPG\Caracter\AF1.png">
+                        <collision-poly>
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.96875" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Filer\Construct2\2D-RPG\Caracter\AF2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AttackSensor" sid="1264271195311007">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7702805188923985" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="4616271425921956">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8652578328814394" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="Blocks" plugin-id="Sprite" sid="4348382968169484">
+            <members>
+                <member>Block</member>
+                <member>MovableBlock</member>
+            </members>
+        </family>
+        <family name="RockMonsterFamily" plugin-id="Sprite" sid="3283030264792841">
+            <members>
+                <member>RockMonster_RockMonster_RockMonsterArm1</member>
+                <member>RockMonster_RockMonster_RockMonsterArm2</member>
+                <member>RockMonster_RockMonster_RockMonsterBody</member>
+                <member>RockMonster_RockMonster_RockMonsterHead</member>
+                <member>RockMonster_RockMonster_RockMonsterLowerFoot1</member>
+                <member>RockMonster_RockMonster_RockMonsterLowerFoot2</member>
+                <member>RockMonster_RockMonster_RockMonsterUpperFoot1</member>
+                <member>RockMonster_RockMonster_RockMonsterUpperFoot2</member>
+            </members>
+        </family>
+        <family name="Vatn" plugin-id="TiledBg" sid="7616551402602161">
+            <members>
+                <member>V1</member>
+                <member>V2</member>
+                <member>V3</member>
+                <member>V4</member>
+                <member>V5</member>
+                <member>V6</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Fade" sid="9353718053108083">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="ToiletPaperFamily" plugin-id="Sprite" sid="7695134688953956">
+            <members>
+                <member>ToiletPaper_ToiletPaper_ToiletPaper</member>
+            </members>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>OutsideCave.xml</layout>
+        <layout>Cave1-1.xml</layout>
+        <layout>Sewers1-1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Main.xml</event-sheet>
+        <event-sheet>Cave1-1.xml</event-sheet>
+        <event-sheet>OutsideCave.xml</event-sheet>
+        <event-sheet>Sewers1-1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="3" />
+        <global-instance type="Mouse" uid="4" />
+        <global-instance type="Function" uid="140" />
+        <global-instance type="Browser" uid="265" />
+        <global-instance type="Touch" uid="514">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Gamepad" uid="519">
+            <properties>
+                <analog-deadzone>25</analog-deadzone>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="639">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="Jump.m4a" />
+        <file name="Jump.ogg" />
+        <file name="InVater.m4a" />
+        <file name="InVater.ogg" />
+        <file name="EnemyHit.m4a" />
+        <file name="EnemyHit.ogg" />
+        <file name="EnemyHit2.m4a" />
+        <file name="EnemyHit2.ogg" />
+        <file name="PlayerHurt.m4a" />
+        <file name="PlayerHurt.ogg" />
+        <file name="Walk.m4a" />
+        <file name="Walk.ogg" />
+        <file name="EnemyAttack.m4a" />
+        <file name="EnemyAttack.ogg" />
+        <file name="TV-Off.m4a" />
+        <file name="TV-Off.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+        <file-folder name="Spriter animations">
+            <file name="IceGollem.scml" />
+            <file name="RockMonster.scml" />
+            <file name="RockMonster.scon" />
+            <file name="Knight.scon" />
+            <file name="Knight.scon" />
+            <file name="Knight.scon" />
+            <file name="Knight.scml" />
+            <file name="Knight.scon" />
+            <file name="ToiletPaper.scml" />
+            <file name="ToiletPaper.scon" />
+        </file-folder>
+    </files-folder>
+</c2project>
