@@ -11,6 +11,7 @@
     <saved-with-version>22700</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -30,8 +31,8 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>320</width>
-        <height>180</height>
+        <width>420</width>
+        <height>280</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -52,6 +53,48 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
+        <object-folder name="Dummy">
+            <object-type name="Dummy1" sid="5842891846270496">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4781566237577121" speed="3">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Dummy2" sid="9669024975461942">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7713894989558317" speed="3">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Dummy3" sid="1594590188049133">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6581293369922083" speed="3">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Dummy4" sid="9656858308642769">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4941089021538248" speed="3">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="Sprite" sid="498564549512213">
             <plugin id="Sprite" />
             <animation-folder>
@@ -96,7 +139,7 @@
         <object-type name="Player" sid="8554076889688182">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable comment="Dis is da healt" name="Health" sid="8888676694304586" type="number" />
+                <instance-variable name="Veg" sid="1368062564887706" type="string" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="3" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="5576638332335097" speed="3">
@@ -117,7 +160,7 @@
                 <animation framecount="1" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="6670432772618953" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
-                <animation framecount="2" loop="0" name="Slide" pingpong="0" repeatcount="0" repeatto="0" sid="832982076657038" speed="10">
+                <animation framecount="2" loop="0" name="Slide" pingpong="0" repeatcount="0" repeatto="0" sid="832982076657038" speed="15">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
@@ -159,6 +202,9 @@
         </object-type>
         <object-type name="Playerbox" sid="8907107341783037">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Health" sid="4828966796801735" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="1247843201249672">
                     <behavior id="Platform" />
@@ -196,7 +242,7 @@
         <object-type name="Tre" sid="8338008171547916">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8874520080939622" speed="5">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8874520080939622" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Filer\Construct2\TopDownTest\Tiles\Tre.png">
                         <collision-poly>
                             <point x="0.3125" y="0.3125" />
@@ -379,13 +425,174 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite8" sid="2862493387734878">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2218182606658025" speed="5">
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.538462" original-source="C:\Users\Stian\Desktop\Bull\Construct2\Runner\Objekter\Spikes.png">
+                        <collision-poly>
+                            <point x="0.421053" y="0.615385" />
+                            <point x="0.473684" y="0.461538" />
+                            <point x="0.578947" y="0.615385" />
+                            <point x="0.842105" y="0.461538" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.157895" y="0.461538" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground3" sid="9319875965437543">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Sprite9" sid="5249669361893459">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4930331842296613" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont2" sid="9749734172689041">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="MainMenu1" sid="8652473226719261">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="SpriteFont4" sid="4963392613873572">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="MainMenu2" sid="8161425911973575">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="MainMenu3" sid="8401259801853514">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="Sprite10" sid="1912615473679551">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5208097403609986" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite11" sid="1684291362158406">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7250310406693267" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MenuSensor1" sid="4599023387011316">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6315259888213885" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite12" sid="338060992385535">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1934589868190767" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Bull\Construct2\Runner\Hero\LadyIdle.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player2" sid="1680812741264445">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Veg" sid="633054721391485" type="string" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="475680283661953" speed="3">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="8" loop="1" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="5607897589703764" speed="13">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="3286428593946826" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="2" loop="0" name="Slide" pingpong="0" repeatcount="1" repeatto="0" sid="416303740890291" speed="15">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlayerBox2" sid="7232257437200055">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Health" sid="3535905276253914" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="2204135687659712">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8065897010415197" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0.625" />
+                            <point x="1" y="0.625" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Function" sid="7791126528437629">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="Shadow" sid="870411413852508">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Player1Spawner" sid="429657004421676">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1060211360844302" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player2Spawner" sid="377856281847855">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="928357666861519" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Layout 1.xml</layout>
+        <layout>Level1-1.xml</layout>
+        <layout>MainMenu.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Level1-1.xml</event-sheet>
+        <event-sheet>MainMenu.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="70" />
@@ -395,6 +602,7 @@
             </properties>
         </global-instance>
         <global-instance type="Browser" uid="195" />
+        <global-instance type="Function" uid="504" />
     </global-instances>
     <sounds-folder />
     <music-folder />

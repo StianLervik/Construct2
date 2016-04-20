@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MainMenu</name>
+    <events>
+        <variable constant="0" name="PlayerSelect" sid="2149336353717562" static="0" type="number">0</variable>
+        <variable constant="0" name="TextStadie" sid="643932770478103" static="0" type="text">MainMenu1</variable>
+        <variable constant="0" name="Select" sid="5703997731310414" static="0" type="number">1</variable>
+        <event-block sid="5154572979891883">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="709723295201713" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2638357860671999" type="Player">
+                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="5239234876442987" type="Player2">
+                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3881294194025069">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="6076404583559322" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="2948950021685172" type="Player">
+                    <param id="0" name="Object">Playerbox</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="3615758677114714" type="Player2">
+                    <param id="0" name="Object">PlayerBox2</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3104452060802968">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="6180774271018966" type="Keyboard">
+                    <param id="0" name="Key">83 (S)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="6604044684627692" type="System">
+                    <param id="0" name="Variable">Select</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7814648070016571">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="7018945481674617" type="Keyboard">
+                    <param id="0" name="Key">87 (W)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="8961613391193174" type="System">
+                    <param id="0" name="Variable">Select</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8081413731681144">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1834982789102377" type="Playerbox">
+                    <param id="0" name="Object">MenuSensor1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="1050348253790935">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="2300502195888155" type="Player">
+                            <param id="0" name="Instance variable">Veg</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Right&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="4975285721386693" type="Player">
+                            <param id="0" name="Instance variable">Veg</param>
+                            <param id="1" name="Value">&quot;Left&quot;</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="4231403566944732" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1205091129404986">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="7765237932764772" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="8152527094185277" type="Player">
+                            <param id="0" name="Instance variable">Veg</param>
+                            <param id="1" name="Value">&quot;Right&quot;</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="8854079567887391" type="Player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="6803421987034355">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="668406894253447" type="PlayerBox2">
+                    <param id="0" name="Object">MenuSensor1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="2637758045969625">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="8343177744948" type="Player2">
+                            <param id="0" name="Instance variable">Veg</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Right&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="1954120291247316" type="Player2">
+                            <param id="0" name="Instance variable">Veg</param>
+                            <param id="1" name="Value">&quot;Left&quot;</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="3266201635836065" type="Player2">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3775433206508281">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="83611851232215" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="5040771119921428" type="Player2">
+                            <param id="0" name="Instance variable">Veg</param>
+                            <param id="1" name="Value">&quot;Right&quot;</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="8886109196273276" type="Player2">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="9532067713268671">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="7045072569561181" type="Player">
+                    <param id="0" name="Instance variable">Veg</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Right&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="99395790726153" type="Playerbox">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1560822827270553">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="2005884726940326" type="Player">
+                    <param id="0" name="Instance variable">Veg</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Left&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="3193184192503499" type="Playerbox">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="469089929393902">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="6759628123301437" type="Player2">
+                    <param id="0" name="Instance variable">Veg</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Right&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="6162376499182812" type="PlayerBox2">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4907134335416405">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="2663449612251842" type="Player2">
+                    <param id="0" name="Instance variable">Veg</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Left&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="4738554097615358" type="PlayerBox2">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7603388403586264">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7260707726573053" type="System">
+                    <param id="0" name="Variable">TextStadie</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;MainMenu1&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="1517142048309496">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="7752033993957554" type="System">
+                            <param id="0" name="Variable">Select</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="6334844790136841" type="System">
+                            <param id="0" name="Variable">Select</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5770376425847261">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="5924548364000402" type="System">
+                            <param id="0" name="Variable">Select</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="6868344744036407" type="System">
+                            <param id="0" name="Variable">Select</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3332538731027251">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="6120141883501185" type="System">
+                            <param id="0" name="Variable">Select</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="8386866287959879" type="Sprite10">
+                            <param id="0" name="X">160</param>
+                            <param id="1" name="Y">67</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block any="1" sid="1412097148571685">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="9563997264970841" type="Keyboard">
+                                    <param id="0" name="Key">32 (Mellomrom)</param>
+                                </condition>
+                                <condition id="0" name="On key pressed" sid="8972202507891827" type="Keyboard">
+                                    <param id="0" name="Key">13 (Return)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="1425488541323251" type="Shadow">
+                                    <param id="0" name="Opacity">50</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="6765316031767639" type="Dummy1">
+                                    <param id="0" name="X">MainMenu1.X</param>
+                                    <param id="1" name="Y">MainMenu1.Y</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="6029209238350557" type="Dummy2">
+                                    <param id="0" name="X">MainMenu2.X</param>
+                                    <param id="1" name="Y">MainMenu2.Y</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="6674166649316435" type="Dummy3">
+                                    <param id="0" name="X">MainMenu3.X</param>
+                                    <param id="1" name="Y">MainMenu3.Y</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="6139010011707759" type="Dummy4">
+                                    <param id="0" name="X">MainMenu3.X + 32</param>
+                                    <param id="1" name="Y">MainMenu3.Y</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="974912869448077" type="MainMenu1">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="8950617766319685" type="MainMenu2">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="5308666672047054" type="MainMenu3">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="6658385118248426" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="215547641375452" type="System">
+                                    <param id="0" name="Variable">TextStadie</param>
+                                    <param id="1" name="Value">&quot;MainMenu2&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="7578263285746306">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4329795774712578" type="System">
+                            <param id="0" name="Variable">Select</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="3204963359977672" type="Sprite10">
+                            <param id="0" name="X">160</param>
+                            <param id="1" name="Y">115</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8779999540463004">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="8123956545928612" type="System">
+                            <param id="0" name="Variable">Select</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="2034362862015274" type="Sprite10">
+                            <param id="0" name="X">160</param>
+                            <param id="1" name="Y">163</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="5384435137833622">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7178768163564002" type="System">
+                    <param id="0" name="Variable">TextStadie</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;MainMenu2&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="3817890710148034">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5779596828411825" type="Keyboard">
+                            <param id="0" name="Key">32 (Mellomrom)</param>
+                        </condition>
+                        <condition id="0" name="On key pressed" sid="5297212876886008" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-25" name="Go to layout (by name)" sid="8332362156610903" type="System">
+                            <param id="0" name="Layout">&quot;Level1-1&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="4283369509862436">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="7847949062762013" type="System">
+                                    <param id="0" name="Variable">Select</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="1427984664330337" type="System">
+                                    <param id="0" name="Variable">PlayerSelect</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2708876454528196">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="3570792272692667" type="System">
+                                    <param id="0" name="Variable">Select</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="8715265311299656" type="System">
+                                    <param id="0" name="Variable">PlayerSelect</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3721392346543586">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="3767198144735993" type="System">
+                                    <param id="0" name="Variable">Select</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="5722416649476261" type="System">
+                                    <param id="0" name="Variable">PlayerSelect</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="8122736174091814">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="6329230439519591" type="System">
+                            <param id="0" name="Variable">Select</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="6958075477201858" type="System">
+                            <param id="0" name="Variable">Select</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9846124902085995">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="5310167486075156" type="System">
+                            <param id="0" name="Variable">Select</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="6119317716540399" type="System">
+                            <param id="0" name="Variable">Select</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3534266872207108">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="589778737189493" type="System">
+                            <param id="0" name="Variable">Select</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="5424652883964475" type="Sprite10">
+                            <param id="0" name="X">160</param>
+                            <param id="1" name="Y">67</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3269209206043454">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="3698750060815413" type="System">
+                            <param id="0" name="Variable">Select</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="7460745476595705" type="Sprite10">
+                            <param id="0" name="X">160</param>
+                            <param id="1" name="Y">115</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2897385928802383">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4405632454087204" type="System">
+                            <param id="0" name="Variable">Select</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="6590740240140156" type="Sprite10">
+                            <param id="0" name="X">160</param>
+                            <param id="1" name="Y">163</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
