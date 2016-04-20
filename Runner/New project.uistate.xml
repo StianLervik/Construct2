@@ -10,10 +10,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Level1-1</layout>
-        <layout order="2">MainMenu</layout>
-        <event-sheet order="1">Level1-1</event-sheet>
-        <event-sheet active="1" order="3">MainMenu</event-sheet>
+        <layout order="1">Level1-1</layout>
+        <layout active="1" order="3">MainMenu</layout>
+        <event-sheet order="2">Level1-1</event-sheet>
+        <event-sheet order="4">MainMenu</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -25,6 +25,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/Dummy/" />
+        <folder expanded="0" path="object-folder/Blocks/" />
+        <folder expanded="0" path="object-folder/Game/" />
+        <folder expanded="0" path="object-folder/Objects/" />
+        <folder expanded="0" path="object-folder/Playes/" />
+        <folder expanded="0" path="object-folder/Text/" />
+        <folder expanded="0" path="object-folder/Backgrounds/" />
+        <folder expanded="0" path="object-folder/Sensors/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -35,33 +42,31 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Dummy2/" />
         <folder expanded="1" path="animation-folder/Dummy3/" />
         <folder expanded="1" path="animation-folder/Dummy4/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
-        <folder expanded="1" path="animation-folder/Player/" />
         <folder expanded="1" path="animation-folder/Block/" />
-        <folder expanded="1" path="animation-folder/Playerbox/" />
-        <folder expanded="1" path="animation-folder/Sprite5/" />
-        <folder expanded="1" path="animation-folder/Tre/" />
-        <folder expanded="1" path="animation-folder/Grass/" />
-        <folder expanded="1" path="animation-folder/Sprite2/" />
-        <folder expanded="1" path="animation-folder/Sprite3/" />
-        <folder expanded="1" path="animation-folder/Grass2/" />
         <folder expanded="1" path="animation-folder/Block2/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Grass/" />
+        <folder expanded="1" path="animation-folder/Grass2/" />
         <folder expanded="1" path="animation-folder/Grass3/" />
-        <folder expanded="1" path="animation-folder/Sprite4/" />
-        <folder expanded="1" path="animation-folder/TurnSensor1/" />
-        <folder expanded="1" path="animation-folder/Sprite6/" />
-        <folder expanded="1" path="animation-folder/Sprite7/" />
-        <folder expanded="1" path="animation-folder/TurnSensor2/" />
-        <folder expanded="1" path="animation-folder/TurnSensor3/" />
-        <folder expanded="1" path="animation-folder/Sprite8/" />
-        <folder expanded="1" path="animation-folder/Sprite9/" />
-        <folder expanded="1" path="animation-folder/Sprite10/" />
-        <folder expanded="1" path="animation-folder/Sprite11/" />
+        <folder expanded="1" path="animation-folder/Stolpe/" />
+        <folder expanded="1" path="animation-folder/SpikeTrap/" />
+        <folder expanded="1" path="animation-folder/Spikes/" />
+        <folder expanded="1" path="animation-folder/Tre/" />
         <folder expanded="1" path="animation-folder/MenuSensor1/" />
-        <folder expanded="1" path="animation-folder/Sprite12/" />
+        <folder expanded="1" path="animation-folder/Player/" />
         <folder expanded="1" path="animation-folder/Player2/" />
-        <folder expanded="1" path="animation-folder/PlayerBox2/" />
         <folder expanded="1" path="animation-folder/Player1Spawner/" />
         <folder expanded="1" path="animation-folder/Player2Spawner/" />
+        <folder expanded="1" path="animation-folder/Playerbox/" />
+        <folder expanded="1" path="animation-folder/PlayerBox2/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/Sprite10/" />
+        <folder expanded="1" path="animation-folder/StolpeSensor/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/Camera/" />
+        <folder expanded="1" path="animation-folder/Sprite7/" />
+        <folder expanded="1" path="animation-folder/TurnSensor1/" />
+        <folder expanded="1" path="animation-folder/TurnSensor2/" />
+        <folder expanded="1" path="animation-folder/TurnSensor3/" />
     </folders-expanded>
 </c2uistate>

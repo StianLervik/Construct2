@@ -121,7 +121,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-23" name="Move at angle" sid="3791656658972791" type="Sprite4">
+                        <action id="-23" name="Move at angle" sid="3791656658972791" type="Camera">
                             <param id="0" name="Angle">45</param>
                             <param id="1" name="Distance">1</param>
                         </action>
@@ -136,7 +136,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-23" name="Move at angle" sid="7673580382908144" type="Sprite4">
+                        <action id="-23" name="Move at angle" sid="7673580382908144" type="Camera">
                             <param id="0" name="Angle">0</param>
                             <param id="1" name="Distance">1</param>
                         </action>
@@ -151,7 +151,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-23" name="Move at angle" sid="8317147099151852" type="Sprite4">
+                        <action id="-23" name="Move at angle" sid="8317147099151852" type="Camera">
                             <param id="0" name="Angle">-45</param>
                             <param id="1" name="Distance">1</param>
                         </action>
@@ -161,7 +161,7 @@
         </event-block>
         <event-block sid="2420892986742283">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="3556349452563482" type="Sprite4">
+                <condition id="0" name="On collision with another object" sid="3556349452563482" type="Camera">
                     <param id="0" name="Object">TurnSensor1</param>
                 </condition>
             </conditions>
@@ -174,7 +174,7 @@
         </event-block>
         <event-block sid="2471046313751515">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="7130166491830185" type="Sprite4">
+                <condition id="0" name="On collision with another object" sid="7130166491830185" type="Camera">
                     <param id="0" name="Object">TurnSensor2</param>
                 </condition>
             </conditions>
@@ -187,7 +187,7 @@
         </event-block>
         <event-block sid="8748182487192591">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="4750537787407437" type="Sprite4">
+                <condition id="0" name="On collision with another object" sid="4750537787407437" type="Camera">
                     <param id="0" name="Object">TurnSensor3</param>
                 </condition>
             </conditions>
@@ -459,34 +459,34 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="3381501562751267" type="Sprite7" />
-                        <action behavior="Sine" id="0" name="Set active" sid="2392398541957688" type="Sprite6">
+                        <action behavior="Sine" id="0" name="Set active" sid="2392398541957688" type="SpikeTrap">
                             <param id="0" name="State">1</param>
                         </action>
                         <action id="-16" name="Wait" sid="4182681129777705" type="System">
                             <param id="0" name="Seconds">0.5</param>
                         </action>
-                        <action behavior="Sine" id="0" name="Set active" sid="1620146173314306" type="Sprite6">
+                        <action behavior="Sine" id="0" name="Set active" sid="1620146173314306" type="SpikeTrap">
                             <param id="0" name="State">0</param>
                         </action>
-                        <action id="-8" name="Set angle" sid="5855574602771235" type="Sprite6">
+                        <action id="-8" name="Set angle" sid="5855574602771235" type="SpikeTrap">
                             <param id="0" name="Angle">67</param>
                         </action>
                         <action id="-16" name="Wait" sid="8065110074614731" type="System">
                             <param id="0" name="Seconds">0.05</param>
                         </action>
-                        <action id="-8" name="Set angle" sid="4986192940507653" type="Sprite6">
+                        <action id="-8" name="Set angle" sid="4986192940507653" type="SpikeTrap">
                             <param id="0" name="Angle">45</param>
                         </action>
                         <action id="-16" name="Wait" sid="2590433982371361" type="System">
                             <param id="0" name="Seconds">0.05</param>
                         </action>
-                        <action id="-8" name="Set angle" sid="2794304211397745" type="Sprite6">
+                        <action id="-8" name="Set angle" sid="2794304211397745" type="SpikeTrap">
                             <param id="0" name="Angle">22</param>
                         </action>
                         <action id="-16" name="Wait" sid="1596430872118746" type="System">
                             <param id="0" name="Seconds">0.05</param>
                         </action>
-                        <action id="-8" name="Set angle" sid="664771965728965" type="Sprite6">
+                        <action id="-8" name="Set angle" sid="664771965728965" type="SpikeTrap">
                             <param id="0" name="Angle">0</param>
                         </action>
                     </actions>
@@ -716,84 +716,124 @@
                         <action id="-26" name="Restart layout" sid="2714665575263981" type="System" />
                     </actions>
                 </event-block>
-                <event-block sid="1219164451531944">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="2994550552208369" type="PlayerBox2">
-                            <param id="0" name="Object">Sprite7</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="2849369647188005" type="Sprite7" />
-                        <action behavior="Sine" id="0" name="Set active" sid="8280694129548292" type="Sprite6">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="6793420205775805" type="System">
-                            <param id="0" name="Seconds">0.5</param>
-                        </action>
-                        <action behavior="Sine" id="0" name="Set active" sid="825187250056608" type="Sprite6">
-                            <param id="0" name="State">0</param>
-                        </action>
-                        <action id="-8" name="Set angle" sid="1691747605263876" type="Sprite6">
-                            <param id="0" name="Angle">67</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="9202274968335899" type="System">
-                            <param id="0" name="Seconds">0.05</param>
-                        </action>
-                        <action id="-8" name="Set angle" sid="7088730578670076" type="Sprite6">
-                            <param id="0" name="Angle">45</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="7240579145698361" type="System">
-                            <param id="0" name="Seconds">0.05</param>
-                        </action>
-                        <action id="-8" name="Set angle" sid="885030198089203" type="Sprite6">
-                            <param id="0" name="Angle">22</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="2955951920561741" type="System">
-                            <param id="0" name="Seconds">0.05</param>
-                        </action>
-                        <action id="-8" name="Set angle" sid="6604207887461987" type="Sprite6">
-                            <param id="0" name="Angle">0</param>
-                        </action>
-                    </actions>
-                </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="1588964779401841">
+        <event-block sid="2460106367558983">
             <conditions>
-                <condition id="0" name="On function" sid="6818404066164984" type="Function">
+                <condition id="0" name="On collision with another object" sid="8608289885071774" type="PlayerBox2">
+                    <param id="0" name="Object">Sprite7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="1928455203842902" type="Sprite7" />
+                <action behavior="Sine" id="0" name="Set active" sid="9227427535101561" type="SpikeTrap">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="7728154314822858" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action behavior="Sine" id="0" name="Set active" sid="8851182296738292" type="SpikeTrap">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="3647608540895937" type="SpikeTrap">
+                    <param id="0" name="Angle">67</param>
+                </action>
+                <action id="-16" name="Wait" sid="285601242792947" type="System">
+                    <param id="0" name="Seconds">0.05</param>
+                </action>
+                <action id="-8" name="Set angle" sid="6003487861886055" type="SpikeTrap">
+                    <param id="0" name="Angle">45</param>
+                </action>
+                <action id="-16" name="Wait" sid="4312499277972252" type="System">
+                    <param id="0" name="Seconds">0.05</param>
+                </action>
+                <action id="-8" name="Set angle" sid="5033055130085234" type="SpikeTrap">
+                    <param id="0" name="Angle">22</param>
+                </action>
+                <action id="-16" name="Wait" sid="2166182661597646" type="System">
+                    <param id="0" name="Seconds">0.05</param>
+                </action>
+                <action id="-8" name="Set angle" sid="8087179904841338" type="SpikeTrap">
+                    <param id="0" name="Angle">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7746866935318899">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6322204968049801" type="Camera">
+                    <param id="0" name="Object">StolpeSensor</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="8117582372239054" type="StolpeSensor" />
+                <action behavior="Sine" id="0" name="Set active" sid="3752508636663802" type="Stolpe">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="8667017202188899" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action behavior="Sine" id="0" name="Set active" sid="9605492744005" type="Stolpe">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="3583241886973258" type="Stolpe">
+                    <param id="0" name="Angle">-22</param>
+                </action>
+                <action id="-16" name="Wait" sid="8470008053628766" type="System">
+                    <param id="0" name="Seconds">0.05</param>
+                </action>
+                <action id="-8" name="Set angle" sid="5853290886139897" type="Stolpe">
+                    <param id="0" name="Angle">-45</param>
+                </action>
+                <action id="-16" name="Wait" sid="6968938144480341" type="System">
+                    <param id="0" name="Seconds">0.05</param>
+                </action>
+                <action id="-8" name="Set angle" sid="3598025826923385" type="Stolpe">
+                    <param id="0" name="Angle">-67</param>
+                </action>
+                <action id="-16" name="Wait" sid="6990183578891386" type="System">
+                    <param id="0" name="Seconds">0.05</param>
+                </action>
+                <action id="-8" name="Set angle" sid="1201889658263874" type="Stolpe">
+                    <param id="0" name="Angle">-90</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7727247039124841">
+            <conditions>
+                <condition id="0" name="On function" sid="6152919061597106" type="Function">
                     <param id="0" name="Name">&quot;Death1&quot;</param>
                 </condition>
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="3665631567131086">
+                <event-block sid="6809639336336822">
                     <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="3268152276983586" type="PlayerBox2">
+                        <condition id="-7" name="Compare instance variable" sid="9556297678616345" type="PlayerBox2">
                             <param id="0" name="Instance variable">Health</param>
                             <param id="1" name="Comparison">3</param>
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-26" name="Restart layout" sid="7971346847157041" type="System" />
+                        <action id="-26" name="Restart layout" sid="3606258049912729" type="System" />
                     </actions>
                 </event-block>
-                <event-block sid="27081686578506">
+                <event-block sid="7503574574558958">
                     <conditions>
-                        <condition id="-22" name="Else" sid="8700096446394778" type="System" />
+                        <condition id="-22" name="Else" sid="5422961895482721" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-16" name="Wait" sid="5333853895540875" type="System">
+                        <action id="-16" name="Wait" sid="3622929703061313" type="System">
                             <param id="0" name="Seconds">3.0</param>
                         </action>
-                        <action id="-4" name="Set position to another object" sid="3480976906338905" type="Playerbox">
+                        <action id="-4" name="Set position to another object" sid="149477282745081" type="Playerbox">
                             <param id="0" name="Object">PlayerBox2</param>
                             <param id="1" name="Image point (optional)">0</param>
                         </action>
-                        <action behavior="Platform" id="11" name="Set enabled" sid="186932546445704" type="Playerbox">
+                        <action behavior="Platform" id="11" name="Set enabled" sid="9387721849196334" type="Playerbox">
                             <param id="0" name="State">1</param>
                         </action>
-                        <action id="0" name="Spawn another object" sid="9709675033512626" type="PlayerBox2">
+                        <action id="0" name="Spawn another object" sid="8566761215101881" type="PlayerBox2">
                             <param id="0" name="Object">Player</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="Image point">0</param>
@@ -802,42 +842,42 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="3732501976285861">
+        <event-block sid="8406643712242132">
             <conditions>
-                <condition id="0" name="On function" sid="9673569790305903" type="Function">
+                <condition id="0" name="On function" sid="1709245816166856" type="Function">
                     <param id="0" name="Name">&quot;Death2&quot;</param>
                 </condition>
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="2412660593192676">
+                <event-block sid="6038086643390609">
                     <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="5580560678708575" type="Playerbox">
+                        <condition id="-7" name="Compare instance variable" sid="1053688286127841" type="Playerbox">
                             <param id="0" name="Instance variable">Health</param>
                             <param id="1" name="Comparison">3</param>
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-26" name="Restart layout" sid="9163916982367849" type="System" />
+                        <action id="-26" name="Restart layout" sid="8868493652469887" type="System" />
                     </actions>
                 </event-block>
-                <event-block sid="7776144897868338">
+                <event-block sid="2401397074181658">
                     <conditions>
-                        <condition id="-22" name="Else" sid="8368631056364593" type="System" />
+                        <condition id="-22" name="Else" sid="208868179570213" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-16" name="Wait" sid="8110901686225043" type="System">
+                        <action id="-16" name="Wait" sid="6261729964010504" type="System">
                             <param id="0" name="Seconds">3.0</param>
                         </action>
-                        <action id="-4" name="Set position to another object" sid="3316699715071837" type="PlayerBox2">
+                        <action id="-4" name="Set position to another object" sid="6622955687511703" type="PlayerBox2">
                             <param id="0" name="Object">Playerbox</param>
                             <param id="1" name="Image point (optional)">0</param>
                         </action>
-                        <action behavior="Platform" id="11" name="Set enabled" sid="2671479640971023" type="PlayerBox2">
+                        <action behavior="Platform" id="11" name="Set enabled" sid="4479866727179991" type="PlayerBox2">
                             <param id="0" name="State">1</param>
                         </action>
-                        <action id="0" name="Spawn another object" sid="8804473578573164" type="Playerbox">
+                        <action id="0" name="Spawn another object" sid="5161598527558919" type="Playerbox">
                             <param id="0" name="Object">Player2</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="Image point">0</param>
@@ -846,39 +886,39 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="7670317219764664">
+        <event-block sid="5443741453109646">
             <conditions>
-                <condition id="-7" name="Compare instance variable" sid="6127998911451985" type="PlayerBox2">
+                <condition id="-7" name="Compare instance variable" sid="9485279173078795" type="PlayerBox2">
                     <param id="0" name="Instance variable">Health</param>
                     <param id="1" name="Comparison">3</param>
                     <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="2945125731517229" type="Player2" />
-                <action behavior="Platform" id="11" name="Set enabled" sid="6808049386203784" type="PlayerBox2">
+                <action id="-9" name="Destroy" sid="301405130856348" type="Player2" />
+                <action behavior="Platform" id="11" name="Set enabled" sid="4310821909200588" type="PlayerBox2">
                     <param id="0" name="State">0</param>
                 </action>
-                <action id="0" name="Call function" sid="2407362141590325" type="Function">
+                <action id="0" name="Call function" sid="6339653186591384" type="Function">
                     <param id="0" name="Name">&quot;Death2&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="9880266603115682">
+        <event-block sid="1211833911891126">
             <conditions>
-                <condition id="-7" name="Compare instance variable" sid="3019717048659682" type="Playerbox">
+                <condition id="-7" name="Compare instance variable" sid="1639708765580779" type="Playerbox">
                     <param id="0" name="Instance variable">Health</param>
                     <param id="1" name="Comparison">3</param>
                     <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="2773467832706311" type="Player" />
-                <action behavior="Platform" id="11" name="Set enabled" sid="5394244365242461" type="Playerbox">
+                <action id="-9" name="Destroy" sid="464361552331617" type="Player" />
+                <action behavior="Platform" id="11" name="Set enabled" sid="2513336418454337" type="Playerbox">
                     <param id="0" name="State">0</param>
                 </action>
-                <action id="0" name="Call function" sid="557303541357136" type="Function">
+                <action id="0" name="Call function" sid="6052251054422499" type="Function">
                     <param id="0" name="Name">&quot;Death1&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
                 </action>

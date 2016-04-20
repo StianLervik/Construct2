@@ -19,6 +19,9 @@
                     <param id="0" name="Animation">&quot;Walking&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
+                <action id="10" name="Request fullscreen" sid="112752116718247" type="Browser">
+                    <param id="0" name="Mode">5</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="3881294194025069">
@@ -482,6 +485,34 @@
                         <action id="-3" name="Set position" sid="6590740240140156" type="Sprite10">
                             <param id="0" name="X">160</param>
                             <param id="1" name="Y">163</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="5641349715903433">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="1431994794274093" type="Keyboard">
+                    <param id="0" name="Key">27 (Esc)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="662890365544692">
+                    <conditions>
+                        <condition id="10" name="Is fullscreen" sid="592050511434048" type="Browser" />
+                    </conditions>
+                    <actions>
+                        <action id="11" name="Cancel fullscreen" sid="5316682333111931" type="Browser" />
+                    </actions>
+                </event-block>
+                <event-block sid="6178207346035533">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="9780582641867717" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="10" name="Request fullscreen" sid="5094398959860691" type="Browser">
+                            <param id="0" name="Mode">5</param>
                         </action>
                     </actions>
                 </event-block>

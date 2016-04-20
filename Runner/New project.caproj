@@ -95,495 +95,492 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-type name="Sprite" sid="498564549512213">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="10" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2258570833995866" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0" />
-                            <point x="1" y="0" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-                <animation framecount="1" loop="0" name="Animation2" pingpong="0" repeatcount="1" repeatto="0" sid="7920987845838215" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Player" sid="8554076889688182">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="Veg" sid="1368062564887706" type="string" />
-            </instance-variables>
-            <animation-folder>
-                <animation framecount="3" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="5576638332335097" speed="3">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-                <animation framecount="8" loop="1" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="8828613548087348" speed="13">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-                <animation framecount="1" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="6670432772618953" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-                <animation framecount="2" loop="0" name="Slide" pingpong="0" repeatcount="0" repeatto="0" sid="832982076657038" speed="15">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Block" sid="7499989808843154">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="2646453616010712">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="15" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3608811261149672" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\InvEdgeOnTop.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grass.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Edge.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\EdgeInWall.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\InvEdgeInWall.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Dirt.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Tiles\InvLowerSnowEdge.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Tiles\LowerDirt.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Tiles\LowerSnowEdge.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Tiles\DirtEdge.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Tiles\DirtEdge2.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="1" y="0" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Playerbox" sid="8907107341783037">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="Health" sid="4828966796801735" type="number" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="Platform" sid="1247843201249672">
-                    <behavior id="Platform" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="82793111343813" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0" y="0.625" />
-                            <point x="1" y="0.625" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Keyboard" sid="4700384668821042">
-            <plugin id="Keyboard" />
-        </object-type>
-        <object-type name="TiledBackground" sid="293492287667014">
-            <plugin id="TiledBg" />
-            <texture original-source="C:\Users\Stian\Desktop\Filer\Construct2\TopDownTest\Hero\Screen.png" />
-        </object-type>
-        <object-type name="Sprite5" sid="6896826937529579">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="161971865876126" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Screen1.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Tre" sid="8338008171547916">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8874520080939622" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Filer\Construct2\TopDownTest\Tiles\Tre.png">
-                        <collision-poly>
-                            <point x="0.3125" y="0.3125" />
-                            <point x="0.5" y="0.203125" />
-                            <point x="0.71875" y="0.28125" />
-                            <point x="0.71875" y="0.5" />
-                            <point x="0.6875" y="0.6875" />
-                            <point x="0.5" y="1" />
-                            <point x="0.296875" y="0.703125" />
-                            <point x="0.234375" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Filer\Construct2\TopDownTest\Tiles\Haust.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Gamepad" sid="227116916492514">
-            <plugin id="gamepad" />
-        </object-type>
-        <object-type name="Lau" sid="8596225527218459">
-            <plugin id="Particles" />
-            <texture original-source="C:\Users\Stian\Desktop\Filer\Construct2\TopDownTest\Tiles\Pallet.png" />
-        </object-type>
-        <object-type name="Browser" sid="5643255649056485">
-            <plugin id="Browser" />
-        </object-type>
-        <object-type name="Grass" sid="4675173741840403">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="4" loop="1" name="Rist" pingpong="0" repeatcount="1" repeatto="0" sid="359522533750006" speed="3">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grastust2.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grastust.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grastust3.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite2" sid="3085625069795279">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5993682522717919" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grastust2.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grastust.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grastust3.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite3" sid="9935085188030111">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="1937721768267651">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6174877061581341" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Grass2" sid="5081880372385638">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="4" loop="1" name="Rist" pingpong="0" repeatcount="1" repeatto="0" sid="5866401027188176" speed="3">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grastust2.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grastust.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grastust3.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Block2" sid="8226639931250498">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Jumpthru" sid="7892454756836432">
-                    <behavior id="jumpthru" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="11" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3268834942950606" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\InvEdgeOnTop.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grass.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Edge.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\EdgeInWall.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\InvEdgeInWall.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Dirt.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Tiles\InvLowerSnowEdge.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Tiles\LowerDirt.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Tiles\LowerSnowEdge.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Tiles\DirtEdge2.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Tiles\DirtEdge.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Grass3" sid="4404058581076144">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="4" loop="1" name="Rist" pingpong="0" repeatcount="1" repeatto="0" sid="1421087818133854" speed="3">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grastust2.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grastust.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grastust3.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="TiledBackground2" sid="8542378940609531">
-            <plugin id="TiledBg" />
-            <texture original-source="C:\Users\Stian\Desktop\Test\Tiles\CaveDirt.png" />
-        </object-type>
-        <object-type name="Sprite4" sid="93051443146129">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="ScrollTo" sid="6010135879384341">
-                    <behavior id="scrollto" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1105590962327484" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="SpriteFont" sid="3165741556211203">
-            <plugin id="Spritefont2" />
-            <texture />
-        </object-type>
-        <object-type name="TurnSensor1" sid="8803518007796726">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2023616708191076" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite6" sid="2263554774096029">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Sine" sid="1195367354931905">
-                    <behavior id="Sin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="347414939220931" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Stian\Desktop\Filer\Construct2\Runner\Objekter\SpikeTrapp.png">
-                        <collision-poly>
-                            <point x="0.1875" y="0.09375" />
-                            <point x="0.5" y="0" />
-                            <point x="0.8125" y="0.09375" />
-                            <point x="0.78125" y="0.5" />
-                            <point x="0.59375" y="0.59375" />
-                            <point x="0.5" y="1" />
-                            <point x="0.40625" y="0.59375" />
-                            <point x="0.21875" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite7" sid="2057814335763599">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9242266165951125" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="TurnSensor2" sid="1266585909281698">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9739849084183582" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="TurnSensor3" sid="4144236703787594">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="951842592833536" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite8" sid="2862493387734878">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2218182606658025" speed="5">
-                    <frame duration="1" hotspotX="0.526316" hotspotY="0.538462" original-source="C:\Users\Stian\Desktop\Bull\Construct2\Runner\Objekter\Spikes.png">
-                        <collision-poly>
-                            <point x="0.421053" y="0.615385" />
-                            <point x="0.473684" y="0.461538" />
-                            <point x="0.578947" y="0.615385" />
-                            <point x="0.842105" y="0.461538" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0.157895" y="0.461538" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="TiledBackground3" sid="9319875965437543">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
-        <object-type name="Sprite9" sid="5249669361893459">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4930331842296613" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="SpriteFont2" sid="9749734172689041">
-            <plugin id="Spritefont2" />
-            <texture />
-        </object-type>
-        <object-type name="MainMenu1" sid="8652473226719261">
-            <plugin id="Spritefont2" />
-            <texture />
-        </object-type>
-        <object-type name="SpriteFont4" sid="4963392613873572">
-            <plugin id="Spritefont2" />
-            <texture />
-        </object-type>
-        <object-type name="MainMenu2" sid="8161425911973575">
-            <plugin id="Spritefont2" />
-            <texture />
-        </object-type>
-        <object-type name="MainMenu3" sid="8401259801853514">
-            <plugin id="Spritefont2" />
-            <texture />
-        </object-type>
-        <object-type name="Sprite10" sid="1912615473679551">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5208097403609986" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite11" sid="1684291362158406">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7250310406693267" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="MenuSensor1" sid="4599023387011316">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6315259888213885" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite12" sid="338060992385535">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1934589868190767" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Bull\Construct2\Runner\Hero\LadyIdle.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Player2" sid="1680812741264445">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="Veg" sid="633054721391485" type="string" />
-            </instance-variables>
-            <animation-folder>
-                <animation framecount="3" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="475680283661953" speed="3">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-                <animation framecount="8" loop="1" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="5607897589703764" speed="13">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-                <animation framecount="1" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="3286428593946826" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-                <animation framecount="2" loop="0" name="Slide" pingpong="0" repeatcount="1" repeatto="0" sid="416303740890291" speed="15">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="PlayerBox2" sid="7232257437200055">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="Health" sid="3535905276253914" type="number" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="Platform" sid="2204135687659712">
-                    <behavior id="Platform" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8065897010415197" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0" y="0.625" />
-                            <point x="1" y="0.625" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Function" sid="7791126528437629">
-            <plugin id="Function" />
-        </object-type>
-        <object-type name="Shadow" sid="870411413852508">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
-        <object-type name="Player1Spawner" sid="429657004421676">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1060211360844302" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Player2Spawner" sid="377856281847855">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="928357666861519" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
+        <object-folder name="Blocks">
+            <object-type name="Block" sid="7499989808843154">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="2646453616010712">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="15" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3608811261149672" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\InvEdgeOnTop.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grass.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Edge.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\EdgeInWall.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\InvEdgeInWall.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Dirt.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Tiles\InvLowerSnowEdge.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Tiles\LowerDirt.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Tiles\LowerSnowEdge.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Tiles\DirtEdge.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Tiles\DirtEdge2.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Block2" sid="8226639931250498">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Jumpthru" sid="7892454756836432">
+                        <behavior id="jumpthru" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="11" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3268834942950606" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\InvEdgeOnTop.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grass.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Edge.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\EdgeInWall.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\InvEdgeInWall.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Dirt.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Tiles\InvLowerSnowEdge.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Tiles\LowerDirt.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Tiles\LowerSnowEdge.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Tiles\DirtEdge2.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Tiles\DirtEdge.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite" sid="498564549512213">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="10" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2258570833995866" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Animation2" pingpong="0" repeatcount="1" repeatto="0" sid="7920987845838215" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Game">
+            <object-type name="Browser" sid="5643255649056485">
+                <plugin id="Browser" />
+            </object-type>
+            <object-type name="Function" sid="7791126528437629">
+                <plugin id="Function" />
+            </object-type>
+            <object-type name="Gamepad" sid="227116916492514">
+                <plugin id="gamepad" />
+            </object-type>
+            <object-type name="Keyboard" sid="4700384668821042">
+                <plugin id="Keyboard" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Objects">
+            <object-type name="Grass" sid="4675173741840403">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="4" loop="1" name="Rist" pingpong="0" repeatcount="1" repeatto="0" sid="359522533750006" speed="3">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grastust2.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grastust.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grastust3.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Grass2" sid="5081880372385638">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="4" loop="1" name="Rist" pingpong="0" repeatcount="1" repeatto="0" sid="5866401027188176" speed="3">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grastust2.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grastust.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grastust3.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Grass3" sid="4404058581076144">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="4" loop="1" name="Rist" pingpong="0" repeatcount="1" repeatto="0" sid="1421087818133854" speed="3">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grastust2.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grastust.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Grastust3.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Lau" sid="8596225527218459">
+                <plugin id="Particles" />
+                <texture original-source="C:\Users\Stian\Desktop\Filer\Construct2\TopDownTest\Tiles\Pallet.png" />
+            </object-type>
+            <object-type name="Stolpe" sid="8781141948173163">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="7144005548709247">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9469316683615857" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Stian\Desktop\Bull\Construct2\Runner\Objekter\Stolpe.png">
+                            <collision-poly>
+                                <point x="0.4375" y="0.21875" />
+                                <point x="0.5" y="0.203125" />
+                                <point x="0.5625" y="0.21875" />
+                                <point x="0.59375" y="0.5" />
+                                <point x="0.59375" y="0.796875" />
+                                <point x="0.5" y="1" />
+                                <point x="0.40625" y="0.796875" />
+                                <point x="0.40625" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SpikeTrap" sid="2263554774096029">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="1195367354931905">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="347414939220931" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Stian\Desktop\Filer\Construct2\Runner\Objekter\SpikeTrapp.png">
+                            <collision-poly>
+                                <point x="0.1875" y="0.09375" />
+                                <point x="0.5" y="0" />
+                                <point x="0.8125" y="0.09375" />
+                                <point x="0.78125" y="0.5" />
+                                <point x="0.59375" y="0.59375" />
+                                <point x="0.5" y="1" />
+                                <point x="0.40625" y="0.59375" />
+                                <point x="0.21875" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Spikes" sid="2862493387734878">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2218182606658025" speed="5">
+                        <frame duration="1" hotspotX="0.526316" hotspotY="0.538462" original-source="C:\Users\Stian\Desktop\Bull\Construct2\Runner\Objekter\Spikes.png">
+                            <collision-poly>
+                                <point x="0.421053" y="0.615385" />
+                                <point x="0.473684" y="0.461538" />
+                                <point x="0.578947" y="0.615385" />
+                                <point x="0.842105" y="0.461538" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0.157895" y="0.461538" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Tre" sid="8338008171547916">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8874520080939622" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Bull\Construct2\TopDownTest\Tiles\Tre.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Filer\Construct2\TopDownTest\Tiles\Haust.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Playes">
+            <object-type name="MenuSensor1" sid="4599023387011316">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6315259888213885" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Player" sid="8554076889688182">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Veg" sid="1368062564887706" type="string" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="3" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="5576638332335097" speed="3">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="8" loop="1" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="8828613548087348" speed="13">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="6670432772618953" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="2" loop="0" name="Slide" pingpong="0" repeatcount="0" repeatto="0" sid="832982076657038" speed="15">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Player2" sid="1680812741264445">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Veg" sid="633054721391485" type="string" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="3" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="475680283661953" speed="3">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="8" loop="1" name="Walking" pingpong="0" repeatcount="1" repeatto="0" sid="5607897589703764" speed="13">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="3286428593946826" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="2" loop="0" name="Slide" pingpong="0" repeatcount="1" repeatto="0" sid="416303740890291" speed="15">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Player1Spawner" sid="429657004421676">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1060211360844302" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Player2Spawner" sid="377856281847855">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="928357666861519" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Playerbox" sid="8907107341783037">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Health" sid="4828966796801735" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Platform" sid="1247843201249672">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="82793111343813" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0" y="0.625" />
+                                <point x="1" y="0.625" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PlayerBox2" sid="7232257437200055">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Health" sid="3535905276253914" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Platform" sid="2204135687659712">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8065897010415197" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0" y="0.625" />
+                                <point x="1" y="0.625" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Text">
+            <object-type name="MainMenu1" sid="8652473226719261">
+                <plugin id="Spritefont2" />
+                <texture />
+            </object-type>
+            <object-type name="MainMenu2" sid="8161425911973575">
+                <plugin id="Spritefont2" />
+                <texture />
+            </object-type>
+            <object-type name="MainMenu3" sid="8401259801853514">
+                <plugin id="Spritefont2" />
+                <texture />
+            </object-type>
+            <object-type name="SpriteFont" sid="3165741556211203">
+                <plugin id="Spritefont2" />
+                <texture />
+            </object-type>
+            <object-type name="SpriteFont2" sid="9749734172689041">
+                <plugin id="Spritefont2" />
+                <texture />
+            </object-type>
+            <object-type name="SpriteFont4" sid="4963392613873572">
+                <plugin id="Spritefont2" />
+                <texture />
+            </object-type>
+        </object-folder>
+        <object-folder name="Backgrounds">
+            <object-type name="Shadow" sid="870411413852508">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="Sprite5" sid="6896826937529579">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="161971865876126" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Stian\Desktop\Test\Screen1.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TiledBackground2" sid="8542378940609531">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\Stian\Desktop\Test\Tiles\CaveDirt.png" />
+            </object-type>
+            <object-type name="TiledBackground3" sid="9319875965437543">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+        </object-folder>
+        <object-folder name="Sensors">
+            <object-type name="Sprite10" sid="1912615473679551">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5208097403609986" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="StolpeSensor" sid="3891514371916628">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="719241563739605" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite3" sid="9935085188030111">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="1937721768267651">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6174877061581341" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Camera" sid="93051443146129">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="ScrollTo" sid="6010135879384341">
+                        <behavior id="scrollto" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1105590962327484" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite7" sid="2057814335763599">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9242266165951125" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TurnSensor1" sid="8803518007796726">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2023616708191076" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TurnSensor2" sid="1266585909281698">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9739849084183582" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TurnSensor3" sid="4144236703787594">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="951842592833536" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
     </object-folder>
     <families />
     <layout-folder>
