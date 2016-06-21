@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Boss1</name>
+    <events>
+        <variable constant="0" name="FadeOut" sid="176657116638651" static="0" type="text">false</variable>
+        <variable constant="0" name="Boss" sid="8883731700020666" static="0" type="text">false</variable>
+        <include>Level1-1</include>
+        <event-block sid="9209652780841253">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3091682884602266" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="3625402777890017">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5396238954501742" type="Player3Box">
+                    <param id="0" name="Object">BossStartSensor</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9386418612472863" type="System">
+                    <param id="0" name="Variable">Boss</param>
+                    <param id="1" name="Value">&quot;true&quot;</param>
+                </action>
+                <action id="-3" name="Set position" sid="9081484701554517" type="CloseBlock">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">336</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4333822817682092">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7842548379054376" type="System">
+                    <param id="0" name="Variable">Boss</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;true&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="1023002094912928">
+                    <conditions>
+                        <condition id="-10" name="Compare opacity" sid="6626847412213359" type="MunkOfOld">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Opacity">100</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="74521677299303">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="6480465349090539" type="System">
+                                    <param id="0" name="Interval (seconds)">0.1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="2947203970910047" type="MunkOfOld">
+                                    <param id="0" name="Opacity">MunkOfOld.Opacity+5</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="5336126366562326" type="Boss1">
+                                    <param id="0" name="Opacity">Boss1.Opacity+5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1010059408611686">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="3110658176861676" type="Player3Box">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">Boss1Box.X</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="2197369957178304" type="MunkOfOld">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2599404324738252">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="3209436609751939" type="Player3Box">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">Boss1Box.X</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="6979026281167797" type="MunkOfOld">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8892391746378761">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="4231369745962595" type="System">
+                    <param id="0" name="Variable">Boss</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;true&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5151761672930675">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="6842194265738582" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="7813130810754298" type="System">
+                            <param id="0" name="Seconds">3.0</param>
+                        </action>
+                        <action id="0" name="Call function" sid="6872015263774749" type="Function">
+                            <param id="0" name="Name">&quot;Attack1&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3715773009498818">
+                    <conditions>
+                        <condition id="-10" name="Compare opacity" sid="5246890216958907" type="MunkOfOld">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Opacity">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-41" name="Wait for signal" sid="7450699704524115" type="System">
+                            <param id="0" name="Tag">&quot;Attack&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="4456647736468385" type="Function">
+                            <param id="0" name="Name">&quot;Attack1&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="9612749750996837">
+            <conditions>
+                <condition id="0" name="On function" sid="65856841092295" type="Function">
+                    <param id="0" name="Name">&quot;Attack1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="5504898818587551" type="MunkOfOld">
+                    <param id="0" name="Object">BossFire</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="7803201606840558" type="BossFire">
+                    <param id="0" name="X">Player3Box.X</param>
+                    <param id="1" name="Y">Player3Box.Y-37</param>
+                </action>
+                <action id="-16" name="Wait" sid="8581152046098929" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="2227045411601848" type="MunkOfOld">
+                    <param id="0" name="Object">BossFire</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="2955179671533543" type="BossFire">
+                    <param id="0" name="X">Player3Box.X</param>
+                    <param id="1" name="Y">Player3Box.Y-37</param>
+                </action>
+                <action id="-16" name="Wait" sid="8172219562713611" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="1326898876040708" type="MunkOfOld">
+                    <param id="0" name="Object">BossFire</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="4257403210821024" type="BossFire">
+                    <param id="0" name="X">Player3Box.X</param>
+                    <param id="1" name="Y">Player3Box.Y-37</param>
+                </action>
+                <action id="-16" name="Wait" sid="8699315136605355" type="System">
+                    <param id="0" name="Seconds">5.0</param>
+                </action>
+                <action id="0" name="Call function" sid="8204424920257887" type="Function">
+                    <param id="0" name="Name">&quot;BigBall&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6371441760055293">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7388811819660456" type="MonkAmmo">
+                    <param id="0" name="Object">MunkOfOld</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="6949914484032667">
+                    <conditions>
+                        <condition behavior="Flash" id="0" inverted="1" name="Is flashing" sid="6633485706227769" type="MunkOfOld" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="5021957352761152" type="Function">
+                            <param id="0" name="Name">&quot;Boss1Damage&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="3743696356993297">
+            <conditions>
+                <condition id="0" name="On function" sid="8800633782242037" type="Function">
+                    <param id="0" name="Name">&quot;Boss1Damage&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="7730678030021386" type="MunkOfOld">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="8355403564820734" type="MonkAmmo" />
+                <action id="-12" name="Subtract from" sid="3660328318805599" type="Boss1Box">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5486641059661391">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="1778888641865045" type="Boss1Box">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="5029190086951106" type="BossH1">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1092837470238338">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="582394384667493" type="Boss1Box">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="9460509403792726" type="BossH2">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9563456501193376">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="7467016855143473" type="Boss1Box">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="2221755278816759" type="BossH3">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7001498078294824">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="5072584701705716" type="Boss1Box">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="3070681039130964" type="BossH4">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3046791062675816">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="5332883527653965" type="Boss1Box">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="2784898368645014" type="BossH5">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2945219237275037">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="2176573802006605" type="Boss1Box">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="1646568068039163" type="BossH6">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5059600208699424">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="3217800144510532" type="Boss1Box">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="2891646351908718" type="BossH7">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5006620130151227">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="359713821636575" type="Boss1Box">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="5413666653759433" type="BossH8">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9339990139396168">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="1048896003839178" type="Boss1Box">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="9688955610105715" type="BossH9">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8917959673122539">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="4935428917806914" type="Boss1Box">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="411202484553277" type="BossH10">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="3663431564398312">
+                    <conditions>
+                        <condition behavior="Flash" id="1" name="On flash ended" sid="3448676394673794" type="MunkOfOld" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="2810621571769047" type="MunkOfOld" />
+                        <action id="-9" name="Destroy" sid="5193273945803157" type="Boss1Box" />
+                        <action id="-9" name="Set value" sid="5380454380856884" type="System">
+                            <param id="0" name="Variable">FadeOut</param>
+                            <param id="1" name="Value">&quot;true&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="4905921042552404">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5011063865166669" type="System">
+                    <param id="0" name="Variable">FadeOut</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;true&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="7880170353238445">
+                    <conditions>
+                        <condition id="-10" name="Compare opacity" sid="4082117788968491" type="Boss1">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Opacity">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="4568007209904984">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="2876897806777765" type="System">
+                                    <param id="0" name="Interval (seconds)">0.1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="8019390147485164" type="Boss1">
+                                    <param id="0" name="Opacity">Boss1.Opacity-5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1937252669540966">
+            <conditions>
+                <condition id="0" name="On function" sid="294771537081263" type="Function">
+                    <param id="0" name="Name">&quot;BigBall&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="2052358074078109" type="MunkOfOld">
+                    <param id="0" name="Object">BossBigFire</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3476782123607669">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="7585013130643866" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="2718199960441714">
+                    <conditions>
+                        <condition behavior="Bullet" id="0" inverted="1" name="Compare speed" sid="4649555415603096" type="BossBigFire">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Speed">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-22" name="Set angle toward position" sid="1630705408282781" type="BossBigFire">
+                            <param id="0" name="X">Player3Box.X</param>
+                            <param id="1" name="Y">Player3Box.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

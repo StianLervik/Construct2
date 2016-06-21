@@ -29,14 +29,14 @@
                     <param id="1" name="Image point (optional)">0</param>
                 </action>
                 <action id="-4" name="Set position to another object" sid="4827593711026655" type="Munk">
-                    <param id="0" name="Object">Sprite5</param>
+                    <param id="0" name="Object">Player3Box</param>
                     <param id="1" name="Image point (optional)">0</param>
                 </action>
                 <action id="-1" name="Set X" sid="2072489292672049" type="Camera1">
-                    <param id="0" name="X">Sprite5.X</param>
+                    <param id="0" name="X">Player3Box.X</param>
                 </action>
                 <action id="-2" name="Set Y" sid="6727166407102274" type="Camera1">
-                    <param id="0" name="Y">Sprite5.Y-96</param>
+                    <param id="0" name="Y">Player3Box.Y-96</param>
                 </action>
             </actions>
         </event-block>
@@ -494,6 +494,106 @@
         </event-group>
         <event-group description="" sid="9708241474706786" title="Player3">
             <sub-events>
+                <event-block sid="4954573811318264">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="3266552367930432" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="9445761119450135" type="Player3Box">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9202415399020269">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="3742480591106245" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="8241053696110503">
+                            <conditions>
+                                <condition id="10" name="Is Mirrored (on x axis)" sid="8612667973165867" type="Munk" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="3232753482715514">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="1695764959515134" type="System">
+                                            <param id="0" name="Variable">Cooldown</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="8865193919925654" type="System">
+                                            <param id="0" name="Variable">Cooldown</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="9780144078140406" type="Player3Box">
+                                            <param id="0" name="Object">MonkAmmo</param>
+                                            <param id="1" name="Layer">1</param>
+                                            <param id="2" name="Image point">1</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="5601130548496545" type="MonkAmmo">
+                                            <param id="0" name="Angle">180</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="1758970494136725" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="8952476656599287" type="System">
+                                            <param id="0" name="Variable">Cooldown</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="148694979662911">
+                            <conditions>
+                                <condition id="10" inverted="1" name="Is Mirrored (on x axis)" sid="466567240115889" type="Munk" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="3918348237164791">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="5771226266041594" type="System">
+                                            <param id="0" name="Variable">Cooldown</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Add to" sid="5105600110782379" type="System">
+                                            <param id="0" name="Variable">Cooldown</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="0" name="Spawn another object" sid="6681884664130902" type="Player3Box">
+                                            <param id="0" name="Object">MonkAmmo</param>
+                                            <param id="1" name="Layer">1</param>
+                                            <param id="2" name="Image point">1</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="3975484286671572" type="MonkAmmo">
+                                            <param id="0" name="Angle">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="7197440399370255" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="1893464016974804" type="System">
+                                            <param id="0" name="Variable">Cooldown</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
                 <event-block any="1" sid="8399505557275833">
                     <conditions>
                         <condition id="6" name="On button pressed" sid="670126145148951" type="Gamepad">
@@ -508,7 +608,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="7973562166321516" type="Sprite5">
+                        <action behavior="Platform" id="7" name="Simulate control" sid="7973562166321516" type="Player3Box">
                             <param id="0" name="Control">1</param>
                         </action>
                     </actions>
@@ -539,7 +639,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="2473251898937989" type="Sprite5">
+                        <action behavior="Platform" id="7" name="Simulate control" sid="2473251898937989" type="Player3Box">
                             <param id="0" name="Control">0</param>
                         </action>
                     </actions>
@@ -577,131 +677,6 @@
             </conditions>
             <actions />
         </event-block>
-        <event-block sid="2911250005081725">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="1131464509354181" type="Sprite5">
-                    <param id="0" name="Object">Startsensor</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Platform" id="11" name="Set enabled" sid="1017847851405371" type="Sprite5">
-                    <param id="0" name="State">1</param>
-                </action>
-                <action behavior="Platform" id="5" name="Set gravity" sid="3672952352781002" type="Sprite5">
-                    <param id="0" name="Gravity">1500</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="4954573811318264">
-            <conditions>
-                <condition id="6" name="On button pressed" sid="3266552367930432" type="Gamepad">
-                    <param id="0" name="Gamepad">0</param>
-                    <param id="1" name="Button">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Platform" id="7" name="Simulate control" sid="9445761119450135" type="Sprite5">
-                    <param id="0" name="Control">2</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="9202415399020269">
-            <conditions>
-                <condition id="6" name="On button pressed" sid="3742480591106245" type="Gamepad">
-                    <param id="0" name="Gamepad">0</param>
-                    <param id="1" name="Button">2</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="8241053696110503">
-                    <conditions>
-                        <condition id="10" name="Is Mirrored (on x axis)" sid="8612667973165867" type="Munk" />
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="3232753482715514">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="1695764959515134" type="System">
-                                    <param id="0" name="Variable">Cooldown</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="5658096926675967">
-                                    <conditions>
-                                        <condition id="-11" name="For Each" sid="8579316768128201" type="System">
-                                            <param id="0" name="Object">Sprite6</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-10" name="Add to" sid="8865193919925654" type="System">
-                                            <param id="0" name="Variable">Cooldown</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                        <action id="0" name="Spawn another object" sid="9780144078140406" type="Sprite5">
-                                            <param id="0" name="Object">Sprite6</param>
-                                            <param id="1" name="Layer">1</param>
-                                            <param id="2" name="Image point">1</param>
-                                        </action>
-                                        <action id="-8" name="Set angle" sid="5601130548496545" type="Sprite6">
-                                            <param id="0" name="Angle">180</param>
-                                        </action>
-                                        <action id="-16" name="Wait" sid="1758970494136725" type="System">
-                                            <param id="0" name="Seconds">3.0</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="8952476656599287" type="System">
-                                            <param id="0" name="Variable">Cooldown</param>
-                                            <param id="1" name="Value">0</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="8538233232195112">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="1845210116566289" type="System" />
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="4961326284174416">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="667178303005025" type="System">
-                                    <param id="0" name="Variable">Cooldown</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Add to" sid="1547579297143911" type="System">
-                                    <param id="0" name="Variable">Cooldown</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-8" name="Set angle" sid="3604859878013095" type="Sprite6">
-                                    <param id="0" name="Angle">0</param>
-                                </action>
-                                <action id="0" name="Spawn another object" sid="5807242418854075" type="Sprite5">
-                                    <param id="0" name="Object">Sprite6</param>
-                                    <param id="1" name="Layer">1</param>
-                                    <param id="2" name="Image point">1</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="650162866767408" type="System">
-                                    <param id="0" name="Seconds">3.0</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="763222211397959" type="System">
-                                    <param id="0" name="Variable">Cooldown</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-            </sub-events>
-        </event-block>
         <event-block sid="5039179709590924">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="2030481212771716" type="System">
@@ -730,21 +705,6 @@
                 <action id="5" name="Set frame" sid="5516185846506265" type="Sprite8">
                     <param id="0" name="Frame number">0</param>
                 </action>
-            </actions>
-        </event-block>
-        <event-block sid="8370208666060965">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="5869979205190161" type="Sprite6">
-                    <param id="0" name="Object">MunkOfOld</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Flash" id="0" name="Flash" sid="8403649225312736" type="MunkOfOld">
-                    <param id="0" name="&apos;On&apos; time">0.1</param>
-                    <param id="1" name="&apos;Off&apos; time">0.1</param>
-                    <param id="2" name="Duration">1.0</param>
-                </action>
-                <action id="-9" name="Destroy" sid="1047556770884083" type="Sprite6" />
             </actions>
         </event-block>
     </events>
